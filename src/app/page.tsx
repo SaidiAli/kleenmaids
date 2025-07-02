@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Avatar, AvatarImage, AvatarFallback } from "@radix-ui/react-avatar";
 import { Badge, Building, Car, CheckCircle, Link, Mail, MapPin, Phone, Sofa, Sparkles, Star, Users, Home as HomeIcon } from "lucide-react";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -61,38 +62,41 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center p-8">
-              <div className="pt-6">
-                <div className="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-100">
-                  <Phone className="w-8 h-8 text-blue-600" />
+          <div className="relative">
+            <img src="/images/connector.png" className="w-full h-96 absolute top-0 left-0 z-0" alt="Connector" />
+            <div className="flex justify-center items-center gap-8 z-10 relative">
+              <div className="text-center p-8 relative">
+                <div className="pt-6">
+                  <div className="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-100">
+                    <Phone className="w-8 h-8 text-blue-600" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-4">Book Your Service</h3>
+                  <p className="text-gray-600">
+                    Call us or book online to schedule your cleaning service at your convenience
+                  </p>
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Book Your Service</h3>
-                <p className="text-gray-600">
-                  Call us or book online to schedule your cleaning service at your convenience
-                </p>
               </div>
-            </div>
 
-            <div className="text-center p-8">
-              <div className="pt-6">
-                <div className="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-100">
-                  <Users className="w-8 h-8 text-blue-600" />
+              <div className="text-center p-8">
+                <div className="pt-6">
+                  <div className="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-100">
+                    <Users className="w-8 h-8 text-blue-600" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-4">Choose Package</h3>
+                  <p className="text-gray-600">
+                    Select from our range of cleaning packages tailored to your specific needs
+                  </p>
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Choose Package</h3>
-                <p className="text-gray-600">
-                  Select from our range of cleaning packages tailored to your specific needs
-                </p>
               </div>
-            </div>
 
-            <div className="text-center p-8">
-              <div className="pt-6">
-                <div className="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-100">
-                  <CheckCircle className="w-8 h-8 text-blue-600" />
+              <div className="text-center p-8">
+                <div className="pt-6">
+                  <div className="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-100">
+                    <CheckCircle className="w-8 h-8 text-blue-600" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-4">Book Appointment</h3>
+                  <p className="text-gray-600">Confirm your appointment and enjoy professional cleaning services</p>
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Book Appointment</h3>
-                <p className="text-gray-600">Confirm your appointment and enjoy professional cleaning services</p>
               </div>
             </div>
           </div>
