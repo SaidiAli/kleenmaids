@@ -62,39 +62,39 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="text-center p-8 hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="text-center p-8">
+              <div className="pt-6">
+                <div className="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-100">
                   <Phone className="w-8 h-8 text-blue-600" />
                 </div>
                 <h3 className="text-xl font-semibold mb-4">Book Your Service</h3>
                 <p className="text-gray-600">
                   Call us or book online to schedule your cleaning service at your convenience
                 </p>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
-            <Card className="text-center p-8 hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Users className="w-8 h-8 text-yellow-600" />
+            <div className="text-center p-8">
+              <div className="pt-6">
+                <div className="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-100">
+                  <Users className="w-8 h-8 text-blue-600" />
                 </div>
                 <h3 className="text-xl font-semibold mb-4">Choose Package</h3>
                 <p className="text-gray-600">
                   Select from our range of cleaning packages tailored to your specific needs
                 </p>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
-            <Card className="text-center p-8 hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <CheckCircle className="w-8 h-8 text-green-600" />
+            <div className="text-center p-8">
+              <div className="pt-6">
+                <div className="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-100">
+                  <CheckCircle className="w-8 h-8 text-blue-600" />
                 </div>
                 <h3 className="text-xl font-semibold mb-4">Book Appointment</h3>
                 <p className="text-gray-600">Confirm your appointment and enjoy professional cleaning services</p>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </div>
         </div>
       </section>
