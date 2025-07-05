@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export default function Navbar() {
     return (
-        <header className="border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
+        <header className="border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 top-0 z-50">
             <div className="flex items-center justify-between bg-midnight text-white px-32 py-2 text-center">
                 <p>We are here to help you achieve your goals</p>
                 <div className="flex items-center space-x-2 ml-2">

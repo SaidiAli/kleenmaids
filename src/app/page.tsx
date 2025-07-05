@@ -1,7 +1,12 @@
+import { Footer } from "@/components/Footer";
+import { HeroSection } from "@/components/HereSection";
 import Navbar from "@/components/navbar";
+import { ServicesGrid } from "@/components/ServicesGrid";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import WhoWeServeCard from "@/components/WhoweserveCard";
 import { Avatar, AvatarImage, AvatarFallback } from "@radix-ui/react-avatar";
 import { Badge, Building, Car, CheckCircle, Link, Mail, MapPin, Phone, Sofa, Sparkles, Star, Users, Home as HomeIcon } from "lucide-react";
 import Image from "next/image";
@@ -13,65 +18,100 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-tahiti via-tahiti to-tahiti relative overflow-hidden">
-        <div className="absolute inset-0 bg-blue-600/20"></div>
-        <div className="container mx-auto px-4 py-20 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="text-white">
-              <Badge className="bg-yellow-500 text-black mb-4">WELCOME TO KLEENMAIDS</Badge>
-              <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-                We Are Best <span className="text-yellow-400">Cleaning</span>
-                <br />
-                Services & Solution
-              </h1>
-              <p className="text-xl mb-8 text-blue-100">
-                Professional cleaning services in Kampala, Uganda. We provide reliable, affordable, and eco-friendly
-                cleaning solutions for homes and offices.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold">
-                  Book Service
-                </Button>
-                <Button className="border-white text-white hover:bg-white hover:text-blue-600">
-                  Learn More
-                </Button>
-              </div>
+      <HeroSection />
+
+      {/* who we serve */}
+      <section>
+        <div className="container mx-auto px-4 py-20">
+          <div className="flex justify-center gap-8">
+            <div>
+              <h3 className="text-5xl font-bold mb-4">Who We Serve</h3>
+              <p className="text-gray-600 text-lg">Our cleaning services are tailored to meet the needs of individuals and businesses alike. Whether you're looking for a one-time deep clean or regular maintenance, we've got you covered.</p>
             </div>
-            <div className="relative">
-              <div className="w-full h-96 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full flex items-center justify-center">
-                <img
-                  src="/placeholder.svg?height=400&width=400"
-                  alt="Professional cleaner with supplies"
-                  width={400}
-                  height={400}
-                  className="rounded-full"
-                />
-              </div>
+            <WhoWeServeCard quote="Organisations / Companies" author="Let us clean your company premises" position="Kleenmaids" />
+            <WhoWeServeCard quote="Individuals / Commercial" author="Let us clean your home or commercial premises" position="Kleenmaids" />
+          </div>
+        </div>
+      </section>
+
+      {/* Spotlight service */}
+      <div className="w-full flex justify-center border-5 border-bermuda rounded-lg container mx-auto p-16 ">
+        <div className="bg-white lg:mx-8 lg:flex lg:max-w-5xl lg:shadow-lg rounded-lg">
+          <div className="lg:w-1/2">
+            <div className="lg:scale-110 bg-cover lg:h-full rounded-b-none border lg:rounded-lg bg-[url('/images/maid.png')]">
+            </div>
+          </div>
+          <div className="py-12 px-6 lg:px-12 max-w-xl lg:max-w-5xl lg:w-1/2 rounded-t-none border lg:rounded-lg">
+            <h2 className="text-3xl text-gray-800 font-bold">
+              Live in maids placement
+            </h2>
+            <p className="mt-4 text-gray-600 text-lg">
+              We offer live-in maids placement services to help you find the perfect live-in maid for your home or office.
+            </p>
+            <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold">
+              Book Service
+            </Button>
+          </div>
+        </div>
+      </div>
+
+      {/* Services */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">More Services</h2>
+          </div>
+
+          <ServicesGrid />
+        </div>
+      </section>
+
+      {/* Booking Form */}
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-5xl font-bold text-white mb-4">Get a Free Appointment Booking!</h2>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-4 gap-4">
+              <Input placeholder="Your Name" className="bg-white h-16 px-4 py-2" />
+              <Input placeholder="Phone Number" className="bg-white h-16 px-4 py-2" />
+              <Select>
+                <SelectTrigger className="w-full bg-white h-16 px-4 py-2">
+                  <SelectValue placeholder="Service" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="service-1">Service 1</SelectItem>
+                  <SelectItem value="service-2">Service 2</SelectItem>
+                  <SelectItem value="service-3">Service 3</SelectItem>
+                </SelectContent>
+              </Select>
+              <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold h-16 px-4 py-2">Book Now</Button>
             </div>
           </div>
         </div>
       </section>
 
       {/* How It Works */}
-      <section className="py-20 bg-gray-50">
+      <section className="pt-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">How 'KleenmaidsUg' Works</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Simple steps to get your space sparkling clean with our professional cleaning services
-            </p>
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our process</h2>
           </div>
 
           <div className="relative">
-            <img src="/images/connector.png" className="w-full h-96 absolute top-0 left-0 z-0" alt="Connector" />
-            <div className="flex justify-center items-center gap-8 z-10 relative">
-              <div className="text-center p-8 relative">
+            <div className="absolute top-0 left-0 z-0">
+              <img src="/images/connector.png" className="w-full h-96" alt="Connector" />
+            </div>
+            <div className="flex justify-center items-center gap-8 z-10" id="how-it-works">
+              <div className="text-center p-8">
                 <div className="pt-6">
-                  <div className="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-100">
+                  <div className="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-100 z-10">
                     <Phone className="w-8 h-8 text-blue-600" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-4">Book Your Service</h3>
-                  <p className="text-gray-600">
+                  <h3 className="text-xl font-semibold mb-4 text-2xl">Book Your Service</h3>
+                  <p className="text-gray-600 text-lg">
                     Call us or book online to schedule your cleaning service at your convenience
                   </p>
                 </div>
@@ -82,8 +122,8 @@ export default function Home() {
                   <div className="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-100">
                     <Users className="w-8 h-8 text-blue-600" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-4">Choose Package</h3>
-                  <p className="text-gray-600">
+                  <h3 className="text-xl font-semibold mb-4 text-2xl">Choose Package</h3>
+                  <p className="text-gray-600 text-lg">
                     Select from our range of cleaning packages tailored to your specific needs
                   </p>
                 </div>
@@ -94,8 +134,8 @@ export default function Home() {
                   <div className="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-100">
                     <CheckCircle className="w-8 h-8 text-blue-600" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-4">Book Appointment</h3>
-                  <p className="text-gray-600">Confirm your appointment and enjoy professional cleaning services</p>
+                  <h3 className="text-xl font-semibold mb-4 text-2xl">Book Appointment</h3>
+                  <p className="text-gray-600 text-lg">Confirm your appointment and enjoy professional cleaning services</p>
                 </div>
               </div>
             </div>
@@ -108,22 +148,22 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
-              <div className="w-full h-96 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center">
+              <div className="w-full flex items-center justify-center">
                 <img
-                  src="/placeholder.svg?height=400&width=400"
+                  src="/h6-about1.png"
                   alt="Experienced cleaner"
-                  width={400}
-                  height={400}
+                  width={600}
+                  height={600}
                   className="rounded-full"
                 />
               </div>
             </div>
 
             <div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-5xl lg:text-6xl font-bold text-blue-600 mb-6">
                 We Have Been Doing Projects Since 2018
               </h2>
-              <p className="text-gray-600 mb-8">
+              <p className="text-gray-600 mb-8 text-lg">
                 With over 5 years of experience serving Kampala and surrounding areas, KleenmaidsUg has built a
                 reputation for excellence in cleaning services.
               </p>
@@ -147,98 +187,28 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="space-y-3">
+              <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span>Cost Effective</span>
+                  <span className="text-lg font-semibold">Cost Effective</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span>Trained and Bonded</span>
+                  <span className="text-lg font-semibold">Trained and Bonded</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span>100% Satisfaction</span>
+                  <span className="text-lg font-semibold">100% Satisfaction</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span>Quality Service</span>
+                  <span className="text-lg font-semibold">Quality Service</span>
                 </div>
               </div>
+              <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold">
+                Book Service
+              </Button>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Booking Form */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">Get a Free Appointment Booking!</h2>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-4 gap-4">
-              <Input placeholder="Your Name" className="bg-white" />
-              <Input placeholder="Phone Number" className="bg-white" />
-              <Input placeholder="Email Address" className="bg-white" />
-              <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold">Book Now</Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Services */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Best Services</h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <Card className="group hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="w-full h-48 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg mb-4 flex items-center justify-center">
-                  <HomeIcon className="w-16 h-16 text-blue-600" />
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Emergency Cleaning</h3>
-                <p className="text-gray-600">Quick response cleaning for urgent situations</p>
-              </CardContent>
-            </Card>
-
-            <Card className="group hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="w-full h-48 bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg mb-4 flex items-center justify-center">
-                  <Building className="w-16 h-16 text-yellow-600" />
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Regular Cleaning</h3>
-                <p className="text-gray-600">Scheduled cleaning services for homes and offices</p>
-              </CardContent>
-            </Card>
-
-            <Card className="group hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="w-full h-48 bg-gradient-to-br from-green-100 to-green-200 rounded-lg mb-4 flex items-center justify-center">
-                  <Sofa className="w-16 h-16 text-green-600" />
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Deep Cleaning</h3>
-                <p className="text-gray-600">Comprehensive deep cleaning for thorough results</p>
-              </CardContent>
-            </Card>
-
-            <Card className="group hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="w-full h-48 bg-gradient-to-br from-purple-100 to-purple-200 rounded-lg mb-4 flex items-center justify-center">
-                  <Car className="w-16 h-16 text-purple-600" />
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Car Cleaning</h3>
-                <p className="text-gray-600">Professional car washing and detailing services</p>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="text-center mt-12">
-            <Button>View All Services</Button>
           </div>
         </div>
       </section>
@@ -248,15 +218,15 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl lg:text-5xl font-bold text-blue-600 mb-6">
                 Your Happiness Is Our First Priority
               </h2>
-              <p className="text-gray-600 mb-8">
+              <p className="text-gray-600 mb-8 text-lg">
                 At KleenmaidsUg, we believe that a clean environment leads to happiness and productivity. Our dedicated
                 team ensures every client receives exceptional service.
               </p>
 
-              <div className="space-y-4">
+              <div className="grid grid-cols-2 gap-4">
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-green-500" />
                   <span>Highly Trained Cleaners</span>
@@ -285,12 +255,12 @@ export default function Home() {
             </div>
 
             <div className="relative">
-              <div className="w-full h-96 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center">
+              <div className="flex items-center justify-center">
                 <img
-                  src="/placeholder.svg?height=400&width=400"
+                  src="/h6-video-intro1.jpg"
                   alt="Happy cleaning team"
-                  width={400}
-                  height={400}
+                  width={500}
+                  height={500}
                   className="rounded-full"
                 />
               </div>
@@ -300,114 +270,14 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-700">
-        <div className="container mx-auto px-4 text-center">
+      <section className="container mx-auto rounded-lg py-16 bg-gradient-to-r from-blue-600 to-blue-700">
+        <div className="flex items-center justify-center gap-12 px-4 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
             Please Call Us to Talk on Extraordinary Service!
           </h2>
-          <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold">
+          <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold h-16 px-8 py-2">
             Contact Now
           </Button>
-        </div>
-      </section>
-
-      {/* Pricing */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              We Have An Amazing Pricing For Cleaning Services
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <Card className="relative">
-              <CardContent className="p-8 text-center">
-                <h3 className="text-xl font-semibold mb-4">Basic Plan</h3>
-                <div className="text-4xl font-bold text-blue-600 mb-6">
-                  UGX 100k<span className="text-lg text-gray-500">/month</span>
-                </div>
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-center justify-center space-x-2">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span>Weekly cleaning</span>
-                  </li>
-                  <li className="flex items-center justify-center space-x-2">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span>Basic supplies included</span>
-                  </li>
-                  <li className="flex items-center justify-center space-x-2">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span>2-3 rooms</span>
-                  </li>
-                </ul>
-                <Button className="w-full">
-                  Choose Plan
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="relative border-blue-500 border-2">
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                <Badge className="bg-blue-500 text-white">Most Popular</Badge>
-              </div>
-              <CardContent className="p-8 text-center">
-                <h3 className="text-xl font-semibold mb-4">Standard Plan</h3>
-                <div className="text-4xl font-bold text-blue-600 mb-6">
-                  UGX 150k<span className="text-lg text-gray-500">/month</span>
-                </div>
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-center justify-center space-x-2">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span>Bi-weekly cleaning</span>
-                  </li>
-                  <li className="flex items-center justify-center space-x-2">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span>Premium supplies</span>
-                  </li>
-                  <li className="flex items-center justify-center space-x-2">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span>4-5 rooms</span>
-                  </li>
-                  <li className="flex items-center justify-center space-x-2">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span>Deep cleaning monthly</span>
-                  </li>
-                </ul>
-                <Button className="w-full bg-blue-600 hover:bg-blue-700">Choose Plan</Button>
-              </CardContent>
-            </Card>
-
-            <Card className="relative">
-              <CardContent className="p-8 text-center">
-                <h3 className="text-xl font-semibold mb-4">Premium Plan</h3>
-                <div className="text-4xl font-bold text-blue-600 mb-6">
-                  UGX 300k<span className="text-lg text-gray-500">/month</span>
-                </div>
-                <ul className="space-y-3 mb-8">
-                  <li className="flex items-center justify-center space-x-2">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span>Daily cleaning</span>
-                  </li>
-                  <li className="flex items-center justify-center space-x-2">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span>Eco-friendly supplies</span>
-                  </li>
-                  <li className="flex items-center justify-center space-x-2">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span>Unlimited rooms</span>
-                  </li>
-                  <li className="flex items-center justify-center space-x-2">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span>24/7 support</span>
-                  </li>
-                </ul>
-                <Button className="w-full">
-                  Choose Plan
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
         </div>
       </section>
 
@@ -545,161 +415,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Recent News */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Recent News</h2>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="overflow-hidden">
-              <div className="h-48 bg-gradient-to-br from-blue-100 to-blue-200"></div>
-              <CardContent className="p-6">
-                <Badge className="mb-3">Tips</Badge>
-                <h3 className="text-xl font-semibold mb-3">10 Tips for Maintaining a Clean Home</h3>
-                <p className="text-gray-600 mb-4">
-                  Learn simple daily habits that keep your home spotless between professional cleanings.
-                </p>
-                <Link to="/news" className="text-blue-600 hover:underline">
-                  Read More →
-                </Link>
-              </CardContent>
-            </Card>
-
-            <Card className="overflow-hidden">
-              <div className="h-48 bg-gradient-to-br from-yellow-100 to-yellow-200"></div>
-              <CardContent className="p-6">
-                <Badge className="mb-3">News</Badge>
-                <h3 className="text-xl font-semibold mb-3">KleenmaidsUg Expands Services to Entebbe</h3>
-                <p className="text-gray-600 mb-4">
-                  We're excited to announce our expansion to serve clients in Entebbe and surrounding areas.
-                </p>
-                <Link to="/news" className="text-blue-600 hover:underline">
-                  Read More →
-                </Link>
-              </CardContent>
-            </Card>
-
-            <Card className="overflow-hidden">
-              <div className="h-48 bg-gradient-to-br from-green-100 to-green-200"></div>
-              <CardContent className="p-6">
-                <Badge className="mb-3">Environment</Badge>
-                <h3 className="text-xl font-semibold mb-3">Our Commitment to Eco-Friendly Cleaning</h3>
-                <p className="text-gray-600 mb-4">
-                  Discover how we're protecting Uganda's environment with our green cleaning practices.
-                </p>
-                <Link to="/news" className="text-blue-600 hover:underline">
-                  Read More →
-                </Link>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-16">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <div className="flex items-center space-x-2 mb-6">
-                <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-                  <Sparkles className="w-6 h-6 text-white" />
-                </div>
-                <span className="text-xl font-bold">KleenmaidsUg</span>
-              </div>
-              <p className="text-gray-400 mb-6">
-                Professional cleaning services in Kampala, Uganda. Making your spaces spotless since 2018.
-              </p>
-              <div className="space-y-2">
-                <div className="flex items-center space-x-3">
-                  <Phone className="w-4 h-4" />
-                  <span>+256 700 123 456</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Mail className="w-4 h-4" />
-                  <span>info@kleenmaidsug.com</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <MapPin className="w-4 h-4" />
-                  <span>Kampala, Uganda</span>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
-              <ul className="space-y-3">
-                <li>
-                  <Link to="/about" className="text-gray-400 hover:text-white">
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/services" className="text-gray-400 hover:text-white">
-                    Our Services
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/pricing" className="text-gray-400 hover:text-white">
-                    Pricing
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/contact" className="text-gray-400 hover:text-white">
-                    Contact
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/book" className="text-gray-400 hover:text-white">
-                    Book Now
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-6">Latest News</h3>
-              <ul className="space-y-3">
-                <li>
-                  <Link to="/news" className="text-gray-400 hover:text-white">
-                    Cleaning Tips
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/news" className="text-gray-400 hover:text-white">
-                    Service Updates
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/news" className="text-gray-400 hover:text-white">
-                    Special Offers
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/news" className="text-gray-400 hover:text-white">
-                    Company News
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-6">Newsletter</h3>
-              <p className="text-gray-400 mb-4">Subscribe to get updates on our latest offers and cleaning tips.</p>
-              <div className="space-y-3">
-                <Input placeholder="Your email address" className="bg-gray-800 border-gray-700 text-white" />
-                <Button className="w-full bg-yellow-500 hover:bg-yellow-600 text-black">Subscribe</Button>
-              </div>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 KleenmaidsUg. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
