@@ -1,10 +1,13 @@
 import { Badge } from "lucide-react"
 import { Button } from "./ui/button"
+import Image from "next/image"
 
 export const HeroSection = () => {
     return (
-        <section className="bg-gradient-to-br from-tahiti via-tahiti to-tahiti relative overflow-hidden">
-            <div className="absolute inset-0 bg-blue-600/20"></div>
+        <section className="relative overflow-hidden bg-gradient-to-br from-tahiti to-tahiti/20 h-[80vh]">
+            <div className="absolute inset-0">
+                <Image src="/images/transparent-bg.png" alt="Hero Background" fill className="object-cover bg-cover bg-center" />
+            </div>
             <div className="container mx-auto px-4 py-20 relative z-10">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     <div className="text-white">
@@ -25,17 +28,6 @@ export const HeroSection = () => {
                             <Button className="border-white text-white hover:bg-white hover:text-blue-600">
                                 Learn More
                             </Button>
-                        </div>
-                    </div>
-                    <div className="relative">
-                        <div className="flex items-center justify-center">
-                            <img
-                                src="/images/cleaner.png"
-                                alt="Professional cleaner with supplies"
-                                width={400}
-                                height={400}
-                                className="rounded-full"
-                            />
                         </div>
                     </div>
                 </div>

@@ -28,8 +28,8 @@ export default function Home() {
               <h3 className="text-5xl font-bold mb-4">Who We Serve</h3>
               <p className="text-gray-600 text-lg">Our cleaning services are tailored to meet the needs of individuals and businesses alike. Whether you're looking for a one-time deep clean or regular maintenance, we've got you covered.</p>
             </div>
-            <WhoWeServeCard quote="Organisations / Companies" author="Let us clean your company premises" position="Kleenmaids" />
-            <WhoWeServeCard quote="Individuals / Commercial" author="Let us clean your home or commercial premises" position="Kleenmaids" />
+            <WhoWeServeCard image="/images/org_cleaning.jpg" quote="Organisations / Companies" author="Let us clean your company premises" position="Kleenmaids" />
+            <WhoWeServeCard image="/images/kleenmaids_pest-control-man-spraying-pesticide_107420-29671.jpg" quote="Individuals / Commercial" author="Let us clean your home or commercial premises" position="Kleenmaids" />
           </div>
         </div>
       </section>
