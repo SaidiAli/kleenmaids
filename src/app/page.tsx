@@ -1,5 +1,6 @@
 import { Footer } from "@/components/Footer";
 import { HeroSection } from "@/components/HereSection";
+import ProcessSection from "@/components/homepage/process";
 import Navbar from "@/components/navbar";
 import { ServicesGrid } from "@/components/ServicesGrid";
 import { Button } from "@/components/ui/button";
@@ -8,7 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import WhoWeServeCard from "@/components/WhoweserveCard";
 import { Avatar, AvatarImage, AvatarFallback } from "@radix-ui/react-avatar";
-import { Badge, Building, Car, CheckCircle, Link, Mail, MapPin, Phone, Sofa, Sparkles, Star, Users, Home as HomeIcon } from "lucide-react";
+import { Badge, Building, Car, CheckCircle, Link, Mail, MapPin, Phone, Sofa, Sparkles, Star, Users, Home as HomeIcon, User } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
@@ -35,13 +36,12 @@ export default function Home() {
       </section>
 
       {/* Spotlight service */}
-      <div className="w-full flex justify-center border-5 border-bermuda rounded-lg container mx-auto p-16 ">
-        <div className="bg-white lg:mx-8 lg:flex lg:max-w-5xl lg:shadow-lg rounded-lg">
-          <div className="lg:w-1/2">
-            <div className="lg:scale-110 bg-cover lg:h-full rounded-b-none border lg:rounded-lg bg-[url('/images/maid.png')]">
-            </div>
+      <div className="w-full flex justify-center border-5 border-bermuda rounded-lg container mx-auto">
+        <div className="bg-white flex justify-center gap-8">
+          <div>
+            <Image src="/images/kleenmaids-maid-1.png" alt="maid" width={800} height={800} />
           </div>
-          <div className="py-12 px-6 lg:px-12 max-w-xl lg:max-w-5xl lg:w-1/2 rounded-t-none border lg:rounded-lg">
+          <div className="p-16">
             <h2 className="text-3xl text-gray-800 font-bold">
               Live in maids placement
             </h2>
@@ -67,7 +67,7 @@ export default function Home() {
       </section>
 
       {/* Booking Form */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700">
+      {/* <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-5xl font-bold text-white mb-4">Get a Free Appointment Booking!</h2>
@@ -75,73 +75,63 @@ export default function Home() {
 
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-4 gap-4">
-              <Input placeholder="Your Name" className="bg-white h-16 px-4 py-2" />
-              <Input placeholder="Phone Number" className="bg-white h-16 px-4 py-2" />
-              <Select>
-                <SelectTrigger className="w-full bg-white h-16 px-4 py-2">
-                  <SelectValue placeholder="Service" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="service-1">Service 1</SelectItem>
-                  <SelectItem value="service-2">Service 2</SelectItem>
-                  <SelectItem value="service-3">Service 3</SelectItem>
-                </SelectContent>
-              </Select>
+              <div className="relative">
+                <Input placeholder="Your Name" className="bg-white h-16 px-4 py-2 rounded-sm" />
+                <User className="absolute top-1/2 -translate-y-1/2 right-2" />
+              </div>
+              <div className="relative">
+                <Input placeholder="Phone Number" className="bg-white h-16 px-4 py-2 rounded-sm" />
+                <Phone className="absolute top-1/2 -translate-y-1/2 right-2" />
+              </div>
+              <select className="bg-white h-16 px-4 py-2 rounded-sm">
+                <option value="">Select Service</option>
+                <option value="maid">Maid</option>
+                <option value="cleaning">Cleaning</option>
+              </select>
               <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold h-16 px-4 py-2">Book Now</Button>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      {/* How It Works */}
-      <section className="pt-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our process</h2>
+      <section>
+        <div className="bg-fixed bg-cover bg-center bg-no-repeat bg-[url('/images/young-male-cleaner.jpg')]">
+        <div className="bg-black/50 py-20">
+          <div className="container mx-auto px-4">
+            <div className="text-center">
+              <h2 className="text-2xl lg:text-4xl font-bold text-white mb-6">
+                Are you looking for a proffesional cleaning company?
+              </h2>
+              <p className="text-gray-600 mb-8 text-lg text-white">
+                Choose KleenmaidsUg, an innovative and committed professional cleaning company
+              </p>
+              <p className="text-gray-600 mb-8 text-lg text-white">Fill out this form and we will contact you within 72 hours!</p>
+            </div>
+
+            <div className="max-w-4xl mx-auto bg-midnight p-16 rounded-lg">
+            <div className="grid md:grid-cols-4 gap-4">
+              <div className="relative">
+                <Input placeholder="Your Name" className="bg-white h-16 px-4 py-2 rounded-sm" />
+                <User className="absolute top-1/2 -translate-y-1/2 right-2" />
+              </div>
+              <div className="relative">
+                <Input placeholder="Phone Number" className="bg-white h-16 px-4 py-2 rounded-sm" />
+                <Phone className="absolute top-1/2 -translate-y-1/2 right-2" />
+              </div>
+              <select className="bg-white h-16 px-4 py-2 rounded-sm">
+                <option value="">Select Service</option>
+                <option value="maid">Maid</option>
+                <option value="cleaning">Cleaning</option>
+              </select>
+              <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold h-16 px-4 py-2">Book Now</Button>
+            </div>
           </div>
-
-          <div className="relative">
-            <div className="absolute top-0 left-0 z-0">
-              <img src="/images/connector.png" className="w-full h-96" alt="Connector" />
-            </div>
-            <div className="flex justify-center items-center gap-8 z-10" id="how-it-works">
-              <div className="text-center p-8">
-                <div className="pt-6">
-                  <div className="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-100 z-10">
-                    <Phone className="w-8 h-8 text-blue-600" />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-4 text-2xl">Book Your Service</h3>
-                  <p className="text-gray-600 text-lg">
-                    Call us or book online to schedule your cleaning service at your convenience
-                  </p>
-                </div>
-              </div>
-
-              <div className="text-center p-8">
-                <div className="pt-6">
-                  <div className="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-100">
-                    <Users className="w-8 h-8 text-blue-600" />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-4 text-2xl">Choose Package</h3>
-                  <p className="text-gray-600 text-lg">
-                    Select from our range of cleaning packages tailored to your specific needs
-                  </p>
-                </div>
-              </div>
-
-              <div className="text-center p-8">
-                <div className="pt-6">
-                  <div className="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-100">
-                    <CheckCircle className="w-8 h-8 text-blue-600" />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-4 text-2xl">Book Appointment</h3>
-                  <p className="text-gray-600 text-lg">Confirm your appointment and enjoy professional cleaning services</p>
-                </div>
-              </div>
-            </div>
+          </div>
           </div>
         </div>
       </section>
+
+      <ProcessSection />
 
       {/* Experience Section */}
       <section className="py-20">
