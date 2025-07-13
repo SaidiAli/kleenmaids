@@ -1,15 +1,15 @@
 import { Footer } from "@/components/Footer";
 import { HeroSection } from "@/components/HereSection";
+import BookingSection from "@/components/homepage/bookingsection";
 import ProcessSection from "@/components/homepage/process";
 import Navbar from "@/components/navbar";
 import { ServicesGrid } from "@/components/ServicesGrid";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import WhoWeServeCard from "@/components/WhoweserveCard";
 import { Avatar, AvatarImage, AvatarFallback } from "@radix-ui/react-avatar";
-import { Badge, Building, Car, CheckCircle, Link, Mail, MapPin, Phone, Sofa, Sparkles, Star, Users, Home as HomeIcon, User } from "lucide-react";
+import { CheckCircle, Phone, Star, User } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
@@ -23,7 +23,7 @@ export default function Home() {
 
       {/* who we serve */}
       <section>
-        <div className="container mx-auto px-4 py-20">
+        <div className="container mx-auto px-4 mt-20 mb-50">
           <div className="flex justify-center gap-8">
             <div>
               <h3 className="text-5xl font-bold mb-4">Who We Serve</h3>
@@ -36,7 +36,7 @@ export default function Home() {
       </section>
 
       {/* Spotlight service */}
-      <div className="w-full flex justify-center border-5 border-bermuda rounded-lg container mx-auto">
+      <div className="w-full flex justify-center border-5 border-bermuda rounded-lg container mx-auto mb-50">
         <div className="bg-white flex justify-center gap-8">
           <div>
             <Image src="/images/kleenmaids-maid-1.png" alt="maid" width={800} height={800} />
@@ -56,7 +56,7 @@ export default function Home() {
       </div>
 
       {/* Services */}
-      <section className="py-20">
+      <section className="mb-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">More Services</h2>
@@ -66,145 +66,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Booking Form */}
-      {/* <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-5xl font-bold text-white mb-4">Get a Free Appointment Booking!</h2>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-4 gap-4">
-              <div className="relative">
-                <Input placeholder="Your Name" className="bg-white h-16 px-4 py-2 rounded-sm" />
-                <User className="absolute top-1/2 -translate-y-1/2 right-2" />
-              </div>
-              <div className="relative">
-                <Input placeholder="Phone Number" className="bg-white h-16 px-4 py-2 rounded-sm" />
-                <Phone className="absolute top-1/2 -translate-y-1/2 right-2" />
-              </div>
-              <select className="bg-white h-16 px-4 py-2 rounded-sm">
-                <option value="">Select Service</option>
-                <option value="maid">Maid</option>
-                <option value="cleaning">Cleaning</option>
-              </select>
-              <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold h-16 px-4 py-2">Book Now</Button>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      <section>
-        <div className="bg-fixed bg-cover bg-center bg-no-repeat bg-[url('/images/young-male-cleaner.jpg')]">
-        <div className="bg-black/50 py-20">
-          <div className="container mx-auto px-4">
-            <div className="text-center">
-              <h2 className="text-2xl lg:text-4xl font-bold text-white mb-6">
-                Are you looking for a proffesional cleaning company?
-              </h2>
-              <p className="text-gray-600 mb-8 text-lg text-white">
-                Choose KleenmaidsUg, an innovative and committed professional cleaning company
-              </p>
-              <p className="text-gray-600 mb-8 text-lg text-white">Fill out this form and we will contact you within 72 hours!</p>
-            </div>
-
-            <div className="max-w-4xl mx-auto bg-midnight p-16 rounded-lg">
-            <div className="grid md:grid-cols-4 gap-4">
-              <div className="relative">
-                <Input placeholder="Your Name" className="bg-white h-16 px-4 py-2 rounded-sm" />
-                <User className="absolute top-1/2 -translate-y-1/2 right-2" />
-              </div>
-              <div className="relative">
-                <Input placeholder="Phone Number" className="bg-white h-16 px-4 py-2 rounded-sm" />
-                <Phone className="absolute top-1/2 -translate-y-1/2 right-2" />
-              </div>
-              <select className="bg-white h-16 px-4 py-2 rounded-sm">
-                <option value="">Select Service</option>
-                <option value="maid">Maid</option>
-                <option value="cleaning">Cleaning</option>
-              </select>
-              <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold h-16 px-4 py-2">Book Now</Button>
-            </div>
-          </div>
-          </div>
-          </div>
-        </div>
-      </section>
+      <BookingSection />
 
       <ProcessSection />
 
-      {/* Experience Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative">
-              <div className="w-full flex items-center justify-center">
-                <img
-                  src="/h6-about1.png"
-                  alt="Experienced cleaner"
-                  width={600}
-                  height={600}
-                  className="rounded-full"
-                />
-              </div>
-            </div>
-
-            <div>
-              <h2 className="text-5xl lg:text-6xl font-bold text-blue-600 mb-6">
-                We Have Been Doing Projects Since 2018
-              </h2>
-              <p className="text-gray-600 mb-8 text-lg">
-                With over 5 years of experience serving Kampala and surrounding areas, KleenmaidsUg has built a
-                reputation for excellence in cleaning services.
-              </p>
-
-              <div className="grid grid-cols-2 gap-6 mb-8">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">500+</div>
-                  <div className="text-gray-600">Happy Clients</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">1000+</div>
-                  <div className="text-gray-600">Projects Completed</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">50+</div>
-                  <div className="text-gray-600">Expert Cleaners</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">24/7</div>
-                  <div className="text-gray-600">Quality Service</div>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-2 gap-6 mb-8">
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-lg font-semibold">Cost Effective</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-lg font-semibold">Trained and Bonded</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-lg font-semibold">100% Satisfaction</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-lg font-semibold">Quality Service</span>
-                </div>
-              </div>
-              <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold">
-                Book Service
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Happiness Priority */}
-      <section className="py-20 bg-gray-50">
+      <section className="mb-50 py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
