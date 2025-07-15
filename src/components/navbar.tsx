@@ -2,6 +2,7 @@
 import { MoveUpRight, PhoneCall } from "lucide-react"
 import { Button } from "./ui/button"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Navbar() {
     return (
@@ -14,22 +15,22 @@ export default function Navbar() {
                 </div>
             </div>
             <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-                <div className="flex items-center space-x-2 relative">
+                <Link href="/" className="flex items-center space-x-2 relative">
                     <Image src="/images/logo.png" alt="Logo" width={300} height={100} className="object-contain" />
-                </div>
+                </Link>
                 <nav className="hidden md:flex items-center space-x-8 uppercase font-bold">
-                    <a href="#services" className="text-gray-600 hover:text-blue-600 transition-colors">
+                    <Link href="/services" className="text-gray-600 hover:text-blue-600 transition-colors">
                         Services
-                    </a>
-                    <a href="#about" className="text-gray-600 hover:text-blue-600 transition-colors">
+                    </Link>
+                    <Link href="#about" className="text-gray-600 hover:text-blue-600 transition-colors">
                         About
-                    </a>
-                    <a href="#testimonials" className="text-gray-600 hover:text-blue-600 transition-colors">
+                    </Link>
+                    <Link href="#testimonials" className="text-gray-600 hover:text-blue-600 transition-colors">
                         Success Stories
-                    </a>
-                    <a href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors">
+                    </Link>
+                    <Link href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors">
                         Contact
-                    </a>
+                    </Link>
                 </nav>
                 <Button className="bg-midnight hover:bg-tahiti rounded-full px-6 hover:scale-105 transition-all uppercase">Book Session<MoveUpRight className="h-5 w-5" /></Button>
             </div>
