@@ -19,16 +19,16 @@ export default function Navbar() {
                     <Image src="/images/logo.png" alt="Logo" width={300} height={100} className="object-contain" />
                 </Link>
                 <nav className="hidden md:flex items-center space-x-8 uppercase font-bold">
+                    <Link href="/" className="text-gray-600 hover:text-blue-600 transition-colors">
+                        Home
+                    </Link>
                     <Link href="/services" className="text-gray-600 hover:text-blue-600 transition-colors">
                         Services
                     </Link>
-                    <Link href="#about" className="text-gray-600 hover:text-blue-600 transition-colors">
+                    <Link href="/about" className="text-gray-600 hover:text-blue-600 transition-colors">
                         About
                     </Link>
-                    <Link href="#testimonials" className="text-gray-600 hover:text-blue-600 transition-colors">
-                        Success Stories
-                    </Link>
-                    <Link href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors">
+                    <Link href="/contact" className="text-gray-600 hover:text-blue-600 transition-colors">
                         Contact
                     </Link>
                 </nav>

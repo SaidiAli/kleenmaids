@@ -11,7 +11,6 @@ export const HeroSection = () => {
             <div className="container mx-auto px-4 py-20 relative z-10">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     <div className="text-white">
-                        <Badge className="bg-yellow-500 text-black mb-4">WELCOME TO KLEENMAIDS</Badge>
                         <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
                             We Are Best <span className="text-yellow-400">Cleaning</span>
                             <br />

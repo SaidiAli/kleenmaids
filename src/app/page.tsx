@@ -1,7 +1,7 @@
 import { HeroSection } from "@/components/HereSection";
 import BookingSection from "@/components/homepage/bookingsection";
 import ProcessSection from "@/components/homepage/process";
-import Testimonial from "@/components/homepage/testimonial";
+import Testimonials from "@/components/homepage/testimonial";
 import { ServicesGrid } from "@/components/ServicesGrid";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -26,8 +26,8 @@ export default function Home() {
               <h3 className="text-5xl font-bold mb-4">Who We Serve</h3>
               <p className="text-gray-600 text-lg">Our cleaning services are tailored to meet the needs of individuals and businesses alike. Whether you're looking for a one-time deep clean or regular maintenance, we've got you covered.</p>
             </div>
-            <WhoWeServeCard image="/images/org_cleaning.jpg" quote="Organisations / Companies" author="Let us clean your company premises" position="Kleenmaids" />
-            <WhoWeServeCard image="/images/kleenmaids_pest-control-man-spraying-pesticide_107420-29671.jpg" quote="Individuals / Commercial" author="Let us clean your home or commercial premises" position="Kleenmaids" />
+            <WhoWeServeCard image="/images/org_cleaning.jpg" headline="Organisations / Companies" subheader="Let us clean your company premises" />
+            <WhoWeServeCard image="/images/kleenmaids_pest-control-man-spraying-pesticide_107420-29671.jpg" headline="Individuals / Commercial" subheader="Let us clean your home or commercial premises" />
           </div>
         </div>
       </section>
@@ -67,7 +67,7 @@ export default function Home() {
       <ProcessSection />
 
       {/* Happiness Priority */}
-      <section className="mb-50 py-20 bg-gray-50">
+      <section className="mb-30 py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="flex justify-between gap-12">
             <div className="w-1/2">
@@ -115,26 +115,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="container mx-auto rounded-lg py-16 bg-gradient-to-r from-blue-600 to-blue-700">
-        <div className="flex items-center justify-center gap-12 px-4 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-            Please Call Us to Talk on Extraordinary Service!
-          </h2>
-          <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold h-16 px-8 py-2">
-            Contact Now
-          </Button>
-        </div>
-      </section>
-
       {/* Testimonials */}
-      <section className="py-20">
+      <section>
         <div className="container mx-auto px-4">
           <div className="text-center mb-8">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">What They Are Talking</h2>
             <p className="text-gray-600">Feedback from our happy clients across Kampala and beyond</p>
           </div>
-          <Testimonial />
+          <Testimonials />
         </div>
       </section>
 

@@ -4,9 +4,10 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --color-midnight: #121063;
-  --color-tahiti: #3ab7bf;
-  --color-bermuda: #78dcca;
+  --color-bluish: #F7FCFF;
+  --color-greenish: #85D332;
+  --color-yellowish: #FFD00E;
+  --color-deep-blue: #131850;
 }
 
 @theme inline {

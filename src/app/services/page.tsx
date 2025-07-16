@@ -50,7 +50,7 @@ export default function ServicesPage() {
                 <div className="container mx-auto px-4 text-center">
                     <h1 className="text-4xl lg:text-6xl font-bold text-blue-900 mb-4 uppercase tracking-wide">Our Services</h1>
                     <p className="text-xl text-blue-700 max-w-2xl mx-auto">
-                        Comprehensive cleaning and staffing solutions for homes and businesses in Kampala, Uganda
+                        Comprehensive cleaning and staffing solutions for homes and businesses
                     </p>
                 </div>
             </section>
