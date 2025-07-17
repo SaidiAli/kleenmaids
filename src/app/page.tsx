@@ -22,9 +22,9 @@ export default function Home() {
       <section>
         <div className="container mx-auto px-4 mt-20 mb-50">
           <div className="flex justify-center gap-8">
-            <div>
-              <h3 className="text-5xl font-bold mb-4">Who We Serve</h3>
-              <p className="text-gray-600 text-lg">Our cleaning services are tailored to meet the needs of individuals and businesses alike. Whether you're looking for a one-time deep clean or regular maintenance, we've got you covered.</p>
+            <div className="">
+              <h3 className="text-5xl font-bold mb-4 text-deep-blue">Who We Serve</h3>
+              <p className="text-lg text-deep-blue">Our cleaning services are tailored to meet the needs of individuals and businesses alike. Whether you're looking for a one-time deep clean or regular maintenance, we've got you covered.</p>
             </div>
             <WhoWeServeCard image="/images/org_cleaning.jpg" headline="Organisations / Companies" subheader="Let us clean your company premises" />
             <WhoWeServeCard image="/images/kleenmaids_pest-control-man-spraying-pesticide_107420-29671.jpg" headline="Individuals / Commercial" subheader="Let us clean your home or commercial premises" />
@@ -33,19 +33,19 @@ export default function Home() {
       </section>
 
       {/* Spotlight service */}
-      <div className="w-full flex justify-center border-5 border-bermuda rounded-lg container mx-auto mb-50">
+      <div className="w-full flex justify-center border-5 border-greenish rounded-lg container mx-auto mb-20">
         <div className="bg-white flex justify-center gap-8">
           <div>
             <Image src="/images/kleenmaids-maid-1.png" alt="maid" width={800} height={800} />
           </div>
           <div className="p-16">
-            <h2 className="text-3xl text-gray-800 font-bold">
+            <h2 className="text-3xl text-deep-blue font-bold">
               Live in maids placement
             </h2>
             <p className="mt-4 text-gray-600 text-lg">
               We offer live-in maids placement services to help you find the perfect live-in maid for your home or office.
             </p>
-            <Button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold">
+            <Button className="bg-yellowish hover:bg-deep-blue text-deep-blue hover:text-white font-semibold px-12 py-4 rounded-none">
               Book Service
             </Button>
           </div>
@@ -53,10 +53,10 @@ export default function Home() {
       </div>
 
       {/* Services */}
-      <section className="mb-50">
+      <section className="bg-bluish pt-20 pb-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">More Services</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
           </div>
 
           <ServicesGrid />
@@ -67,7 +67,7 @@ export default function Home() {
       <ProcessSection />
 
       {/* Happiness Priority */}
-      <section className="mb-30 py-20 bg-gray-50">
+      <section className="py-20 bg-bluish">
         <div className="container mx-auto px-4">
           <div className="flex justify-between gap-12">
             <div className="w-1/2">
@@ -103,7 +103,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="relative w-1/2 h-[600px] border border-blue-600 border-5 rounded-lg">
+            <div className="relative w-1/2 h-[600px] border-greenish border-5 rounded-lg">
               <Image
                 src="/images/kleen.jpeg"
                 alt="Happy cleaning team"
@@ -116,7 +116,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section>
+      <section className="py-20 bg-bluish">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">What They Are Talking</h2>
