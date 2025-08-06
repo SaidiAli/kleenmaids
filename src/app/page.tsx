@@ -12,14 +12,35 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
-      {/* Header */}
-
-      {/* Hero Section */}
+    <div className="min-h-screen bg-bluish">
       <HeroSection />
 
-      {/* who we serve */}
-      <section>
+      <section className="container mx-auto py-32">
+        <div className="flex flex-col gap-8 justify-center items-center">
+          <div>
+            <Image src="/kleen.svg" alt="maid" width={50} height={50} />
+          </div>
+          <div className="w-4xl space-y-8 mb-8">
+            <h2 className="text-6xl font-bold text-center">Who we are</h2>
+            <p className="text-xl text-center">
+              Kleenmaids is a professional cleaning service committed to providing exceptional cleaning experiences for homes, offices and commercial spaces. Our team of professionals ensures thorough cleaning, leaving your space spotless.
+            </p>
+          </div>
+
+          <div className="flex flex-row gap-8">
+            <div className="bg-greenish p-8 w-[400px]">
+              <p>Value 1</p>
+              <p>We provide professional cleaning services for homes, offices and commercial spaces.</p>
+            </div>
+            <div className="bg-greenish p-8 w-[400px]">
+              <p>Value 2</p>
+              <p>We provide professional cleaning services for homes, offices and commercial spaces.</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      {/* <section>
         <div className="container mx-auto px-4 mt-20 mb-50">
           <div className="flex justify-center gap-8">
             <div className="">
@@ -30,10 +51,10 @@ export default function Home() {
             <WhoWeServeCard image="/images/kleenmaids_pest-control-man-spraying-pesticide_107420-29671.jpg" headline="Individuals / Commercial" subheader="Let us clean your home or commercial premises" />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Spotlight service */}
-      <div className="w-full flex justify-center border-5 border-greenish rounded-lg container mx-auto mb-20">
+      {/* <div className="w-full flex justify-center border-5 border-greenish rounded-lg container mx-auto mb-20">
         <div className="bg-white flex justify-center gap-8">
           <div>
             <Image src="/images/kleenmaids-maid-1.png" alt="maid" width={800} height={800} />
@@ -50,10 +71,10 @@ export default function Home() {
             </Button>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Services */}
-      <section className="bg-bluish pt-20 pb-50">
+      {/* <section className="bg-bluish pt-20 pb-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
@@ -61,6 +82,33 @@ export default function Home() {
 
           <ServicesGrid />
         </div>
+      </section> */}
+
+      <section className="pt-20 pb-50 bg-bluish">
+        <div className="container mx-auto">
+          <div className="flex flex-col gap-8">
+            <h2 className="text-5xl font-bold">Services</h2>
+            <div className="flex flex-row">
+              <div className="p-8">
+                <h3>Deep Cleaning</h3>
+                <p>Deep cleaning is a thorough cleaning process that removes dirt, grime, and bacteria from surfaces and objects in a home or office.</p>
+              </div>
+              <div className="border-x-2 border-greenish p-8">
+                <h3>Deep Cleaning</h3>
+                <p>Deep cleaning is a thorough cleaning process that removes dirt, grime, and bacteria from surfaces and objects in a home or office.</p>
+              </div>
+              <div className="border-r-2 border-greenish p-8">
+                <h3>Deep Cleaning</h3>
+                <p>Deep cleaning is a thorough cleaning process that removes dirt, grime, and bacteria from surfaces and objects in a home or office.</p>
+              </div>
+              <div className="p-8">
+                <h3>Deep Cleaning</h3>
+                <p>Deep cleaning is a thorough cleaning process that removes dirt, grime, and bacteria from surfaces and objects in a home or office.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </section>
 
       <BookingSection />
