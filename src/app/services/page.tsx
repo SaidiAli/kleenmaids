@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Sparkles, Users, Clock, Zap, Building, UserCheck } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function ServicesPage() {
     const services = [
@@ -43,7 +44,7 @@ export default function ServicesPage() {
     ]
 
     return (
-        <div className="min-h-screen bg-white">
+        <div className="min-h-screen bg-bluish">
 
             {/* Hero Section */}
             <section className="bg-bluish py-20">
@@ -60,19 +61,20 @@ export default function ServicesPage() {
                 <div className="container mx-auto px-4">
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {services.map((service, index) => (
-                            <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                                <CardContent className="p-8">
-                                    <div className={`w-16 h-16 ${service.color} rounded-lg flex items-center justify-center mb-6`}>
+                            <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 elevation-2 bg-bluish">
+                                <CardContent className="p-8 space-y-4">
+                                    {/* <div className={`w-16 h-16 ${service.color} rounded-lg flex items-center justify-center mb-6`}>
                                         {service.icon}
-                                    </div>
-                                    <h3 className="text-xl font-semibold mb-4 group-hover:text-blue-600 transition-colors">
+                                    </div> */}
+                                    <Image src="/kleen.svg" alt="maid" width={30} height={30} className="" />
+                                    <h3 className="text-xl font-semibold mb-4 group-hover:text-greenish transition-colors">
                                         {service.title}
                                     </h3>
                                     <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
                                     <Link href={service.href}>
                                         <Button
                                             variant="outline"
-                                            className="group-hover:bg-blue-600 group-hover:text-white transition-colors bg-transparent"
+                                            className="group-hover:bg-greenish group-hover:text-white transition-colors bg-transparent w-full"
                                         >
                                             Learn More
                                         </Button>

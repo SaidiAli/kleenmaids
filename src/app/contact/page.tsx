@@ -2,7 +2,7 @@ import { Mail, MapPin, Phone, Send } from 'lucide-react';
 
 const ContactPage = () => {
     return (
-        <div className="bg-[#f0f4f8] min-h-screen p-8 md:p-16 lg:p-24">
+        <div className="bg-bluish min-h-screen p-8 md:p-16 lg:p-24">
             <div className="container mx-auto max-w-6xl">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                     {/* Left Column: Contact Info */}

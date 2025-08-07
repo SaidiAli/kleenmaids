@@ -1,7 +1,7 @@
 import type React from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Sparkles, ArrowRight, Quote } from "lucide-react"
+import { ArrowRight, Quote } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -18,8 +18,6 @@ export default function ServiceLayout({
     title,
     description,
     heroImage,
-    benefits,
-    features,
     children,
 }: ServiceLayoutProps) {
     const services = [
@@ -34,12 +32,12 @@ export default function ServiceLayout({
     const isActiveService = (service: any): boolean => service.name.toLowerCase().includes(title.toLowerCase().split(" ")[0])
 
     return (
-        <div className="min-h-screen bg-white">
+        <div className="min-h-screen bg-bluish">
 
             {/* Hero Section */}
-            <section className="bg-gradient-to-br from-blue-50 to-blue-100 py-20">
+            <section className="py-20">
                 <div className="container mx-auto px-4 text-center">
-                    <h1 className="text-4xl font-bold text-blue-900 mb-4 uppercase tracking-wide">{title}</h1>
+                    <h1 className="text-5xl font-bold mb-4 uppercase tracking-wide">{title}</h1>
                 </div>
             </section>
 
@@ -49,7 +47,7 @@ export default function ServiceLayout({
                     <div className="grid lg:grid-cols-4 gap-8">
                         {/* Sidebar */}
                         <div className="lg:col-span-1">
-                            <Card className="mb-8 py-0">
+                            <Card className="mb-8 py-0 bg-bluish">
                                 <CardContent className="p-0">
                                     <div className="divide-y">
                                         {services.map((service, index) => (
@@ -57,7 +55,7 @@ export default function ServiceLayout({
                                                 key={index}
                                                 href={service.href}
                                                 className={`block p-4 ${isActiveService(service) ? null : 'hover:bg-blue-50'} transition-colors ${isActiveService(service)
-                                                    ? "bg-blue-600 text-white"
+                                                    ? "bg-yellowish text-white font-bold"
                                                     : "text-gray-700"
                                                     }`}
                                             >
@@ -72,7 +70,7 @@ export default function ServiceLayout({
                             </Card>
 
                             {/* CTA Card */}
-                            <Card className="bg-gradient-to-br from-blue-600 to-blue-700 text-white">
+                            <Card className="bg-gradient-to-br from-greenish to-greenish/20 text-white sticky top-25">
                                 <CardContent className="p-6 text-center">
                                     <h3 className="text-xl font-bold mb-2">We Are Cleaning</h3>
                                     <h2 className="text-2xl font-bold mb-4">Experts</h2>
@@ -114,12 +112,12 @@ export default function ServiceLayout({
                             {children}
 
                             {/* CTA Button */}
-                            <div className="flex justify-between bg-midnight/20 p-16 rounded-lg items-center">
+                            {/* <div className="flex justify-between bg-midnight/20 p-16 rounded-lg items-center">
                                 <p className="text-4xl font-bold">Get the service</p>
                                 <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-8">
                                     Book now
                                 </Button>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

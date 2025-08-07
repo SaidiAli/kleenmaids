@@ -1,6 +1,4 @@
-import { Badge } from "lucide-react"
 import { Button } from "./ui/button"
-import Image from "next/image"
 
 export const HeroSection = () => {
     return (
@@ -18,7 +16,7 @@ export const HeroSection = () => {
             <div className="container mx-auto px-4 py-20 relative z-10">
                 <div className="flex flex-col items-center justify-center h-full w-4xl">
                     <div className="text-white">
-                        <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight text-deep-blue">
+                        <h1 className="text-4xl lg:text-7xl font-bold mb-6 leading-tight text-deep-blue">
                             Revitalize Your <span className="text-yellow-400">Space</span>
                         </h1>
                         <p className="text-xl mb-8 text-deep-blue">
@@ -26,7 +24,7 @@ export const HeroSection = () => {
                             cleaning solutions for homes and offices.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <Button className="bg-yellow-500 hover:bg-deep-blue font-semibold px-12 py-4 rounded-none text-white">
+                            <Button className="bg-yellow-500 cursor-pointer hover:bg-deep-blue font-semibold px-12 py-4 rounded-none text-white">
                                 Book Service
                             </Button>
                         </div>
