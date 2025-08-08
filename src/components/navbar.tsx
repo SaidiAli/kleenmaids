@@ -28,7 +28,11 @@ export default function Navbar() {
                         </Link>
                     </nav>
                 </div>
-                <Button className="bg-greenish hover:bg-tahiti rounded-full px-6 hover:scale-105 transition-all uppercase cursor-pointer">Book Session<MoveUpRight className="h-5 w-5" /></Button>
+                <Link href="/contact" className="">
+                    <Button className="bg-greenish hover:bg-tahiti rounded-full px-6 hover:scale-105 transition-all uppercase cursor-pointer">
+                        Book Service<MoveUpRight className="h-5 w-5" />
+                    </Button>
+                </Link>
             </div>
         </header>
     )

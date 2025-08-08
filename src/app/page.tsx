@@ -2,14 +2,9 @@ import { HeroSection } from "@/components/HeroSection";
 import BookingSection from "@/components/homepage/bookingsection";
 import ProcessSection from "@/components/homepage/process";
 import Testimonials from "@/components/homepage/testimonial";
-import Navbar from "@/components/navbar";
-import { ServicesGrid } from "@/components/ServicesGrid";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import WhoWeServeCard from "@/components/WhoweserveCard";
-import { Avatar, AvatarImage, AvatarFallback } from "@radix-ui/react-avatar";
-import { CheckCircle, Phone, Star, User } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -31,38 +26,42 @@ export default function Home() {
           </div>
 
           <div className="flex flex-row gap-8">
-            <div className="bg-greenish p-8 w-[400px]">
-              <p>Value 1</p>
-              <p>We provide professional cleaning services for homes, offices and commercial spaces.</p>
+            <div className="p-8 w-[400px] border border-black rounded-lg space-y-4">
+              <p className="text-2xl font-bold">For Organisations</p>
+              <p>Organizations in need of Professional cleaning and support staff placements for small, medium, and large enterprises</p>
             </div>
-            <div className="bg-greenish p-8 w-[400px]">
-              <p>Value 2</p>
-              <p>We provide professional cleaning services for homes, offices and commercial spaces.</p>
+            <div className="p-8 w-[400px] border border-black rounded-lg space-y-4">
+              <p className="text-2xl font-bold">For Individuals</p>
+              <p>Individuals in need of Customized domestic help Support for their households and families</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="pt-20 pb-50 bg-bluish">
+      <section className="pt-20 pb-50 bg-gradient-to-b from-deep-blue/20 to-white">
         <div className="container mx-auto">
           <div className="flex flex-col gap-8">
             <h2 className="text-7xl font-bold">Services</h2>
             <div className="flex flex-row">
-              <div className="p-8">
-                <h3>Deep Cleaning</h3>
-                <p>Deep cleaning is a thorough cleaning process that removes dirt, grime, and bacteria from surfaces and objects in a home or office.</p>
+              <div className="p-8 space-y-4 group">
+                <h3 className="text-2xl font-bold group-hover:text-greenish transition-colors">Live-In Maid Placement Services</h3>
+                <p>Temporary or permanent live-in maid placement with carefully screened candidates.</p>
+                <Link href="/services/live-in-maids" className="hover:text-greenish transition-colors">Read more</Link>
               </div>
-              <div className="border-x-2 border-greenish p-8">
-                <h3>Deep Cleaning</h3>
-                <p>Deep cleaning is a thorough cleaning process that removes dirt, grime, and bacteria from surfaces and objects in a home or office.</p>
+              <div className="border-x-2 border-greenish p-8 space-y-4 group">
+                <h3 className="text-2xl font-bold group-hover:text-greenish transition-colors">Scheduled House Cleaning</h3>
+                <p>Regular cleaning services at your convenience with flexible scheduling options.</p>
+                <Link href="/services/house-cleaning" className="hover:text-greenish transition-colors">Read more</Link>
               </div>
-              <div className="border-r-2 border-greenish p-8">
-                <h3>Deep Cleaning</h3>
-                <p>Deep cleaning is a thorough cleaning process that removes dirt, grime, and bacteria from surfaces and objects in a home or office.</p>
+              <div className="border-r-2 border-greenish p-8 space-y-4 group">
+                <h3 className="text-2xl font-bold group-hover:text-greenish transition-colors">Emergency Maids Solution</h3>
+                <p>Quick response cleaning for urgent situations and last-minute needs.</p>
+                <Link href="/services/emergency-maids" className="hover:text-greenish transition-colors">Read more</Link>
               </div>
-              <div className="p-8">
-                <h3>Deep Cleaning</h3>
-                <p>Deep cleaning is a thorough cleaning process that removes dirt, grime, and bacteria from surfaces and objects in a home or office.</p>
+              <div className="p-8 space-y-4 group">
+                <h3 className="text-2xl font-bold group-hover:text-greenish transition-colors">Staffing Services</h3>
+                <p>Support staff including cleaners, cooks, housekeepers for various needs.</p>
+                <Link href="/services/staffing" className="hover:text-greenish transition-colors">Read more</Link>
               </div>
             </div>
           </div>

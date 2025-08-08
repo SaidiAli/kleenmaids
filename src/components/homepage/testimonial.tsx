@@ -4,9 +4,9 @@ export default function Testimonials() {
             <div className="">
 
                 <div className="flex flex-row justify-center gap-8">
-                    <TestimonialCard name="John Doe" position="CEO, Company" testimonial="This is my application so i'll only say good things about it. It's the piece of crap. Although it took me so much time and energy to build. I'm proud of it." />
-                    <TestimonialCard name="John Doe" position="CEO, Company" testimonial="This is my application so i'll only say good things about it. It's the piece of crap. Although it took me so much time and energy to build. I'm proud of it." />
-                    <TestimonialCard name="John Doe" position="CEO, Company" testimonial="This is my application so i'll only say good things about it. It's the piece of crap. Although it took me so much time and energy to build. I'm proud of it." />
+                    <TestimonialCard name="" position="" testimonial="You haven&apos;t disappointed me in the passed so I will keep refering you." />
+                    <TestimonialCard name="Abdeel K" position="" testimonial="Thank you very much Jauharah, you understood our specifications and the lady that you gave us is doing a great job" />
+                    <TestimonialCard name="Enock. E" position="" testimonial="Thank you Jauharah, it was nice coming back home to a clean and organized place after being away for a week." />
                 </div>
 
             </div>

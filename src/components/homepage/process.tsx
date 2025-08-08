@@ -1,4 +1,4 @@
-import { CalendarArrowDown, CheckCircle, Package, Phone, Users } from "lucide-react";
+import { CalendarArrowDown, Package, Phone } from "lucide-react";
 
 export default function ProcessSection() {
     return (

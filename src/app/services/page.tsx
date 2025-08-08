@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Sparkles, Users, Clock, Zap, Building, UserCheck } from "lucide-react"
+import { Users, Clock, Zap, Building, UserCheck } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
