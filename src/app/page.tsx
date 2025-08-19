@@ -21,7 +21,7 @@ export default function Home() {
           <div className="w-4xl space-y-8 mb-8">
             <h2 className="text-6xl font-bold text-center">Who we are</h2>
             <p className="text-xl text-center">
-              Kleenmaids is a professional cleaning service committed to providing exceptional cleaning experiences for homes, offices and commercial spaces. Our team of professionals ensures thorough cleaning, leaving your space spotless.
+              Kleenmaids is a professional domestic help placement agency and cleaning service provider with a 10-year history of serving homeowners and corporate entities in the Kampala area. We maintain a keen focus on providing thoroughly vetted staff, quality placements, and exceptional, eco-friendly cleaning solutions.
             </p>
           </div>
 

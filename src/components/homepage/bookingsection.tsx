@@ -12,12 +12,12 @@ export default function BookingSection() {
                         <p className="text-white">Served contracts</p>
                     </div>
                     <div className="bg-deep-blue p-8 rounded-lg shadow max-w-[500px] w-[500px] flex flex-col items-center">
-                        <p className="text-4xl font-bold text-white">1000+</p>
-                        <p className="text-white">Live-in maid placements</p>
+                        <p className="text-4xl font-bold text-white">3000+</p>
+                        <p className="text-white">Live-in helpers Placed</p>
                     </div>
                     <div className="bg-deep-blue p-8 rounded-lg shadow max-w-[500px] w-[500px] flex flex-col items-center">
                         <p className="text-4xl font-bold text-white">500+</p>
-                        <p className="text-white">Scheduled House Cleaning Services</p>
+                        <p className="text-white">Scheduled House Cleaning</p>
                     </div>
                 </div>
                 <div className="bg-black/50 py-20 h-[100vh]">
