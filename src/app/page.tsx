@@ -3,7 +3,7 @@ import BookingSection from "@/components/homepage/bookingsection";
 import ProcessSection from "@/components/homepage/process";
 import Testimonials from "@/components/homepage/testimonial";
 import WhoWeAreSection from "@/components/homepage/who-we-are";
-import { CheckCircle } from "lucide-react";
+import { StarIcon } from "@/components/ui/star-icon";
 import Image from "next/image";
 import Link from "next/link";
 import ServicesSection from "@/components/homepage/services-section";
@@ -30,8 +30,8 @@ export default function Home() {
             <div className="w-full lg:w-1/2">
               <div className="flex flex-col gap-6">
                 <div className="flex flex-row gap-4 bg-white shadow-lg rounded-lg p-6">
-                  <div className="w-12 h-12 bg-yellowish rounded-full flex items-center justify-center flex-shrink-0">
-                    <CheckCircle className="w-6 h-6 text-green-600" />
+                  <div className="flex-shrink-0">
+                    <StarIcon size={48} />
                   </div>
                   <div className="flex flex-col">
                     <span className="text-lg font-bold text-gray-900">Highly Trained Cleaners</span>
@@ -39,8 +39,8 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex flex-row gap-4 bg-white shadow-lg rounded-lg p-6">
-                  <div className="w-12 h-12 bg-yellowish rounded-full flex items-center justify-center flex-shrink-0">
-                    <CheckCircle className="w-6 h-6 text-green-600" />
+                  <div className="flex-shrink-0">
+                    <StarIcon size={48} />
                   </div>
                   <div className="flex flex-col">
                     <span className="text-lg font-bold text-gray-900">Eco-Friendly Products</span>
@@ -48,8 +48,8 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex flex-row gap-4 bg-white shadow-lg rounded-lg p-6">
-                  <div className="w-12 h-12 bg-yellowish rounded-full flex items-center justify-center flex-shrink-0">
-                    <CheckCircle className="w-6 h-6 text-green-600" />
+                  <div className="flex-shrink-0">
+                    <StarIcon size={48} />
                   </div>
                   <div className="flex flex-col">
                     <span className="text-lg font-bold text-gray-900">Flexible Scheduling</span>
@@ -57,8 +57,8 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex flex-row gap-4 bg-white shadow-lg rounded-lg p-6">
-                  <div className="w-12 h-12 bg-yellowish rounded-full flex items-center justify-center flex-shrink-0">
-                    <CheckCircle className="w-6 h-6 text-green-600" />
+                  <div className="flex-shrink-0">
+                    <StarIcon size={48} />
                   </div>
                   <div className="flex flex-col">
                     <span className="text-lg font-bold text-gray-900">100% Satisfaction Guarantee</span>
@@ -71,16 +71,8 @@ export default function Home() {
             <div className="relative w-full lg:w-1/2 h-[500px] lg:h-[600px]">
               <div className="relative h-full rounded-lg overflow-hidden">
                 <Image
-                  src="/images/kleen.jpeg"
+                  src="https://res.cloudinary.com/zurri-cloud/image/upload/v1755723564/kleenmaids/mcqx8amwvs9sljgb356v.jpg"
                   alt="Professional cleaning team"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="absolute -bottom-12 -left-12 w-48 h-48 rounded-lg overflow-hidden shadow-xl border-4 border-white">
-                <Image
-                  src="/images/cook.jpg"
-                  alt="Home cleaning services"
                   fill
                   className="object-cover"
                 />
