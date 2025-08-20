@@ -7,8 +7,9 @@ import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
 import { motion } from "motion/react"
+import { cn } from "@/lib/utils"
 
-export default function Navbar() {
+export default function Navbar({ className }: { className: string }) {
     const [isServicesHovered, setIsServicesHovered] = useState(false)
 
     const services = [
@@ -35,7 +36,7 @@ export default function Navbar() {
     ]
 
     return (
-        <header className="border-b bg-bluish top-0 z-50 sticky">
+        <header className={cn("bg-bluish top-0 z-50 sticky", className)}>
             <div className="container mx-auto px-4 py-2 flex items-center justify-between">
                 <div className="flex items-center space-x-8">
                     <Link href="/" className="flex items-center space-x-2 relative">

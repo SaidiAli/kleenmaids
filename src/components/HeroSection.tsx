@@ -1,8 +1,10 @@
+import Navbar from "./navbar"
 import { Button } from "./ui/button"
 
 export const HeroSection = () => {
     return (
         <section className="relative overflow-hidden h-[100vh]">
+            <Navbar className="m-8 rounded-full p-4" />
             <video
                 autoPlay
                 loop
@@ -24,7 +26,7 @@ export const HeroSection = () => {
                             cleaning solutions for homes and offices.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <Button className="bg-yellow-500 cursor-pointer hover:bg-deep-blue font-semibold px-12 py-4 rounded-none text-white">
+                            <Button className="bg-yellow-500 cursor-pointer hover:bg-deep-blue font-semibold px-12 py-4 rounded-full text-white">
                                 Book Service
                             </Button>
                         </div>
