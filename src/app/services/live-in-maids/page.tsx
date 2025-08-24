@@ -1,4 +1,6 @@
 import ServiceLayout from "@/components/ServiceLayout"
+import { Icon } from "@iconify/react";
+
 
 export default function LiveInMaidPage() {
     const benefits = [
@@ -21,37 +23,58 @@ export default function LiveInMaidPage() {
 
     return (
         <ServiceLayout
-            title="Live-In Maid Placement Services"
-            description="If you're looking for a temporary or permanent live-in maid, we have the right candidate for you. Once you provide us with the requirements of the person you're looking for, we present you with options to select from. The charge is based on the schedule you have opted for."
-            heroImage="/images/kleenmaids-maid-1.png"
+            title="Live-In Helper Placement Services"
+            description="Temporary or permanent live-in maid placements."
+            heroImage="https://res.cloudinary.com/zurri-cloud/image/upload/v1755705255/kleenmaids/fumdsl1gfby740tmm8iq.jpg"
             benefits={benefits}
             features={features}
         >
-            <div className="mb-12">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">What our clients say</h3>
-                <div className="grid md:grid-cols-3 gap-6">
-                    <div className="text-center p-6 bg-blue-50 rounded-lg">
-                        <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <span className="text-white font-bold">1</span>
-                        </div>
-                        <h4 className="font-semibold mb-2">Requirements Assessment</h4>
-                        <p className="text-gray-600 text-sm">We discuss your specific needs and preferences</p>
-                    </div>
-                    <div className="text-center p-6 bg-blue-50 rounded-lg">
-                        <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <span className="text-white font-bold">2</span>
-                        </div>
-                        <h4 className="font-semibold mb-2">Candidate Selection</h4>
-                        <p className="text-gray-600 text-sm">We present you with pre-screened candidates</p>
-                    </div>
-                    <div className="text-center p-6 bg-blue-50 rounded-lg">
-                        <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <span className="text-white font-bold">3</span>
-                        </div>
-                        <h4 className="font-semibold mb-2">Placement & Support</h4>
-                        <p className="text-gray-600 text-sm">We facilitate the placement and provide ongoing support</p>
-                    </div>
+            <div className="max-w-2xl space-y-10">
+
+                <p className="text-gray-700 leading-relaxed">Find the perfect, dependable support for your household with our permanent and temporary Live-In Domestic Help Placements. We specialize in providing thoroughly vetted and carefully screened candidates to simplify the day-to-day demands of your life. Our goal is to connect you with a professional who fits your family's unique needs, giving you more time to do what you love.</p>
+
+                <div className="space-y-6">
+                    <h2 className="text-xl font-semibold text-gray-900 border-b border-gray-200 pb-2">Our Placement Process</h2>
+                    <ol className="list-decimal pl-6 space-y-3 text-gray-700">
+                        <li><strong className="text-gray-900">Share Your Requirements</strong>: Contact us and provide the specific requirements for the type of worker you are looking for, including the size of your household.</li>
+                        <li><strong className="text-gray-900">Candidate Presentation & Interview</strong>: We present a vetted and screened candidate to you for an interview. This gives you the opportunity to meet them and decide if they are the right fit.</li>
+                        <li><strong className="text-gray-900">Service Agreement</strong>: Once you have chosen a candidate, a service agreement is filled out and signed by you. We will also share all pertinent information regarding your chosen candidate.</li>
+                        <li><strong className="text-gray-900">Placement & Fee</strong>: After the agreement is signed, the worker is brought to your home and a one-time, non-refundable agency fee is paid through our shared payment channels.</li>
+                    </ol>
                 </div>
+
+                <div className="testimonial mt-10 rounded-xl border border-blue-100 bg-blue-50/60 p-6">
+                    <h2 className="text-xl font-semibold text-gray-900 mb-3">Client Testimonial</h2>
+                    <blockquote className="text-gray-700 italic">
+                        <p>“Thank you very much Jauharah, you understood our specifications and the lady that you gave us is doing a great job”.</p>
+                        <cite className="block mt-2 text-sm text-gray-600">- Abdeel.K</cite>
+                    </blockquote>
+                </div>
+
+                <div className="policies mt-10">
+                    <h2 className="text-xl font-semibold text-gray-900 border-b border-gray-200 pb-2 mb-4">Important Policies for Live-In Placements</h2>
+                    <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                        <li><strong>Setting Boundaries</strong>: We encourage clients to define clear boundaries under which the employee will operate.</li>
+                        <li><strong>Phone Usage</strong>: While we encourage workers not to be on the phone during work hours, clients are required to allow live-in staff access to their phones after their day's work is complete to contact their families.</li>
+                        <li><strong>National ID Retention</strong>: As a security measure, we encourage clients to retain the National Identity Card of the live-in staff for the duration of their employment.</li>
+                        <li><strong>Termination</strong>: Should you choose to terminate the live-in staff, a 14-day notice is required so we can arrange for a replacement if desired. If the termination is the client's choice, a full month's salary shall be paid to the worker.</li>
+                        <li><strong>Zero-Tolerance on Violence</strong>: Under no circumstances should a client exercise violence towards an employee, nor should an employee act violently towards a client or any member of their household.</li>
+                    </ul>
+                </div>
+
+                <div className="cta mt-10 bg-deep-blue text-white rounded-xl p-6 shadow flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                    <p className="font-semibold">Ready to find the ideal support for your home?</p>
+                    <a
+                        href="https://wa.me/256752623801"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center gap-2 rounded-md bg-yellowish text-deep-blue px-4 py-2 font-semibold shadow hover:bg-blue-50 transition-colors"
+                    >
+                        <Icon icon="logos:whatsapp-icon" width={24} height={24} />
+                        Chat With Us
+                    </a>
+                </div>
+
             </div>
         </ServiceLayout>
     )

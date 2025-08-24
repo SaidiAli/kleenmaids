@@ -53,7 +53,7 @@ export default function Navbar({ className }: { className: string }) {
                             onMouseEnter={() => setIsServicesHovered(true)}
                             onMouseLeave={() => setIsServicesHovered(false)}
                         >
-                            <p className="text-gray-600 hover:text-greenish transition-colors flex items-center gap-1">
+                            <div className="text-gray-600 hover:text-greenish transition-colors flex items-center gap-1">
                                 Services
                                 <motion.div
                                     animate={{ rotate: isServicesHovered ? 180 : 0 }}
@@ -61,7 +61,7 @@ export default function Navbar({ className }: { className: string }) {
                                 >
                                     <ChevronDown className="h-4 w-4" />
                                 </motion.div>
-                            </p>
+                            </div>
                             <div 
                                 className={`absolute top-full left-0 mt-2 w-64 bg-bluish shadow-lg rounded-none transition-all duration-300 ${
                                     isServicesHovered 

@@ -8,7 +8,7 @@ interface StarIconProps {
 export const StarIcon = ({ 
   size = 48, 
   className = "", 
-  circleColor = "#FFF7BD", 
+  circleColor = "#FFD00E", 
   starColor = "#533E2E" 
 }: StarIconProps) => {
   return (

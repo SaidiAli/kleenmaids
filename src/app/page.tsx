@@ -13,13 +13,10 @@ export default function Home() {
     <div className="min-h-screen bg-bluish">
       <HeroSection />
       <WhoWeAreSection />
-
       <ServicesSection />
-
       <BookingSection />
       <ProcessSection />
 
-      {/* Why Choose Us */}
       <section className="py-20 bg-bluish">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -31,7 +28,7 @@ export default function Home() {
               <div className="flex flex-col gap-6">
                 <div className="flex flex-row gap-4 bg-white shadow-lg rounded-lg p-6">
                   <div className="flex-shrink-0">
-                    <StarIcon size={48} />
+                    <StarIcon size={48} circleColor="#FFF7BD" />
                   </div>
                   <div className="flex flex-col">
                     <span className="text-lg font-bold text-gray-900">Highly Trained Cleaners</span>

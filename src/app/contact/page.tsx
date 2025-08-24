@@ -1,41 +1,46 @@
+import Navbar from '@/components/navbar';
+import { Button } from '@/components/ui/button';
+import { StarIcon } from '@/components/ui/star-icon';
+import { services } from '@/data';
 import { Mail, MapPin, Phone, Send } from 'lucide-react';
 
 const ContactPage = () => {
     return (
-        <div className="bg-bluish min-h-screen p-8 md:p-16 lg:p-24">
-            <div className="container mx-auto max-w-6xl">
+        <div className="bg-bluish min-h-screen">
+            <Navbar className="" />
+            <div className="container mx-auto py-20">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                     {/* Left Column: Contact Info */}
                     <div className="text-gray-800">
                         <div className="flex items-center gap-3 mb-4">
-                            <span className="text-blue-500 font-bold text-2xl">✦</span>
+                            <StarIcon size={24} />
                             <p className="font-semibold text-gray-700">Get in touch</p>
                         </div>
-                        <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-8 leading-tight">
-                            We want to share our location to find us easily.
+                        <h1 className="text-4xl md:text-5xl font-bold text-deep-blue mb-8 leading-tight">
+                            For any inquiry about our services, please reach out
                         </h1>
 
                         <div className="space-y-6">
-                            <div className="bg-white p-6 rounded-lg shadow-sm flex items-start gap-4">
-                                <MapPin className="text-blue-500 w-8 h-8 mt-1 flex-shrink-0" />
+                            <div className="bg-white p-6 rounded-none shadow-sm flex items-start gap-4">
+                                <MapPin className="text-deep-blue w-8 h-8 mt-1 flex-shrink-0" />
                                 <div>
-                                    <h3 className="text-xl font-bold text-blue-900">Office address</h3>
+                                    <h3 className="text-xl font-bold text-deep-blue">Office Address</h3>
                                     <p className="text-gray-600">Kampala, Uganda.</p>
                                 </div>
                             </div>
 
-                            <div className="bg-white p-6 rounded-lg shadow-sm flex items-start gap-4">
-                                <Phone className="text-blue-500 w-8 h-8 mt-1 flex-shrink-0" />
+                            <div className="bg-white p-6 rounded-none shadow-sm flex items-start gap-4">
+                                <Phone className="text-deep-blue w-8 h-8 mt-1 flex-shrink-0" />
                                 <div>
-                                    <h3 className="text-xl font-bold text-blue-900">Telephone number</h3>
-                                    <p className="text-gray-600">+256 756 222 222</p>
+                                    <h3 className="text-xl font-bold text-deep-blue">Telephone Number</h3>
+                                    <p className="text-gray-600">+256 752 623 801</p>
                                 </div>
                             </div>
 
-                            <div className="bg-white p-6 rounded-lg shadow-sm flex items-start gap-4">
-                                <Mail className="text-blue-500 w-8 h-8 mt-1 flex-shrink-0" />
+                            <div className="bg-white p-6 rounded-none shadow-sm flex items-start gap-4">
+                                <Mail className="text-deep-blue w-8 h-8 mt-1 flex-shrink-0" />
                                 <div>
-                                    <h3 className="text-xl font-bold text-blue-900">Mail address</h3>
+                                    <h3 className="text-xl font-bold text-deep-blue">Mail Address</h3>
                                     <p className="text-gray-600">info@kleenmaidsug.com</p>
                                 </div>
                             </div>
@@ -47,25 +52,25 @@ const ContactPage = () => {
                         <form className="space-y-6">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
-                                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name (required)</label>
+                                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name <span className="text-red-500">*</span></label>
                                     <input
                                         type="text"
                                         id="name"
                                         name="name"
                                         placeholder="Your name*"
                                         required
-                                        className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        className="w-full px-4 py-3 border border-gray-300 rounded-none focus:outline-none focus:ring-1 focus:ring-deep-blue"
                                     />
                                 </div>
                                 <div>
-                                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email address (required)</label>
+                                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email address <span className="text-red-500">*</span></label>
                                     <input
                                         type="email"
                                         id="email"
                                         name="email"
                                         placeholder="Email*"
                                         required
-                                        className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        className="w-full px-4 py-3 border border-gray-300 rounded-none focus:outline-none focus:ring-1 focus:ring-deep-blue"
                                     />
                                 </div>
                             </div>
@@ -77,43 +82,42 @@ const ContactPage = () => {
                                         id="phone"
                                         name="phone"
                                         placeholder="Phone"
-                                        className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        className="w-full px-4 py-3 border border-gray-300 rounded-none focus:outline-none focus:ring-1 focus:ring-deep-blue"
                                     />
                                 </div>
                                 <div>
-                                    <label htmlFor="services" className="block text-sm font-medium text-gray-700 mb-1">Services (required)</label>
+                                    <label htmlFor="services" className="block text-sm font-medium text-gray-700 mb-1">Services <span className="text-red-500">*</span></label>
                                     <select
                                         id="services"
                                         name="services"
                                         required
-                                        className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        className="w-full px-4 py-3 border border-gray-300 rounded-none focus:outline-none focus:ring-1 focus:ring-deep-blue"
                                     >
-                                        <option>Choose services</option>
-                                        <option>Residential Cleaning</option>
-                                        <option>Commercial Cleaning</option>
-                                        <option>Deep Cleaning</option>
+                                        {services.map((service, index) => (
+                                            <option key={index} value={service}>{service}</option>
+                                        ))}
                                     </select>
                                 </div>
                             </div>
                             <div>
-                                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Your message*</label>
+                                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Your message <span className="text-red-500">*</span></label>
                                 <textarea
                                     id="message"
                                     name="message"
                                     rows={6}
                                     placeholder="Type message*"
                                     required
-                                    className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    className="w-full px-4 py-3 border border-gray-300 rounded-none focus:outline-none focus:ring-1 focus:ring-deep-blue"
                                 ></textarea>
                             </div>
                             <div>
-                                <button
+                                <Button
                                     type="submit"
-                                    className="w-auto flex items-center justify-center gap-2 bg-blue-500 hover:bg-blue-600 text-white font-bold px-6 py-3 rounded-lg transition-colors"
+                                    className="w-full flex items-center justify-center gap-2 bg-deep-blue hover:bg-greenish text-white font-bold px-6 py-3 rounded-none transition-colors"
                                 >
                                     <Send size={18} />
                                     Send message
-                                </button>
+                                </Button>
                             </div>
                         </form>
                     </div>
