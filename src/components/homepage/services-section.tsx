@@ -24,7 +24,7 @@ const ServicesSection = () => {
         },
         {
             title: "Staffing Services",
-            link: "/services/staffing",
+            link: "/services/staffing-services",
             image: 'https://res.cloudinary.com/zurri-cloud/image/upload/v1755705248/kleenmaids/gqaqsgzt7xjcd3lh18yz.jpg',
         },
     ];
