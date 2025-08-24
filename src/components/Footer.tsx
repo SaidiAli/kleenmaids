@@ -1,46 +1,41 @@
 import Link from "next/link"
 import Image from "next/image"
+import { Icon } from "@iconify/react/dist/iconify.js"
 
 export const Footer = () => {
     return (
-        <footer className="bg-bluish">
-            <div className="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
-                {/* Top border line */}
-                <div className="border-t border-deep-blue mb-8 sm:mb-12"></div>
+        <footer className="bg-bluish border-t border-deep-blue">
+            <div className="container mx-auto">
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 min-h-[200px] sm:min-h-[300px]">
-                    {/* Left section - Logo and tagline */}
-                    <div className="lg:col-span-7 flex flex-col justify-between">
-                        {/* Logo and company name */}
-
+                    <div className="lg:col-span-6 flex flex-col gap-8 border-r border-deep-blue py-8">
                         <Link href="/" className="flex items-center space-x-2 relative">
                             <Image src="/images/logo.png" alt="Logo" width={300} height={100} className="object-contain" />
                         </Link>
+                        <div>
+                            <p className="text-lg font-bold">Follow Us</p>
+                            <div className="flex space-x-2">
+                                <Link href="https://www.linkedin.com/" target="_blank">
+                                    <p className="flex items-center space-x-2 font-medium hover:underline"><Icon icon="mdi:linkedin" width={24} height={24} />LinkedIn</p>
+                                </Link>
+                                <Link href="https://www.instagram.com/" target="_blank">
+                                    <p className="flex items-center space-x-2 font-medium hover:underline"><Icon icon="mdi:instagram" width={24} height={24} />Instagram</p>
+                                </Link>
+                            </div>
+                        </div>
                     </div>
 
-                    {/* Vertical divider - hidden on mobile */}
-                    <div className="hidden lg:block lg:col-span-1">
-                        <div className="h-full w-px bg-gray-400 mx-auto"></div>
-                    </div>
-
-                    {/* Mobile divider - shown only on mobile */}
-                    <div className="block lg:hidden">
-                        <div className="w-full h-px bg-gray-400 my-6"></div>
-                    </div>
-
-                    {/* Right section - Contact info and legal */}
-                    <div className="lg:col-span-4 flex flex-col justify-between space-y-6 lg:space-y-0">
-                        {/* Contact information */}
+                    <div className="lg:col-span-6 flex flex-col justify-between space-y-6 lg:space-y-0 py-8">
                         <div className="space-y-4 sm:space-y-6">
                             <div className="space-y-2">
                                 <Link
-                                    href="tel:123-456-7890"
+                                    href="tel:+256700123456"
                                     className="block text-gray-700 hover:text-green-700 transition-colors text-base sm:text-lg"
                                 >
                                     +256 700 123 456
                                 </Link>
                                 <Link
-                                    href="mailto:info@mysite.com"
+                                    href="mailto:info@kleenmaidsug.com"
                                     className="block text-gray-700 hover:text-green-700 transition-colors text-base sm:text-lg"
                                 >
                                     info@kleenmaidsug.com
@@ -53,7 +48,6 @@ export const Footer = () => {
                             </div>
                         </div>
 
-                        {/* Legal links */}
                         <div className="flex flex-col sm:flex-row lg:flex-col gap-3 sm:gap-6 lg:gap-2 mt-6 lg:mt-0">
                             <Link
                                 href="/privacy-policy"
@@ -71,13 +65,13 @@ export const Footer = () => {
                     </div>
                 </div>
 
-                {/* Bottom border line */}
-                <div className="border-b border-gray-400 mt-8 sm:mt-12 mb-4 sm:mb-6"></div>
 
-                {/* Copyright */}
-                <div className="text-center text-xs sm:text-sm text-gray-600 px-2">
-                    © 2025 Kleenmaids. All rights reserved.
-                </div>
+            </div>
+
+            <div className="border-b border-deep-blue"></div>
+
+            <div className="text-center text-xs sm:text-sm text-gray-600 px-2 py-8">
+                {`© ${new Date().getFullYear()} Kleenmaids. All rights reserved.`}
             </div>
         </footer>
     )
