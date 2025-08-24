@@ -111,7 +111,7 @@ function AboutHero() {
             <div className="flex flex-row justify-between items-start py-20 mt-20">
                 <div className="basis-1/2">
 
-                    <h2 className="text-4xl font-bold">About Us</h2>
+                    <h2 className="text-8xl font-bold">About Us</h2>
                 </div>
 
                 <div className="basis-1/2 space-y-8">

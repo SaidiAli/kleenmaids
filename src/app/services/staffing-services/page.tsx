@@ -22,77 +22,43 @@ export default function StaffingServicesPage() {
     return (
         <ServiceLayout
             title="Staffing Services"
-            description="We provide support staff specifically for those looking for informal workers. These range from cleaners, cooks, housekeepers, and more. With our support staff service, the client shares the job description and number of employees they're looking for, and we provide suitable candidates."
+            description="Reliable staffing for cleaners, cooks, housekeepers, and more."
             heroImage="/images/young-male-cleaner.jpg"
             benefits={benefits}
             features={features}
         >
-            <div className="mb-12">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Available Staff Categories</h3>
-                <div className="grid md:grid-cols-3 gap-6">
-                    <div className="text-center p-6 bg-blue-50 rounded-lg">
-                        <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <span className="text-white text-2xl">🧹</span>
-                        </div>
-                        <h4 className="font-semibold mb-2">Cleaners</h4>
-                        <p className="text-gray-600 text-sm">Professional cleaning staff for various environments</p>
-                    </div>
-                    <div className="text-center p-6 bg-green-50 rounded-lg">
-                        <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <span className="text-white text-2xl">👨‍🍳</span>
-                        </div>
-                        <h4 className="font-semibold mb-2">Cooks</h4>
-                        <p className="text-gray-600 text-sm">Skilled cooks for homes and commercial kitchens</p>
-                    </div>
-                    <div className="text-center p-6 bg-purple-50 rounded-lg">
-                        <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <span className="text-white text-2xl">🏠</span>
-                        </div>
-                        <h4 className="font-semibold mb-2">Housekeepers</h4>
-                        <p className="text-gray-600 text-sm">Comprehensive household management staff</p>
-                    </div>
-                </div>
-            </div>
 
-            <div className="mb-12">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">How It Works</h3>
-                <div className="space-y-6">
-                    <div className="flex items-start space-x-4">
-                        <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
-                            <span className="text-white font-bold text-sm">1</span>
-                        </div>
-                        <div>
-                            <h4 className="font-semibold mb-2">Share Job Description</h4>
-                            <p className="text-gray-600">Provide us with detailed job requirements and responsibilities</p>
-                        </div>
-                    </div>
-                    <div className="flex items-start space-x-4">
-                        <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
-                            <span className="text-white font-bold text-sm">2</span>
-                        </div>
-                        <div>
-                            <h4 className="font-semibold mb-2">Specify Number of Staff</h4>
-                            <p className="text-gray-600">Tell us how many employees you need for your project</p>
-                        </div>
-                    </div>
-                    <div className="flex items-start space-x-4">
-                        <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
-                            <span className="text-white font-bold text-sm">3</span>
-                        </div>
-                        <div>
-                            <h4 className="font-semibold mb-2">Candidate Matching</h4>
-                            <p className="text-gray-600">We match suitable candidates to your requirements</p>
-                        </div>
-                    </div>
-                    <div className="flex items-start space-x-4">
-                        <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
-                            <span className="text-white font-bold text-sm">4</span>
-                        </div>
-                        <div>
-                            <h4 className="font-semibold mb-2">Staff Deployment</h4>
-                            <p className="text-gray-600">We deploy the selected staff and provide ongoing support</p>
-                        </div>
-                    </div>
+            <div className="max-w-2xl space-y-10">
+                <p className="text-gray-700 leading-relaxed">Away from our Domestic Help Support and cleaning services, we also provide support staff placements for clients looking to hire for specific roles as they see fit. We provide support staff for specific for those looking for informal workers.</p>
+                <p className="text-gray-700 leading-relaxed">Whether you need a single placement or ongoing staffing support, we have a solution for you.</p>
+
+                <div className="space-y-4">
+                    <h2 className="text-xl font-semibold text-gray-900 border-b border-gray-200 pb-2">Roles We Place</h2>
+                    <p className="text-gray-700">We provide support staff for specific roles such as:</p>
+                    <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                        <li>Caretakers</li>
+                        <li>Shamba Boys</li>
+                        <li>Cooks</li>
+                        <li>Cleaners that can be hired directly by the client for specific tasks.</li>
+                    </ul>
+                </div>
+
+                <div className="space-y-4">
+                    <h2 className="text-xl font-semibold text-gray-900 border-b border-gray-200 pb-2">How It Works & Pricing</h2>
+                    <p className="text-gray-700">Our process is designed to be simple and flexible for your staffing needs.</p>
+                    <ol className="list-decimal pl-6 space-y-2 text-gray-700">
+                        <li><strong>Share Job Description</strong>: The client shares with the job description and number of employees they’re looking for.</li>
+                        <li><strong>Choose Your Engagement Model</strong>:
+                            <h3 className="font-semibold text-gray-900 mt-2">One-Off Placement</h3>
+                            <p className="text-gray-700">For support staff placements we charge a one-off placement fee. You can engage the company on a one-off basis for a single hire.</p>
+                            <h3 className="font-semibold text-gray-900 mt-2">Retainer Model</h3>
+                            <p className="text-gray-700">For ongoing placement needs, you can keep us on a retainer. A retainer fee is paid for the number of workers that will be needed for a specific period of time.</p>
+                        </li>
+                    </ol>
+                </div>
+
+                <div className="cta mt-10 bg-deep-blue text-white rounded-xl p-6 shadow">
+                    <p className="font-semibold">Looking to hire support staff for a specific role? <a href="" className="underline decoration-yellowish underline-offset-4">Contact us</a> to discuss your requirements and find the right candidate for the job.</p>
                 </div>
             </div>
         </ServiceLayout>
