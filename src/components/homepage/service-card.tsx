@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "motion/react";
 
 interface ServiceCardProps {
     title: string;
@@ -12,25 +13,56 @@ interface ServiceCardProps {
 const ServiceCard = ({ title, image, link, className = "" }: ServiceCardProps) => {
     return (
         <Link href={link}>
-            <div className={`group relative overflow-hidden rounded-lg h-80 transition-transform duration-300 hover:scale-105 cursor-pointer ${className}`}>
+            <motion.div 
+                className={`group relative overflow-hidden rounded-lg h-80 cursor-pointer ${className}`}
+                whileHover={{ 
+                    scale: 1.05,
+                    rotateY: 5,
+                    boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)"
+                }}
+                transition={{ 
+                    type: "spring", 
+                    stiffness: 300, 
+                    damping: 20 
+                }}
+            >
                 {/* Background Image */}
-                <Image
-                    src={image}
-                    alt={title}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
-                />
+                <motion.div
+                    className="absolute inset-0"
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ duration: 0.6 }}
+                >
+                    <Image
+                        src={image}
+                        alt={title}
+                        fill
+                        className="object-cover"
+                    />
+                </motion.div>
 
                 {/* Dark Overlay */}
-                <div className="absolute inset-0 bg-black/20 transition-opacity duration-300 group-hover:bg-black/50" />
+                <motion.div 
+                    className="absolute inset-0 bg-black/20"
+                    whileHover={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
+                    transition={{ duration: 0.3 }}
+                />
 
                 {/* Content */}
-                <div className="absolute inset-0 flex items-end p-8">
-                    <h3 className="text-white text-2xl font-semibold tracking-wide">
+                <motion.div 
+                    className="absolute inset-0 flex items-end p-8"
+                    initial={{ y: 20, opacity: 0.8 }}
+                    whileHover={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.3 }}
+                >
+                    <motion.h3 
+                        className="text-white text-2xl font-semibold tracking-wide"
+                        whileHover={{ scale: 1.05 }}
+                        transition={{ type: "spring", stiffness: 400 }}
+                    >
                         {title}
-                    </h3>
-                </div>
-            </div>
+                    </motion.h3>
+                </motion.div>
+            </motion.div>
         </Link>
     );
 };

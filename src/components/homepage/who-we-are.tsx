@@ -1,22 +1,67 @@
 import Image from "next/image"
 import Link from "next/link"
+import { motion } from "motion/react"
 
 export default function WhoWeAreSection() {
     return (
         <section className="container mx-auto py-32">
-            <div className="flex flex-col gap-8 justify-center items-center">
-                <div>
+            <motion.div 
+                className="flex flex-col gap-8 justify-center items-center"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.3 }}
+                variants={{
+                    hidden: { opacity: 0 },
+                    visible: { 
+                        opacity: 1,
+                        transition: {
+                            staggerChildren: 0.4
+                        }
+                    }
+                }}
+            >
+                <motion.div
+                    variants={{
+                        hidden: { opacity: 0, scale: 0.5, rotate: -180 },
+                        visible: { opacity: 1, scale: 1, rotate: 0, transition: { duration: 1.2, ease: "easeOut" } }
+                    }}
+                >
                     <Image src="/kleen.svg" alt="maid" width={50} height={50} />
-                </div>
-                <div className="w-4xl space-y-8 mb-8">
+                </motion.div>
+                <motion.div 
+                    className="w-4xl space-y-8 mb-8"
+                    variants={{
+                        hidden: { opacity: 0, y: 60 },
+                        visible: { opacity: 1, y: 0, transition: { duration: 1.0, ease: "easeOut" } }
+                    }}
+                >
                     <h2 className="text-6xl font-bold text-center">Who we are</h2>
                     <p className="text-xl text-center">
                         Kleenmaids is a professional domestic help placement agency and cleaning service provider with a 17-year history of serving homeowners and corporate entities in the Kampala area. We maintain a keen focus on providing thoroughly vetted staff, quality placements, and exceptional, eco-friendly cleaning solutions.
                     </p>
-                </div>
+                </motion.div>
 
-                <div className="flex flex-row gap-8">
-                    <div className="flex flex-col justify-between w-[400px] border border-black rounded-2xl space-y-4 group group-hover:border-greenish transition-colors">
+                <motion.div 
+                    className="flex flex-row gap-8"
+                    variants={{
+                        hidden: { opacity: 0 },
+                        visible: { 
+                            opacity: 1,
+                            transition: {
+                                staggerChildren: 0.3
+                            }
+                        }
+                    }}
+                >
+                    <motion.div 
+                        className="flex flex-col justify-between w-[400px] border border-black rounded-2xl space-y-4 group group-hover:border-greenish transition-colors"
+                        variants={{
+                            hidden: { opacity: 0, x: -100, rotateY: -45 },
+                            visible: { opacity: 1, x: 0, rotateY: 0, transition: { duration: 1.0, ease: "easeOut" } }
+                        }}
+                        whileHover={{ scale: 1.05, rotateY: 5 }}
+                        transition={{ type: "spring", stiffness: 200 }}
+                    >
                         <div className="p-8">
                             <p className="text-2xl font-bold">For Organisations</p>
                             <p>Organizations in need of Professional cleaning and support staff placements for small, medium, and large enterprises</p>
@@ -24,8 +69,16 @@ export default function WhoWeAreSection() {
                         <div className="p-8 group-hover:bg-greenish group-hover:text-deep-blue rounded-b-2xl transition-colors">
                             <Link href="/services/live-in-maids" className="font-medium">Book Now</Link>
                         </div>
-                    </div>
-                    <div className="flex flex-col justify-between w-[400px] border border-black rounded-2xl space-y-4 group group-hover:border-greenish group-hover:text-greenish transition-colors">
+                    </motion.div>
+                    <motion.div 
+                        className="flex flex-col justify-between w-[400px] border border-black rounded-2xl space-y-4 group group-hover:border-greenish group-hover:text-greenish transition-colors"
+                        variants={{
+                            hidden: { opacity: 0, x: 100, rotateY: 45 },
+                            visible: { opacity: 1, x: 0, rotateY: 0, transition: { duration: 1.0, ease: "easeOut" } }
+                        }}
+                        whileHover={{ scale: 1.05, rotateY: -5 }}
+                        transition={{ type: "spring", stiffness: 200 }}
+                    >
                         <div className="p-8">
                             <p className="text-2xl font-bold">For Individuals</p>
                             <p>Individuals in need of Customized domestic help Support for their households and families</p>
@@ -33,9 +86,9 @@ export default function WhoWeAreSection() {
                         <div className="p-8 group-hover:bg-greenish group-hover:text-deep-blue rounded-b-2xl transition-colors">
                             <Link href="/services/live-in-maids" className="font-medium">Book Now</Link>
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </motion.div>
+                </motion.div>
+            </motion.div>
         </section>
     )
 }
