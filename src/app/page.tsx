@@ -14,18 +14,6 @@ export default function Home() {
   return (
     <motion.div 
       className="min-h-screen bg-bluish"
-      initial="hidden"
-      animate="visible"
-      variants={{
-        hidden: { opacity: 0 },
-        visible: { 
-          opacity: 1,
-          transition: {
-            duration: 0.8,
-            staggerChildren: 0.5
-          }
-        }
-      }}
     >
       <motion.div
         variants={{
@@ -74,6 +62,9 @@ export default function Home() {
 
       <motion.section 
         className="py-20 bg-bluish"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
         variants={{
           hidden: { opacity: 0, y: 100, scale: 0.9 },
           visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 1.2, ease: "easeOut" } }
@@ -93,12 +84,16 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row justify-between gap-12">
             <motion.div 
               className="w-full lg:w-1/2"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
               variants={{
                 hidden: { opacity: 0 },
                 visible: { 
                   opacity: 1,
                   transition: {
-                    staggerChildren: 0.2
+                    staggerChildren: 0.2,
+                    delayChildren: 0.3
                   }
                 }
               }}
@@ -112,7 +107,7 @@ export default function Home() {
                   }}
                 >
                   <div className="flex-shrink-0">
-                    <StarIcon size={48} circleColor="#FFF7BD" />
+                    <StarIcon size={48} />
                   </div>
                   <div className="flex flex-col">
                     <span className="text-lg font-bold text-gray-900">Highly Trained Cleaners</span>
@@ -169,9 +164,12 @@ export default function Home() {
 
             <motion.div 
               className="relative w-full lg:w-1/2 h-[500px] lg:h-[600px]"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
               variants={{
                 hidden: { opacity: 0, scale: 0.8 },
-                visible: { opacity: 1, scale: 1, transition: { duration: 0.8 } }
+                visible: { opacity: 1, scale: 1, transition: { duration: 0.8, delay: 0.5 } }
               }}
             >
               <div className="relative h-full rounded-lg overflow-hidden">
