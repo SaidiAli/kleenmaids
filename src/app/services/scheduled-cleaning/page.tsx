@@ -23,7 +23,7 @@ export default function ScheduledCleaningPage() {
         <ServiceLayout
             title="Scheduled House Cleaning"
             description="Professional cleaning on your schedule."
-            heroImage="/images/young-male-cleaner.jpg"
+            heroImage="https://res.cloudinary.com/zurri-cloud/image/upload/v1755705248/kleenmaids/yvmqopclpcoydjjn21i4.jpg"
             benefits={benefits}
             features={features}
         >
@@ -63,38 +63,6 @@ export default function ScheduledCleaningPage() {
                         <cite className="block mt-2 text-sm text-gray-600">- Enock.</cite>
                     </blockquote>
                 </div>
-                {/* <div className="grid md:grid-cols-3 gap-6">
-                    <div className="border border-gray-200 rounded-lg p-6">
-                        <h4 className="font-semibold text-lg mb-3">Weekly Cleaning</h4>
-                        <p className="text-gray-600 mb-4">Perfect for busy households that need regular maintenance</p>
-                        <ul className="text-sm text-gray-600 space-y-1">
-                            <li>• General cleaning</li>
-                            <li>• Bathroom sanitization</li>
-                            <li>• Kitchen deep clean</li>
-                            <li>• Laundry service</li>
-                        </ul>
-                    </div>
-                    <div className="border border-gray-200 rounded-lg p-6">
-                        <h4 className="font-semibold text-lg mb-3">Bi-Weekly Cleaning</h4>
-                        <p className="text-gray-600 mb-4">Ideal for maintaining cleanliness with moderate usage</p>
-                        <ul className="text-sm text-gray-600 space-y-1">
-                            <li>• Thorough cleaning</li>
-                            <li>• Organizing services</li>
-                            <li>• Deep sanitization</li>
-                            <li>• Decluttering</li>
-                        </ul>
-                    </div>
-                    <div className="border border-gray-200 rounded-lg p-6">
-                        <h4 className="font-semibold text-lg mb-3">3-4 Times Weekly</h4>
-                        <p className="text-gray-600 mb-4">Comprehensive service for high-maintenance spaces</p>
-                        <ul className="text-sm text-gray-600 space-y-1">
-                            <li>• Daily maintenance</li>
-                            <li>• Complete home care</li>
-                            <li>• Premium service</li>
-                            <li>• Priority support</li>
-                        </ul>
-                    </div>
-                </div> */}
             </div>
         </ServiceLayout>
     )

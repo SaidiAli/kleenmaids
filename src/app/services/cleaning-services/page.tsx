@@ -23,13 +23,11 @@ export default function CleaningServicesPage() {
     <ServiceLayout
       title="Professional Cleaning Services"
       description="Comprehensive cleaning for offices, events, furniture, and specialized needs."
-      heroImage="/images/org_cleaning.jpg"
+      heroImage="https://res.cloudinary.com/zurri-cloud/image/upload/v1756019569/kleenmaids/igdll5lznzuvlf4aicao.jpg"
       benefits={benefits}
       features={features}
     >
       <div className="max-w-2xl space-y-10">
-
-        <h1 className="text-2xl font-bold text-gray-900 border-b border-gray-200 pb-2">Residential & Commercial Cleaning Services</h1>
 
         <p className="text-gray-700 leading-relaxed">Our professional cleaning services provide you with solutions that are tailor-made to your most urgent needs, catering to both homes and commercial spaces. Whether you're preparing for a special event, moving, or simply in need of a thorough deep clean, our team delivers exceptional results that meet your desired satisfaction.</p>
         <p className="text-gray-700 leading-relaxed">We handle the nitty-gritty of your cleaning demands with professionally executed and eco-friendly solutions.</p>

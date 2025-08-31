@@ -1,8 +1,4 @@
 import type React from "react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { ArrowRight, Quote } from "lucide-react"
-import Link from "next/link"
 import Image from "next/image"
 import Navbar from "./navbar"
 

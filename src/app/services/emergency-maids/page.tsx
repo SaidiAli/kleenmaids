@@ -22,13 +22,12 @@ export default function EmergencyMaidsPage() {
   return (
     <ServiceLayout
       title="Emergency Maids Solution"
-      description="Never get stranded! For all your last-minute maid emergency needs, we have you covered with our Quick Fix solution. This service is designed for light cleaning work and is often a one-off service perfect for urgent situations."
-      heroImage="/images/young-male-cleaner.jpg"
+      description="A one-off service for urgent, last-minute light cleaning needs."
+      heroImage="https://res.cloudinary.com/zurri-cloud/image/upload/v1756019568/kleenmaids/rmyfifprz0kj6gaugn9i.jpg"
       benefits={benefits}
       features={features}
     >
       <div className="max-w-2xl space-y-10">
-        <h1 className="text-2xl font-bold text-gray-900 border-b border-gray-200 pb-2">Emergency Helper Solution</h1>
 
         <p className="text-gray-700 leading-relaxed">Never get stranded in a last-minute bind again. Our Emergency Helper Solution is a quick fix designed to support you when your permanently placed worker is unavailable or when an abrupt emergency needs your immediate attention. For all your last-minute maid emergencies, we have you covered.</p>
 

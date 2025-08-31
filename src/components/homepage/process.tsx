@@ -54,7 +54,7 @@ export default function ProcessSection() {
                 </motion.div>
 
                 <motion.div 
-                    className="relative flex justify-center items-center" 
+                    className="relative flex justify-center gap-4 items-center" 
                     id="how-it-works"
                     variants={{
                         hidden: { opacity: 0 },
@@ -118,7 +118,7 @@ export default function ProcessSection() {
                                 {item.title}
                             </motion.h3>
                             <motion.p 
-                                className="text-gray-600 text-lg"
+                                className="text-gray-600 text-base"
                                 variants={{
                                     hidden: { opacity: 0, y: 20 },
                                     visible: { opacity: 1, y: 0, transition: { duration: 0.8, delay: 0.4 } }
