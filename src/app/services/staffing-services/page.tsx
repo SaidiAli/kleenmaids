@@ -58,7 +58,7 @@ export default function StaffingServicesPage() {
                 </div>
 
                 <div className="cta mt-10 bg-deep-blue text-white rounded-xl p-6 shadow">
-                    <p className="font-semibold">Looking to hire support staff for a specific role? <a href="" className="underline decoration-yellowish underline-offset-4">Contact us</a> to discuss your requirements and find the right candidate for the job.</p>
+                    <p className="font-semibold">Looking to hire support staff for a specific role? <a href="https://wa.me/256752623801" className="underline decoration-yellowish underline-offset-4">Contact us</a> to discuss your requirements and find the right candidate for the job.</p>
                 </div>
             </div>
         </ServiceLayout>

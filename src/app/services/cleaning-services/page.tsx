@@ -59,51 +59,8 @@ export default function CleaningServicesPage() {
         </div>
 
         <div className="cta mt-10 bg-deep-blue text-white rounded-xl p-6 shadow">
-          <p className="font-semibold">Ready for a spotless space? <a href="" className="underline decoration-yellowish underline-offset-4">Contact us today</a> to schedule a site visit and receive a custom quotation for your cleaning needs!</p>
+          <p className="font-semibold">Ready for a spotless space? <a href="https://wa.me/256752623801" className="underline decoration-yellowish underline-offset-4">Contact us today</a> to schedule a site visit and receive a custom quotation for your cleaning needs!</p>
         </div>
-
-        {/* <div className="grid md:grid-cols-2 gap-6">
-          <div className="border border-gray-200 rounded-lg p-6">
-            <h4 className="font-semibold text-lg mb-3">Commercial Cleaning</h4>
-            <p className="text-gray-600 mb-4">Professional cleaning for business environments</p>
-            <ul className="text-sm text-gray-600 space-y-1">
-              <li>• Office buildings</li>
-              <li>• Retail spaces</li>
-              <li>• Restaurants</li>
-              <li>• Medical facilities</li>
-            </ul>
-          </div>
-          <div className="border border-gray-200 rounded-lg p-6">
-            <h4 className="font-semibold text-lg mb-3">Special Events</h4>
-            <p className="text-gray-600 mb-4">Pre and post-event cleaning services</p>
-            <ul className="text-sm text-gray-600 space-y-1">
-              <li>• Wedding venues</li>
-              <li>• Corporate events</li>
-              <li>• Private parties</li>
-              <li>• Conference centers</li>
-            </ul>
-          </div>
-          <div className="border border-gray-200 rounded-lg p-6">
-            <h4 className="font-semibold text-lg mb-3">Furniture Cleaning</h4>
-            <p className="text-gray-600 mb-4">Specialized furniture care and maintenance</p>
-            <ul className="text-sm text-gray-600 space-y-1">
-              <li>• Upholstery cleaning</li>
-              <li>• Carpet cleaning</li>
-              <li>• Leather treatment</li>
-              <li>• Fabric protection</li>
-            </ul>
-          </div>
-          <div className="border border-gray-200 rounded-lg p-6">
-            <h4 className="font-semibold text-lg mb-3">Specialized Cleaning</h4>
-            <p className="text-gray-600 mb-4">Custom solutions for unique requirements</p>
-            <ul className="text-sm text-gray-600 space-y-1">
-              <li>• Post-construction cleanup</li>
-              <li>• Move-in/move-out cleaning</li>
-              <li>• Deep sanitization</li>
-              <li>• Industrial cleaning</li>
-            </ul>
-          </div>
-        </div> */}
       </div>
     </ServiceLayout>
   )

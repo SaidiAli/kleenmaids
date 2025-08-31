@@ -4,6 +4,7 @@ import Navbar from '@/components/navbar';
 import { Button } from '@/components/ui/button';
 import { StarIcon } from '@/components/ui/star-icon';
 import { services } from '@/data';
+import { Icon } from '@iconify/react/dist/iconify.js';
 import { Mail, MapPin, Phone, Send } from 'lucide-react';
 import { motion } from 'motion/react';
 
@@ -11,13 +12,13 @@ const ContactPage = () => {
     return (
         <div className="bg-bluish min-h-screen">
             <Navbar className="" />
-            <motion.div 
+            <motion.div
                 className="container mx-auto py-20 px-4"
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
             >
-                <motion.div 
+                <motion.div
                     className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start"
                     initial="hidden"
                     animate="visible"
@@ -32,14 +33,14 @@ const ContactPage = () => {
                     }}
                 >
                     {/* Left Column: Contact Info */}
-                    <motion.div 
+                    <motion.div
                         className="text-gray-800"
                         variants={{
                             hidden: { opacity: 0, x: -50 },
                             visible: { opacity: 1, x: 0, transition: { duration: 0.6 } }
                         }}
                     >
-                        <motion.div 
+                        <motion.div
                             className="flex items-center gap-3 mb-4"
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -48,7 +49,7 @@ const ContactPage = () => {
                             <StarIcon size={24} />
                             <p className="font-semibold text-gray-700">Get in touch</p>
                         </motion.div>
-                        <motion.h1 
+                        <motion.h1
                             className="text-4xl md:text-5xl font-bold text-deep-blue mb-8 leading-tight"
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -57,7 +58,7 @@ const ContactPage = () => {
                             For any inquiry about our services, please reach out
                         </motion.h1>
 
-                        <motion.div 
+                        <motion.div
                             className="space-y-6"
                             initial="hidden"
                             animate="visible"
@@ -72,7 +73,7 @@ const ContactPage = () => {
                                 }
                             }}
                         >
-                            <motion.div 
+                            <motion.div
                                 className="bg-white p-6 rounded-lg shadow-sm flex items-start gap-4"
                                 variants={{
                                     hidden: { opacity: 0, y: 20, scale: 0.9 },
@@ -87,7 +88,7 @@ const ContactPage = () => {
                                 </div>
                             </motion.div>
 
-                            <motion.div 
+                            <motion.div
                                 className="bg-white p-6 rounded-lg shadow-sm flex items-start gap-4"
                                 variants={{
                                     hidden: { opacity: 0, y: 20, scale: 0.9 },
@@ -102,7 +103,25 @@ const ContactPage = () => {
                                 </div>
                             </motion.div>
 
-                            <motion.div 
+                            <motion.a
+                                href="https://wa.me/256752623801"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-white p-6 rounded-lg shadow-sm flex items-start gap-4"
+                                variants={{
+                                    hidden: { opacity: 0, y: 20, scale: 0.9 },
+                                    visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5 } }
+                                }}
+                                whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
+                            >
+                                <Icon icon="logos:whatsapp-icon" width={24} height={24} className='w-8 h-8 mt-1 flex-shrink-0' />
+                                <div>
+                                    <h3 className="text-xl font-bold text-deep-blue">Chat on WhatsApp</h3>
+                                    <p className="text-gray-600">+256 752 623 801</p>
+                                </div>
+                            </motion.a>
+
+                            <motion.div
                                 className="bg-white p-6 rounded-lg shadow-sm flex items-start gap-4"
                                 variants={{
                                     hidden: { opacity: 0, y: 20, scale: 0.9 },
@@ -126,7 +145,7 @@ const ContactPage = () => {
                             visible: { opacity: 1, x: 0, transition: { duration: 0.6, delay: 0.3 } }
                         }}
                     >
-                        <motion.form 
+                        <motion.form
                             className="space-y-6"
                             initial="hidden"
                             animate="visible"
@@ -141,7 +160,7 @@ const ContactPage = () => {
                                 }
                             }}
                         >
-                            <motion.div 
+                            <motion.div
                                 className="grid grid-cols-1 md:grid-cols-2 gap-6"
                                 variants={{
                                     hidden: { opacity: 0, y: 20 },
@@ -173,7 +192,7 @@ const ContactPage = () => {
                                     />
                                 </div>
                             </motion.div>
-                            <motion.div 
+                            <motion.div
                                 className="grid grid-cols-1 md:grid-cols-2 gap-6"
                                 variants={{
                                     hidden: { opacity: 0, y: 20 },

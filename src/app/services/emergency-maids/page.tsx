@@ -51,7 +51,7 @@ export default function EmergencyMaidsPage() {
         </div>
 
         <div className="cta mt-10 bg-deep-blue text-white rounded-xl p-6 shadow">
-          <p className="font-semibold">In an emergency and need help now? <a href="" className="underline decoration-yellowish underline-offset-4">Call us</a> for a quick fix!</p>
+          <p className="font-semibold">In an emergency and need help now? <a href="https://wa.me/256752623801" className="underline decoration-yellowish underline-offset-4">Call us</a> for a quick fix!</p>
         </div>
       </div>
     </ServiceLayout>
