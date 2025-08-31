@@ -28,14 +28,16 @@ export default function StaffingServicesPage() {
             features={features}
         >
 
-            <div className="max-w-2xl space-y-10">
-                <p className="text-gray-700 leading-relaxed">Away from our Domestic Help Support and cleaning services, we also provide support staff placements for clients looking to hire for specific roles as they see fit. We provide support staff for specific for those looking for informal workers.</p>
-                <p className="text-gray-700 leading-relaxed">Whether you need a single placement or ongoing staffing support, we have a solution for you.</p>
+            <div className="max-w-full lg:max-w-2xl space-y-8 sm:space-y-10">
+                <div className="space-y-4 sm:space-y-6">
+                  <p className="text-gray-700 leading-relaxed text-sm sm:text-base">Away from our Domestic Help Support and cleaning services, we also provide support staff placements for clients looking to hire for specific roles as they see fit. We provide support staff for specific for those looking for informal workers.</p>
+                  <p className="text-gray-700 leading-relaxed text-sm sm:text-base">Whether you need a single placement or ongoing staffing support, we have a solution for you.</p>
+                </div>
 
-                <div className="space-y-4">
-                    <h2 className="text-xl font-semibold text-gray-900 border-b border-gray-200 pb-2">Roles We Place</h2>
-                    <p className="text-gray-700">We provide support staff for specific roles such as:</p>
-                    <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                <div className="space-y-4 sm:space-y-6">
+                    <h2 className="text-lg sm:text-xl font-semibold text-gray-900 border-b border-gray-200 pb-2">Roles We Place</h2>
+                    <p className="text-gray-700 text-sm sm:text-base">We provide support staff for specific roles such as:</p>
+                    <ul className="list-disc pl-4 sm:pl-6 space-y-2 text-gray-700 text-sm sm:text-base">
                         <li>Caretakers</li>
                         <li>Shamba Boys</li>
                         <li>Cooks</li>
@@ -43,22 +45,22 @@ export default function StaffingServicesPage() {
                     </ul>
                 </div>
 
-                <div className="space-y-4">
-                    <h2 className="text-xl font-semibold text-gray-900 border-b border-gray-200 pb-2">How It Works & Pricing</h2>
-                    <p className="text-gray-700">Our process is designed to be simple and flexible for your staffing needs.</p>
-                    <ol className="list-decimal pl-6 space-y-2 text-gray-700">
-                        <li><strong>Share Job Description</strong>: The client shares with the job description and number of employees they’re looking for.</li>
+                <div className="space-y-4 sm:space-y-6">
+                    <h2 className="text-lg sm:text-xl font-semibold text-gray-900 border-b border-gray-200 pb-2">How It Works & Pricing</h2>
+                    <p className="text-gray-700 text-sm sm:text-base">Our process is designed to be simple and flexible for your staffing needs.</p>
+                    <ol className="list-decimal pl-4 sm:pl-6 space-y-3 text-gray-700 text-sm sm:text-base">
+                        <li><strong>Share Job Description</strong>: The client shares with the job description and number of employees they're looking for.</li>
                         <li><strong>Choose Your Engagement Model</strong>:
-                            <h3 className="font-semibold text-gray-900 mt-2">One-Off Placement</h3>
-                            <p className="text-gray-700">For support staff placements we charge a one-off placement fee. You can engage the company on a one-off basis for a single hire.</p>
-                            <h3 className="font-semibold text-gray-900 mt-2">Retainer Model</h3>
-                            <p className="text-gray-700">For ongoing placement needs, you can keep us on a retainer. A retainer fee is paid for the number of workers that will be needed for a specific period of time.</p>
+                            <h3 className="font-semibold text-gray-900 mt-3 text-sm sm:text-base">One-Off Placement</h3>
+                            <p className="text-gray-700 text-sm sm:text-base">For support staff placements we charge a one-off placement fee. You can engage the company on a one-off basis for a single hire.</p>
+                            <h3 className="font-semibold text-gray-900 mt-3 text-sm sm:text-base">Retainer Model</h3>
+                            <p className="text-gray-700 text-sm sm:text-base">For ongoing placement needs, you can keep us on a retainer. A retainer fee is paid for the number of workers that will be needed for a specific period of time.</p>
                         </li>
                     </ol>
                 </div>
 
-                <div className="cta mt-10 bg-deep-blue text-white rounded-xl p-6 shadow">
-                    <p className="font-semibold">Looking to hire support staff for a specific role? <a href="https://wa.me/256752623801" className="underline decoration-yellowish underline-offset-4">Contact us</a> to discuss your requirements and find the right candidate for the job.</p>
+                <div className="cta mt-8 sm:mt-10 bg-deep-blue text-white rounded-xl p-4 sm:p-6 shadow">
+                    <p className="font-semibold text-sm sm:text-base">Looking to hire support staff for a specific role? <a href="https://wa.me/256752623801" className="underline decoration-yellowish underline-offset-4">Contact us</a> to discuss your requirements and find the right candidate for the job.</p>
                 </div>
             </div>
         </ServiceLayout>

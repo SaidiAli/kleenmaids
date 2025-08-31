@@ -31,7 +31,7 @@ const ServicesSection = () => {
     ];
 
     return (
-        <section className="pt-20 pb-50">
+        <section className="pt-16 sm:pt-20 pb-16 sm:pb-20 lg:pb-50 px-4 sm:px-6 lg:px-8">
             <motion.div 
                 className="max-w-7xl mx-auto"
                 initial="hidden"
@@ -49,23 +49,23 @@ const ServicesSection = () => {
             >
                 {/* Header */}
                 <motion.div 
-                    className="text-center mb-16 space-y-8"
+                    className="text-center mb-12 sm:mb-16 space-y-4 sm:space-y-8"
                     variants={{
                         hidden: { opacity: 0, y: 80 },
                         visible: { opacity: 1, y: 0, transition: { duration: 1.2, ease: "easeOut" } }
                     }}
                 >
-                    <h2 className="text-6xl font-bold text-center">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center">
                         Our services
                     </h2>
-                    <p className="text-xl text-center">
+                    <p className="text-base sm:text-lg lg:text-xl text-center max-w-2xl mx-auto">
                         We offer a range of services to meet your needs
                     </p>
                 </motion.div>
 
                 {/* Services Grid */}
                 <motion.div 
-                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6"
                     variants={{
                         hidden: { opacity: 0 },
                         visible: { 

@@ -32,25 +32,25 @@ export default function ServiceLayout({
             <Navbar className="" />
 
             {/* Hero Section */}
-            <section className="py-20 relative container mx-auto">
-                <h1 className="text-4xl font-bold mb-4 uppercase tracking-wide">{title}</h1>
-                <p>{description}</p>
+            <section className="py-12 sm:py-16 lg:py-20 relative container mx-auto px-4 sm:px-6 lg:px-8">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 uppercase tracking-wide">{title}</h1>
+                <p className="text-sm sm:text-base lg:text-lg text-gray-600">{description}</p>
             </section>
 
             {/* Main Content */}
-            <section className="py-16">
-                <div className="container mx-auto flex flex-row justify-between items-start">
-                    <div className="basis-2/3">
-                        {children}
-                    </div>
-                    <div className="sticky top-20 basis-1/3">
+            <section className="py-8 sm:py-12 lg:py-16">
+                <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row justify-between items-start gap-8 lg:gap-12">
+                    <div className="w-full lg:basis-1/3 lg:order-2 lg:sticky lg:top-20">
                         <Image
                             src={heroImage || "/placeholder.svg"}
                             alt={title}
                             width={500}
-                            height={600}
-                            className="rounded-lg w-[1000px] h-[600px] mx-auto object-cover"
+                            height={400}
+                            className="rounded-lg w-full h-[250px] sm:h-[300px] lg:h-[400px] xl:h-[600px] object-cover"
                         />
+                    </div>
+                    <div className="w-full lg:basis-2/3 lg:order-1">
+                        {children}
                     </div>
                 </div>
             </section>

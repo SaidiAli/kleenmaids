@@ -27,15 +27,17 @@ export default function CleaningServicesPage() {
       benefits={benefits}
       features={features}
     >
-      <div className="max-w-2xl space-y-10">
+      <div className="max-w-full lg:max-w-2xl space-y-8 sm:space-y-10">
 
-        <p className="text-gray-700 leading-relaxed">Our professional cleaning services provide you with solutions that are tailor-made to your most urgent needs, catering to both homes and commercial spaces. Whether you're preparing for a special event, moving, or simply in need of a thorough deep clean, our team delivers exceptional results that meet your desired satisfaction.</p>
-        <p className="text-gray-700 leading-relaxed">We handle the nitty-gritty of your cleaning demands with professionally executed and eco-friendly solutions.</p>
+        <div className="space-y-4 sm:space-y-6">
+          <p className="text-gray-700 leading-relaxed text-sm sm:text-base">Our professional cleaning services provide you with solutions that are tailor-made to your most urgent needs, catering to both homes and commercial spaces. Whether you're preparing for a special event, moving, or simply in need of a thorough deep clean, our team delivers exceptional results that meet your desired satisfaction.</p>
+          <p className="text-gray-700 leading-relaxed text-sm sm:text-base">We handle the nitty-gritty of your cleaning demands with professionally executed and eco-friendly solutions.</p>
+        </div>
 
-        <div className="space-y-4">
-          <h2 className="text-xl font-semibold text-gray-900 border-b border-gray-200 pb-2">Our Cleaning Solutions</h2>
-          <p className="text-gray-700">We offer a wide range of specialized cleaning services to handle any task, big or small. Our solutions include:</p>
-          <ul className="list-disc pl-6 space-y-2 text-gray-700">
+        <div className="space-y-4 sm:space-y-6">
+          <h2 className="text-lg sm:text-xl font-semibold text-gray-900 border-b border-gray-200 pb-2">Our Cleaning Solutions</h2>
+          <p className="text-gray-700 text-sm sm:text-base">We offer a wide range of specialized cleaning services to handle any task, big or small. Our solutions include:</p>
+          <ul className="list-disc pl-4 sm:pl-6 space-y-2 text-gray-700 text-sm sm:text-base">
             <li>Deep Cleaning Services</li>
             <li>Specialized Cleaning Services</li>
             <li>Move-in and Move-Out Cleaning Services</li>
@@ -44,22 +46,22 @@ export default function CleaningServicesPage() {
           </ul>
         </div>
 
-        <div className="space-y-4">
-          <h2 className="text-xl font-semibold text-gray-900 border-b border-gray-200 pb-2">Our Professional Standard</h2>
-          <p className="text-gray-700 leading-relaxed">To ensure consistent quality and true customer satisfaction, our one-off cleaning services are handled by a dedicated team. Each team includes a supervisor who is present to oversee the particular job at hand and ensure our work exceeds your expectations.</p>
+        <div className="space-y-4 sm:space-y-6">
+          <h2 className="text-lg sm:text-xl font-semibold text-gray-900 border-b border-gray-200 pb-2">Our Professional Standard</h2>
+          <p className="text-gray-700 leading-relaxed text-sm sm:text-base">To ensure consistent quality and true customer satisfaction, our one-off cleaning services are handled by a dedicated team. Each team includes a supervisor who is present to oversee the particular job at hand and ensure our work exceeds your expectations.</p>
         </div>
 
-        <div className="space-y-4">
-          <h2 className="text-xl font-semibold text-gray-900 border-b border-gray-200 pb-2">Our Process</h2>
-          <ol className="list-decimal pl-6 space-y-2 text-gray-700">
+        <div className="space-y-4 sm:space-y-6">
+          <h2 className="text-lg sm:text-xl font-semibold text-gray-900 border-b border-gray-200 pb-2">Our Process</h2>
+          <ol className="list-decimal pl-4 sm:pl-6 space-y-2 text-gray-700 text-sm sm:text-base">
             <li><strong>Request Service</strong>: Contact us about the cleaning service you need.</li>
             <li><strong>Site Visit</strong>: Upon requesting for our cleaning services, we do a site visit.</li>
             <li><strong>Receive a Quotation</strong>: Following the site visit, we provide you with a quotation for the work to be done.</li>
           </ol>
         </div>
 
-        <div className="cta mt-10 bg-deep-blue text-white rounded-xl p-6 shadow">
-          <p className="font-semibold">Ready for a spotless space? <a href="https://wa.me/256752623801" className="underline decoration-yellowish underline-offset-4">Contact us today</a> to schedule a site visit and receive a custom quotation for your cleaning needs!</p>
+        <div className="cta mt-8 sm:mt-10 bg-deep-blue text-white rounded-xl p-4 sm:p-6 shadow">
+          <p className="font-semibold text-sm sm:text-base">Ready for a spotless space? <a href="https://wa.me/256752623801" className="underline decoration-yellowish underline-offset-4">Contact us today</a> to schedule a site visit and receive a custom quotation for your cleaning needs!</p>
         </div>
       </div>
     </ServiceLayout>

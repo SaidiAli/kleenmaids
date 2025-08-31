@@ -4,7 +4,7 @@ import { motion } from "motion/react"
 const StarRating = () => {
     return (
         <motion.div
-            className="flex gap-1 mb-6"
+            className="flex gap-1 mb-4 sm:mb-6"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -12,7 +12,7 @@ const StarRating = () => {
             {[...Array(5)].map((_, i) => (
                 <motion.svg
                     key={i}
-                    className="w-5 h-5 fill-current text-black"
+                    className="w-4 h-4 sm:w-5 sm:h-5 fill-current text-black"
                     viewBox="0 0 24 24"
                     initial={{ opacity: 0, rotate: -180 }}
                     whileInView={{ opacity: 1, rotate: 0 }}
@@ -34,7 +34,7 @@ export default function Testimonials() {
     return (
         <motion.section
             id="testimonies"
-            className="py-16"
+            className="py-12 sm:py-16"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
@@ -50,9 +50,9 @@ export default function Testimonials() {
                 }
             }}
         >
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.div
-                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6"
                     variants={{
                         hidden: { opacity: 0 },
                         visible: {
@@ -82,7 +82,7 @@ export default function Testimonials() {
 const TestimonialCard = ({ name, testimonial, description }: { name: string, testimonial: string, description: string }) => {
     return (
         <motion.div
-            className="bg-yellowish px-6 py-8 rounded-lg h-full flex flex-col"
+            className="bg-yellowish px-4 sm:px-6 py-6 sm:py-8 rounded-lg h-full flex flex-col"
             variants={{
                 hidden: {
                     opacity: 0,
@@ -105,13 +105,13 @@ const TestimonialCard = ({ name, testimonial, description }: { name: string, tes
             }}
         >
             <StarRating />
-            <h3 className="text-lg font-semibold text-gray-900 mb-4 leading-tight">
+            <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-3 sm:mb-4 leading-tight">
                 "{testimonial}"
             </h3>
-            <p className="text-sm text-gray-700 mb-6 flex-grow leading-relaxed">
+            <p className="text-xs sm:text-sm text-gray-700 mb-4 sm:mb-6 flex-grow leading-relaxed">
                 {description}
             </p>
-            <p className="text-sm font-medium text-gray-900 mt-auto">
+            <p className="text-xs sm:text-sm font-medium text-gray-900 mt-auto">
                 {name}
             </p>
         </motion.div>

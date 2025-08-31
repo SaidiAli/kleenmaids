@@ -29,13 +29,13 @@ export default function LiveInMaidPage() {
             benefits={benefits}
             features={features}
         >
-            <div className="max-w-2xl space-y-10">
+            <div className="max-w-full lg:max-w-2xl space-y-8 sm:space-y-10">
 
-                <p className="text-gray-700 leading-relaxed">Find the perfect, dependable support for your household with our permanent and temporary Live-In Domestic Help Placements. We specialize in providing thoroughly vetted and carefully screened candidates to simplify the day-to-day demands of your life. Our goal is to connect you with a professional who fits your family's unique needs, giving you more time to do what you love.</p>
+                <p className="text-gray-700 leading-relaxed text-sm sm:text-base">Find the perfect, dependable support for your household with our permanent and temporary Live-In Domestic Help Placements. We specialize in providing thoroughly vetted and carefully screened candidates to simplify the day-to-day demands of your life. Our goal is to connect you with a professional who fits your family's unique needs, giving you more time to do what you love.</p>
 
-                <div className="space-y-6">
-                    <h2 className="text-xl font-semibold text-gray-900 border-b border-gray-200 pb-2">Our Placement Process</h2>
-                    <ol className="list-decimal pl-6 space-y-3 text-gray-700">
+                <div className="space-y-4 sm:space-y-6">
+                    <h2 className="text-lg sm:text-xl font-semibold text-gray-900 border-b border-gray-200 pb-2">Our Placement Process</h2>
+                    <ol className="list-decimal pl-4 sm:pl-6 space-y-3 text-gray-700 text-sm sm:text-base">
                         <li><strong className="text-gray-900">Share Your Requirements</strong>: Contact us and provide the specific requirements for the type of worker you are looking for, including the size of your household.</li>
                         <li><strong className="text-gray-900">Candidate Presentation & Interview</strong>: We present a vetted and screened candidate to you for an interview. This gives you the opportunity to meet them and decide if they are the right fit.</li>
                         <li><strong className="text-gray-900">Service Agreement</strong>: Once you have chosen a candidate, a service agreement is filled out and signed by you. We will also share all pertinent information regarding your chosen candidate.</li>
@@ -43,17 +43,17 @@ export default function LiveInMaidPage() {
                     </ol>
                 </div>
 
-                <div className="testimonial mt-10 rounded-xl border border-blue-100 bg-blue-50/60 p-6">
-                    <h2 className="text-xl font-semibold text-gray-900 mb-3">Client Testimonial</h2>
-                    <blockquote className="text-gray-700 italic">
-                        <p>“Thank you very much Jauharah, you understood our specifications and the lady that you gave us is doing a great job”.</p>
-                        <cite className="block mt-2 text-sm text-gray-600">- Abdeel.K</cite>
+                <div className="testimonial mt-8 sm:mt-10 rounded-xl border border-blue-100 bg-blue-50/60 p-4 sm:p-6">
+                    <h2 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3">Client Testimonial</h2>
+                    <blockquote className="text-gray-700 italic text-sm sm:text-base">
+                        <p>"Thank you very much Jauharah, you understood our specifications and the lady that you gave us is doing a great job".</p>
+                        <cite className="block mt-2 text-xs sm:text-sm text-gray-600">- Abdeel.K</cite>
                     </blockquote>
                 </div>
 
-                <div className="policies mt-10">
-                    <h2 className="text-xl font-semibold text-gray-900 border-b border-gray-200 pb-2 mb-4">Important Policies for Live-In Placements</h2>
-                    <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                <div className="policies mt-8 sm:mt-10">
+                    <h2 className="text-lg sm:text-xl font-semibold text-gray-900 border-b border-gray-200 pb-2 mb-4">Important Policies for Live-In Placements</h2>
+                    <ul className="list-disc pl-4 sm:pl-6 space-y-2 text-gray-700 text-sm sm:text-base">
                         <li><strong>Setting Boundaries</strong>: We encourage clients to define clear boundaries under which the employee will operate.</li>
                         <li><strong>Phone Usage</strong>: While we encourage workers not to be on the phone during work hours, clients are required to allow live-in staff access to their phones after their day's work is complete to contact their families.</li>
                         <li><strong>National ID Retention</strong>: As a security measure, we encourage clients to retain the National Identity Card of the live-in staff for the duration of their employment.</li>
@@ -62,15 +62,15 @@ export default function LiveInMaidPage() {
                     </ul>
                 </div>
 
-                <div className="cta mt-10 bg-deep-blue text-white rounded-xl p-6 shadow flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-                    <p className="font-semibold">Ready to find the ideal support for your home?</p>
+                <div className="cta mt-8 sm:mt-10 bg-deep-blue text-white rounded-xl p-4 sm:p-6 shadow flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4">
+                    <p className="font-semibold text-sm sm:text-base">Ready to find the ideal support for your home?</p>
                     <a
                         href="https://wa.me/256752623801"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center gap-2 rounded-md bg-yellowish text-deep-blue px-4 py-2 font-semibold shadow hover:bg-blue-50 transition-colors"
+                        className="inline-flex items-center justify-center gap-2 rounded-md bg-yellowish text-deep-blue px-3 sm:px-4 py-2 font-semibold shadow hover:bg-blue-50 transition-colors text-sm sm:text-base whitespace-nowrap"
                     >
-                        <Icon icon="logos:whatsapp-icon" width={24} height={24} />
+                        <Icon icon="logos:whatsapp-icon" width={20} height={20} className="sm:w-6 sm:h-6" />
                         Chat With Us
                     </a>
                 </div>
