@@ -1,10 +1,11 @@
+import { cn } from '@/lib/utils';
 import ServiceCard from './service-card';
 import { motion } from "motion/react";
 
 const ServicesSection = () => {
     const services = [
         {
-            title: "Live-In Maid Placement Services",
+            title: "Live-In Maid Placement",
             link: "/services/live-in-maids",
             image: 'https://res.cloudinary.com/zurri-cloud/image/upload/v1755705250/kleenmaids/wu5ymuiyg1ll1knfszhu.jpg',
         },
@@ -19,7 +20,7 @@ const ServicesSection = () => {
             image: 'https://res.cloudinary.com/zurri-cloud/image/upload/v1755705246/kleenmaids/or62huxxvk9jlnfwwfzv.jpg',
         },
         {
-            title: "Professional Cleaning Services",
+            title: "Professional Cleaning",
             link: "/services/cleaning-services",
             image: 'https://res.cloudinary.com/zurri-cloud/image/upload/v1755705248/kleenmaids/ryufnyrt1ly7zfogaoch.jpg',
         },
@@ -65,7 +66,7 @@ const ServicesSection = () => {
 
                 {/* Services Grid */}
                 <motion.div 
-                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6"
+                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6"
                     variants={{
                         hidden: { opacity: 0 },
                         visible: { 
@@ -79,6 +80,7 @@ const ServicesSection = () => {
                     {services.map((service, index) => (
                         <motion.div
                             key={index}
+                            className={cn("col-span-1", index === 4 ? "md:col-span-2" : "")}
                             variants={{
                                 hidden: { 
                                     opacity: 0, 

@@ -37,8 +37,8 @@ export default function Navbar({ className }: { className: string }) {
     ]
 
     return (
-        <header className={cn("bg-bluish top-0 z-50 sticky", className)}>
-            <div className="container mx-auto px-4 py-2 flex items-center justify-between">
+        <header className={cn("bg-bluish top-0 z-50 sticky px-4", className)}>
+            <div className="container mx-auto flex items-center justify-between">
                 <div className="flex items-center space-x-8">
                     <Link href="/" className="flex items-center space-x-2 relative">
                         <Image src="/images/logo.png" alt="Logo" width={150} height={75} className="object-contain sm:w-[200px] sm:h-[100px]" />
@@ -100,7 +100,7 @@ export default function Navbar({ className }: { className: string }) {
                     </button>
 
                     <Link href="/contact" className="hidden sm:block">
-                        <Button className="bg-greenish hover:bg-tahiti rounded-full px-3 sm:px-6 text-xs sm:text-sm hover:scale-105 transition-all uppercase cursor-pointer">
+                        <Button className="bg-greenish hover:bg-deep-blue font-bold rounded-full px-3 sm:px-6 text-xs sm:text-sm hover:scale-105 transition-all uppercase cursor-pointer">
                             <span className="hidden sm:inline">Book Service</span>
                             <span className="sm:hidden">Book</span>
                             <MoveUpRight className="h-4 w-4 sm:h-5 sm:w-5" />
@@ -153,12 +153,12 @@ export default function Navbar({ className }: { className: string }) {
                             >
                                 Contact
                             </Link>
-                            <Link href="/contact" className="block pt-4">
+                            <Link href="/contact" className="block pt-4 hover:bg-deep-blue">
                                 <Button 
-                                    className="w-full bg-greenish hover:bg-tahiti rounded-full px-6 hover:scale-105 transition-all uppercase cursor-pointer"
+                                    className="w-full bg-greenish rounded-full px-8 hover:scale-105 hover:bg-deep-blue transition-all uppercase cursor-pointer group"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
-                                    Book Service<MoveUpRight className="h-5 w-5" />
+                                    Book Service<MoveUpRight className="h-5 w-5 group-hover:bg-deep-blue" />
                                 </Button>
                             </Link>
                         </nav>

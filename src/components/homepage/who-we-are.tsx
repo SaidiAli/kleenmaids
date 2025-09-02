@@ -5,14 +5,14 @@ import { motion } from "motion/react"
 export default function WhoWeAreSection() {
     return (
         <section className="container mx-auto py-16 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
-            <motion.div 
+            <motion.div
                 className="flex flex-col gap-6 sm:gap-8 justify-center items-center"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.3 }}
                 variants={{
                     hidden: { opacity: 0 },
-                    visible: { 
+                    visible: {
                         opacity: 1,
                         transition: {
                             staggerChildren: 0.4
@@ -28,7 +28,7 @@ export default function WhoWeAreSection() {
                 >
                     <Image src="/kleen.svg" alt="maid" width={40} height={40} className="sm:w-[50px] sm:h-[50px]" />
                 </motion.div>
-                <motion.div 
+                <motion.div
                     className="max-w-4xl space-y-6 sm:space-y-8 mb-6 sm:mb-8"
                     variants={{
                         hidden: { opacity: 0, y: 60 },
@@ -41,7 +41,7 @@ export default function WhoWeAreSection() {
                     </p>
                 </motion.div>
 
-                <motion.div 
+                {/* <motion.div 
                     className="flex flex-col lg:flex-row gap-6 sm:gap-8 w-full max-w-6xl"
                     variants={{
                         hidden: { opacity: 0 },
@@ -87,7 +87,7 @@ export default function WhoWeAreSection() {
                             <Link href="/services/live-in-maids" className="font-medium text-sm sm:text-base">Book Now</Link>
                         </div>
                     </motion.div>
-                </motion.div>
+                </motion.div> */}
             </motion.div>
         </section>
     )
