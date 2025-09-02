@@ -51,7 +51,6 @@ const ServiceCard = ({ title, image, link, className = "" }: ServiceCardProps) =
                 <motion.div 
                     className="absolute bottom-15 pl-8"
                     initial={{ y: 20, opacity: 0.8 }}
-                    whileHover={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.3 }}
                 >
                     <motion.h3 
