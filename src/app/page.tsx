@@ -38,6 +38,7 @@ export default function Home() {
           hidden: { opacity: 0, y: 100, scale: 0.9 },
           visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 1.2, ease: "easeOut" } }
         }}
+        id="services"
       >
         <ServicesSection />
       </motion.div>

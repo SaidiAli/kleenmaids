@@ -32,9 +32,11 @@ export default function ServiceLayout({
             <Navbar className="" />
 
             {/* Hero Section */}
-            <section className="py-12 sm:py-16 lg:py-20 relative container mx-auto px-4 sm:px-6 lg:px-8">
-                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 uppercase tracking-wide">{title}</h1>
-                <p className="text-sm sm:text-base lg:text-lg text-gray-600">{description}</p>
+            <section className="py-12 sm:py-16 lg:py-20 relative mx-auto px-4 sm:px-6 lg:px-8 bg-deep-blue">
+                <div className="container mx-auto">
+                    <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 uppercase tracking-wide text-white">{title}</h1>
+                    <p className="text-sm sm:text-base lg:text-lg text-white">{description}</p>
+                </div>
             </section>
 
             {/* Main Content */}

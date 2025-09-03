@@ -14,7 +14,7 @@ export default function AboutPage() {
             <AboutHero />
 
             <motion.section 
-                className="pb-16 sm:pb-24 lg:pb-36 mx-auto px-4 sm:px-6 lg:px-8"
+                className="pb-16 sm:pb-24 lg:pb-36 mx-auto"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
@@ -32,7 +32,7 @@ export default function AboutPage() {
                             src="https://res.cloudinary.com/zurri-cloud/image/upload/v1755723564/kleenmaids/mcqx8amwvs9sljgb356v.jpg"
                             alt="Professional cleaning team"
                             fill
-                            className="object-cover rounded-lg"
+                            className="object-cover"
                         />
                     </motion.div>
                     <motion.div 
@@ -46,7 +46,7 @@ export default function AboutPage() {
                             src="https://res.cloudinary.com/zurri-cloud/image/upload/v1756019572/kleenmaids/ecrevztowjfcpbezml1e.png"
                             alt="Professional cleaning service"
                             fill
-                            className="object-cover rounded-lg"
+                            className="object-cover"
                         />
                     </motion.div>
                 </div>
@@ -251,28 +251,28 @@ export default function AboutPage() {
 function AboutHero() {
     return (
         <motion.section 
-            className="container mx-auto px-4 sm:px-6 lg:px-8"
+            className="p-8 bg-deep-blue"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
         >
-            <div className="flex flex-col lg:flex-row justify-between items-start py-8 sm:py-12 md:py-20 mt-4 sm:mt-8 md:mt-20 gap-6 sm:gap-8 lg:gap-12">
+            <div className="flex flex-col container mx-auto lg:flex-row justify-between items-start py-8 sm:py-12 md:py-20 gap-6 sm:gap-8 lg:gap-12">
                 <motion.div 
                     className="w-full lg:basis-1/2"
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.6, delay: 0.2 }}
                 >
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-bold">About Us</h2>
+                    <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white">About Us</h2>
                 </motion.div>
 
                 <motion.div 
-                    className="w-full lg:basis-1/2 space-y-4 sm:space-y-6 md:space-y-8"
+                    className="w-full lg:basis-1/2 space-y-4 sm:space-y-6 md:space-y-8 text-white"
                     initial={{ opacity: 0, x: 50 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.6, delay: 0.4 }}
                 >
-                    <p className="text-sm sm:text-base md:text-lg leading-relaxed">
+                    <p className="text-lg leading-relaxed">
                         Kleenmaids Management & Placement Agency (U) Ltd is a trusted cleaning and domestic help service provider with over 15 years of experience. We provide solutions to:
                     </p>
                     <div className="space-y-3 sm:space-y-4">
@@ -283,7 +283,7 @@ function AboutHero() {
                             transition={{ duration: 0.5, delay: 0.6 }}
                         >
                             <StarIcon size={20} className="flex-shrink-0 mt-1 sm:w-6 sm:h-6" />
-                            <p className="text-xs sm:text-sm md:text-base">
+                            <p className="text-base">
                                 <span className="font-bold">Organizations</span> in need of professional cleaning and support staff placements for small, medium, and large enterprises
                             </p>
                         </motion.div>
@@ -294,7 +294,7 @@ function AboutHero() {
                             transition={{ duration: 0.5, delay: 0.8 }}
                         >
                             <StarIcon size={20} className="flex-shrink-0 mt-1 sm:w-6 sm:h-6" />
-                            <p className="text-xs sm:text-sm md:text-base">
+                            <p className="text-base">
                                 <span className="font-bold">Individuals</span> in need of customized domestic help support for their households and families
                             </p>
                         </motion.div>
