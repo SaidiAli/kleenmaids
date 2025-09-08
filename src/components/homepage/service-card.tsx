@@ -27,38 +27,24 @@ const ServiceCard = ({ title, image, link, className = "" }: ServiceCardProps) =
                 }}
             >
                 {/* Background Image */}
-                <motion.div
-                    className="absolute inset-0"
-                    whileHover={{ scale: 1.1 }}
-                    transition={{ duration: 0.6 }}
-                >
+                <div className="absolute inset-0">
                     <Image
                         src={image}
                         alt={title}
                         fill
-                        className="object-cover"
+                        className="object-cover group-hover:scale-110 transition-transform duration-500"
                     />
-                </motion.div>
+                </div>
 
                 {/* Dark Overlay */}
-                <motion.div
-                    className="absolute inset-0 bg-black/20"
-                    whileHover={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
-                    transition={{ duration: 0.3 }}
-                />
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/60 transition-colors duration-300" />
 
                 {/* Content */}
-                <motion.div
-                    className="absolute bottom-15 pl-8"
-                    initial={{ y: 20, opacity: 0.8 }}
-                    transition={{ duration: 0.3 }}
-                >
-                    <motion.h3
-                        className="text-white text-3xl font-semibold tracking-wide leading-tight"
-                    >
+                <div className="absolute bottom-6 left-8 right-8">
+                    <h3 className="text-white text-2xl sm:text-3xl font-semibold tracking-wide leading-tight group-hover:scale-105 transition-transform duration-300">
                         {title}
-                    </motion.h3>
-                </motion.div>
+                    </h3>
+                </div>
             </motion.div>
         </Link>
     );
