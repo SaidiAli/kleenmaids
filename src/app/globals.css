@@ -15,8 +15,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-unna: var(--font-unna);
+  --font-ibm-plex-serif: var(--font-ibm-plex-serif);
   --color-ring: var(--ring);
   --color-input: var(--input);
   --color-border: var(--border);
@@ -117,6 +116,6 @@
   h2,
   h3,
   h4 {
-    @apply font-unna font-bold;
+    @apply font-ibm-plex-serif font-bold;
   }
 }
