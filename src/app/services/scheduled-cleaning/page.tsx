@@ -23,13 +23,12 @@ export default function ScheduledCleaningPage() {
         <ServiceLayout
             title="Scheduled House Cleaning"
             description="Professional cleaning on your schedule."
-            heroImage="https://res.cloudinary.com/zurri-cloud/image/upload/v1755705248/kleenmaids/yvmqopclpcoydjjn21i4.jpg"
+            heroImage="https://res.cloudinary.com/zurri-cloud/image/upload/v1755705251/kleenmaids/b0skm2jljeujyxj4vnwe.jpg"
+            heroImageDesktop="https://res.cloudinary.com/zurri-cloud/image/upload/v1755705248/kleenmaids/yvmqopclpcoydjjn21i4.jpg"
             benefits={benefits}
             features={features}
         >
             <div className="max-w-full lg:max-w-2xl space-y-8 sm:space-y-10">
-                <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 border-b border-gray-200 pb-2">Scheduled House Cleaning Service</h1>
-
                 <div className="space-y-4 sm:space-y-6">
                     <p className="text-gray-700 leading-relaxed text-sm sm:text-base">For those looking for a flexible, non-live-in option, our scheduled services provide the ideal solution to support your household. Enjoy the peace of mind that comes with a consistently clean and organized home, managed by a professional you can trust. The same dedicated helper is assigned to your home for every visit to ensure consistent, personalized service.</p>
                     <p className="text-gray-700 leading-relaxed text-sm sm:text-base">All matters concerning this arrangement are handled directly between you and the company, as the assigned helper is under our management.</p>

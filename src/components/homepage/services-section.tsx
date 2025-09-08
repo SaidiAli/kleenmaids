@@ -32,7 +32,7 @@ const ServicesSection = () => {
     ];
 
     return (
-        <section className="pt-16 sm:pt-20 pb-16 sm:pb-20 lg:pb-50 px-4 sm:px-6 lg:px-8">
+        <section className="pb-16 sm:pb-20 lg:pb-50 px-4 sm:px-6 lg:px-8">
             <motion.div 
                 className="max-w-7xl mx-auto"
                 initial="hidden"

@@ -25,7 +25,8 @@ export default function LiveInMaidPage() {
         <ServiceLayout
             title="Live-In Helper Placement Services"
             description="Temporary or permanent live-in maid placements."
-            heroImage="https://res.cloudinary.com/zurri-cloud/image/upload/v1755705255/kleenmaids/fumdsl1gfby740tmm8iq.jpg"
+            heroImage="https://res.cloudinary.com/zurri-cloud/image/upload/v1755705250/kleenmaids/wu5ymuiyg1ll1knfszhu.jpg"
+            heroImageDesktop="https://res.cloudinary.com/zurri-cloud/image/upload/v1755705255/kleenmaids/fumdsl1gfby740tmm8iq.jpg"
             benefits={benefits}
             features={features}
         >

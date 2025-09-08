@@ -17,7 +17,7 @@ export const HeroSection = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.2, duration: 0.6 }}
             >
-                <Navbar className="md:m-8 md:rounded-full px-4 py-4" />
+                <Navbar className="md:m-8 md:rounded-full px-4 py-4 md:py-0" />
             </motion.div>
 
             <motion.video
