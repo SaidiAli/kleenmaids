@@ -7,27 +7,27 @@ const ServicesSection = () => {
         {
             title: "Live-In Maid Placement",
             link: "/services/live-in-maids",
-            image: 'https://res.cloudinary.com/zurri-cloud/image/upload/v1755705250/kleenmaids/wu5ymuiyg1ll1knfszhu.jpg',
+            image: '/v1755705250/kleenmaids/wu5ymuiyg1ll1knfszhu.jpg',
         },
         {
             title: "Scheduled House Cleaning",
             link: "/services/scheduled-cleaning",
-            image: 'https://res.cloudinary.com/zurri-cloud/image/upload/v1755705251/kleenmaids/b0skm2jljeujyxj4vnwe.jpg',
+            image: '/v1755705251/kleenmaids/b0skm2jljeujyxj4vnwe.jpg',
         },
         {
             title: "Emergency Maids Solution",
             link: "/services/emergency-maids",
-            image: 'https://res.cloudinary.com/zurri-cloud/image/upload/v1755705246/kleenmaids/or62huxxvk9jlnfwwfzv.jpg',
+            image: '/v1755705246/kleenmaids/or62huxxvk9jlnfwwfzv.jpg',
         },
         {
             title: "Professional Cleaning",
             link: "/services/cleaning-services",
-            image: 'https://res.cloudinary.com/zurri-cloud/image/upload/v1755705248/kleenmaids/ryufnyrt1ly7zfogaoch.jpg',
+            image: '/v1755705248/kleenmaids/ryufnyrt1ly7zfogaoch.jpg',
         },
         {
             title: "Staffing Services",
             link: "/services/staffing-services",
-            image: 'https://res.cloudinary.com/zurri-cloud/image/upload/v1755705248/kleenmaids/gqaqsgzt7xjcd3lh18yz.jpg',
+            image: '/v1755705248/kleenmaids/gqaqsgzt7xjcd3lh18yz.jpg',
         },
     ];
 

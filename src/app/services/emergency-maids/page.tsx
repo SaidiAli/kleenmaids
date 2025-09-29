@@ -23,7 +23,7 @@ export default function EmergencyMaidsPage() {
     <ServiceLayout
       title="Emergency Maids Solution"
       description="A one-off service for urgent, last-minute light cleaning needs."
-      heroImage="https://res.cloudinary.com/zurri-cloud/image/upload/v1756019568/kleenmaids/rmyfifprz0kj6gaugn9i.jpg"
+      heroImage="/v1756019568/kleenmaids/rmyfifprz0kj6gaugn9i.jpg"
       benefits={benefits}
       features={features}
     >

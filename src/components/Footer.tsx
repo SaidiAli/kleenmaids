@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Icon } from "@iconify/react/dist/iconify.js"
+import cloudinaryLoader from "@/lib/cloudinaryLoader"
 
 export const Footer = () => {
     const services = [
@@ -18,7 +19,7 @@ export const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 min-h-[200px] sm:min-h-[300px]">
                     <div className="flex flex-col gap-6 sm:gap-8 py-6 sm:py-8">
                         <Link href="/" className="flex items-center space-x-2 relative">
-                            <Image src="https://res.cloudinary.com/zurri-cloud/image/upload/v1756821027/kleenmaids/opyke0inbuummdaqtyz0.png" alt="Logo" width={200} height={80} className="object-contain sm:w-[250px] sm:h-[90px] lg:w-[300px] lg:h-[100px]" />
+                            <Image src="/opyke0inbuummdaqtyz0.png" loader={cloudinaryLoader} alt="Logo" width={200} height={80} className="object-contain sm:w-[250px] sm:h-[90px] lg:w-[300px] lg:h-[100px]" />
                         </Link>
                         <div>
                             <p className="text-xl font-bold mb-3 sm:mb-4">Follow Us</p>

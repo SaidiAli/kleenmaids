@@ -23,8 +23,8 @@ export default function StaffingServicesPage() {
         <ServiceLayout
             title="Staffing Services"
             description="Reliable staffing for cleaners, cooks, housekeepers, and more."
-            heroImage="https://res.cloudinary.com/zurri-cloud/image/upload/v1755705248/kleenmaids/gqaqsgzt7xjcd3lh18yz.jpg"
-            heroImageDesktop="https://res.cloudinary.com/zurri-cloud/image/upload/v1755705245/kleenmaids/wk11mvmtx1vyccokxwpp.jpg"
+            heroImage="/v1755705248/kleenmaids/gqaqsgzt7xjcd3lh18yz.jpg"
+            heroImageDesktop="/v1755705245/kleenmaids/wk11mvmtx1vyccokxwpp.jpg"
             benefits={benefits}
             features={features}
         >

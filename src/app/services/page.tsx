@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Users, Clock, Zap, Building, UserCheck } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import cloudinaryLoader from "@/lib/cloudinaryLoader"
 
 export default function ServicesPage() {
     const services = [
@@ -63,10 +64,7 @@ export default function ServicesPage() {
                         {services.map((service, index) => (
                             <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 elevation-2 bg-bluish">
                                 <CardContent className="p-8 space-y-4">
-                                    {/* <div className={`w-16 h-16 ${service.color} rounded-lg flex items-center justify-center mb-6`}>
-                                        {service.icon}
-                                    </div> */}
-                                    <Image src="/kleen.svg" alt="maid" width={30} height={30} className="" />
+                                    <Image src="/kleen.svg" loader={cloudinaryLoader} alt="maid" width={30} height={30} className="" />
                                     <h3 className="text-xl font-semibold mb-4 group-hover:text-greenish transition-colors">
                                         {service.title}
                                     </h3>

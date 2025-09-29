@@ -1,6 +1,7 @@
 import type React from "react"
 import Image from "next/image"
 import Navbar from "./navbar"
+import cloudinaryLoader from "@/lib/cloudinaryLoader"
 
 interface ServiceLayoutProps {
     title: string
@@ -49,6 +50,7 @@ export default function ServiceLayout({
                         <Image
                             src={heroImage || "/placeholder.svg"}
                             alt={title}
+                            loader={cloudinaryLoader}
                             width={500}
                             height={400}
                             className="rounded-lg w-full h-[250px] sm:h-[300px] lg:h-[400px] xl:h-[600px] object-cover block lg:hidden"
@@ -57,6 +59,7 @@ export default function ServiceLayout({
                         <Image
                             src={heroImageDesktop || heroImage || "/placeholder.svg"}
                             alt={title}
+                            loader={cloudinaryLoader}
                             width={500}
                             height={400}
                             className="rounded-lg w-full h-[250px] sm:h-[300px] lg:h-[400px] xl:h-[600px] object-cover hidden lg:block"

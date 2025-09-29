@@ -23,8 +23,8 @@ export default function CleaningServicesPage() {
     <ServiceLayout
       title="Professional Cleaning Services"
       description="Comprehensive cleaning for offices, events, furniture, and specialized needs."
-      heroImage="https://res.cloudinary.com/zurri-cloud/image/upload/v1755705248/kleenmaids/ryufnyrt1ly7zfogaoch.jpg"
-      heroImageDesktop="https://res.cloudinary.com/zurri-cloud/image/upload/v1755705246/kleenmaids/b3ooxnpb4h5iye7dry77.jpg"
+      heroImage="/v1755705248/kleenmaids/ryufnyrt1ly7zfogaoch.jpg"
+      heroImageDesktop="/v1755705246/kleenmaids/b3ooxnpb4h5iye7dry77.jpg"
       benefits={benefits}
       features={features}
     >

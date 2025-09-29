@@ -6,6 +6,7 @@ import Navbar from "@/components/navbar"
 import Image from "next/image"
 import { StarIcon } from "@/components/ui/star-icon"
 import { motion } from "motion/react"
+import cloudinaryLoader from "@/lib/cloudinaryLoader";
 
 export default function AboutPage() {
     return (
@@ -29,8 +30,9 @@ export default function AboutPage() {
                         transition={{ duration: 0.6, delay: 0.2 }}
                     >
                         <Image
-                            src="https://res.cloudinary.com/zurri-cloud/image/upload/v1755723564/kleenmaids/mcqx8amwvs9sljgb356v.jpg"
+                            src="/v1755723564/kleenmaids/mcqx8amwvs9sljgb356v.jpg"
                             alt="Professional cleaning team"
+                            loader={cloudinaryLoader}
                             fill
                             className="object-cover"
                         />
@@ -43,8 +45,9 @@ export default function AboutPage() {
                         transition={{ duration: 0.6, delay: 0.4 }}
                     >
                         <Image
-                            src="https://res.cloudinary.com/zurri-cloud/image/upload/v1756019572/kleenmaids/ecrevztowjfcpbezml1e.png"
+                            src="/v1756019572/kleenmaids/ecrevztowjfcpbezml1e.png"
                             alt="Professional cleaning service"
+                            loader={cloudinaryLoader}
                             fill
                             className="object-cover"
                         />

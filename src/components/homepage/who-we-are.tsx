@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { motion } from "motion/react"
+import cloudinaryLoader from "@/lib/cloudinaryLoader"
 
 export default function WhoWeAreSection() {
     return (
@@ -26,7 +27,7 @@ export default function WhoWeAreSection() {
                         visible: { opacity: 1, scale: 1, rotate: 0, transition: { duration: 1.2, ease: "easeOut" } }
                     }}
                 >
-                    <Image src="/kleen.svg" alt="maid" width={40} height={40} className="sm:w-[50px] sm:h-[50px]" />
+                    <Image src="/kleen.svg" loader={cloudinaryLoader} alt="maid" width={40} height={40} className="sm:w-[50px] sm:h-[50px]" />
                 </motion.div>
                 <motion.div
                     className="max-w-4xl space-y-6 sm:space-y-8 mb-6 sm:mb-8"

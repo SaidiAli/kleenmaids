@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
+import cloudinaryLoader from "@/lib/cloudinaryLoader";
 
 interface ServiceCardProps {
     title: string;
@@ -31,6 +32,7 @@ const ServiceCard = ({ title, image, link, className = "" }: ServiceCardProps) =
                     <Image
                         src={image}
                         alt={title}
+                        loader={cloudinaryLoader}
                         fill
                         className="object-cover group-hover:scale-110 transition-transform duration-500"
                     />
