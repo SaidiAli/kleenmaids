@@ -1,10 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // output: 'export',
+  output: 'export',
   images: {
     loader: 'custom',
-    // path: 'https://res.cloudinary.com/zurri-cloud/image/upload/v1756821027/kleenmaids',
     loaderFile: './src/lib/cloudinaryLoader.ts',
     remotePatterns: [
       {

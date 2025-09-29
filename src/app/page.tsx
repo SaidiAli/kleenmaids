@@ -9,7 +9,6 @@ import { StarIcon } from "@/components/ui/star-icon";
 import Image from "next/image";
 import ServicesSection from "@/components/homepage/services-section";
 import { motion } from "motion/react";
-import cloudinaryLoader from "@/lib/cloudinaryLoader";
 
 export default function Home() {
   return (
@@ -177,7 +176,6 @@ export default function Home() {
               <div className="relative h-full rounded-lg overflow-hidden">
                 <Image
                   src="/v1755723564/kleenmaids/mcqx8amwvs9sljgb356v.jpg"
-                  loader={cloudinaryLoader}
                   alt="Professional cleaning team"
                   fill
                   className="object-cover"

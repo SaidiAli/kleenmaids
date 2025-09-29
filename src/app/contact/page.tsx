@@ -4,11 +4,17 @@ import Navbar from '@/components/navbar';
 import { Button } from '@/components/ui/button';
 import { StarIcon } from '@/components/ui/star-icon';
 import { services } from '@/data';
+import { useForm } from '@formspree/react';
 import { Icon } from '@iconify/react/dist/iconify.js';
 import { Mail, MapPin, Phone, Send } from 'lucide-react';
 import { motion } from 'motion/react';
 
 const ContactPage = () => {
+    const [state, handleSubmit] = useForm("xdkwevjo");
+    if (state.succeeded) {
+        return <p>Thanks for joining!</p>;
+    }
+
     return (
         <div className="bg-bluish min-h-screen">
             <Navbar className="" />
@@ -149,6 +155,7 @@ const ContactPage = () => {
                             className="space-y-6"
                             initial="hidden"
                             animate="visible"
+                            onSubmit={handleSubmit}
                             variants={{
                                 hidden: { opacity: 0 },
                                 visible: {

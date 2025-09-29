@@ -32,7 +32,6 @@ export default function AboutPage() {
                         <Image
                             src="/v1755723564/kleenmaids/mcqx8amwvs9sljgb356v.jpg"
                             alt="Professional cleaning team"
-                            loader={cloudinaryLoader}
                             fill
                             className="object-cover"
                         />
@@ -47,7 +46,6 @@ export default function AboutPage() {
                         <Image
                             src="/v1756019572/kleenmaids/ecrevztowjfcpbezml1e.png"
                             alt="Professional cleaning service"
-                            loader={cloudinaryLoader}
                             fill
                             className="object-cover"
                         />

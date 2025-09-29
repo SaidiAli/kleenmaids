@@ -42,7 +42,7 @@ export default function Navbar({ className }: { className: string }) {
             <div className="container mx-auto flex items-center justify-between">
                 <div className="flex items-center space-x-8">
                     <Link href="/" className="flex items-center space-x-2 relative">
-                        <Image src="/yqebepxlocyvujhfhtkq.png" loader={cloudinaryLoader} alt="Logo" width={150} height={75} className="object-contain sm:w-[200px] sm:h-[100px]" />
+                        <Image src="/v1756019569/kleenmaids/yqebepxlocyvujhfhtkq.png" alt="Logo" width={150} height={75} className="object-contain sm:w-[200px] sm:h-[100px]" />
                     </Link>
                 </div>
                 <div className="flex items-center gap-4 md:gap-16">

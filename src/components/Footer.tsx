@@ -19,15 +19,15 @@ export const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 min-h-[200px] sm:min-h-[300px]">
                     <div className="flex flex-col gap-6 sm:gap-8 py-6 sm:py-8">
                         <Link href="/" className="flex items-center space-x-2 relative">
-                            <Image src="/opyke0inbuummdaqtyz0.png" loader={cloudinaryLoader} alt="Logo" width={200} height={80} className="object-contain sm:w-[250px] sm:h-[90px] lg:w-[300px] lg:h-[100px]" />
+                            <Image src="/v1756821027/kleenmaids/opyke0inbuummdaqtyz0.png" alt="Logo" width={200} height={80} className="object-contain sm:w-[250px] sm:h-[90px] lg:w-[300px] lg:h-[100px]" />
                         </Link>
                         <div>
                             <p className="text-xl font-bold mb-3 sm:mb-4">Follow Us</p>
                             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                                <Link href="https://www.linkedin.com/" target="_blank">
+                                <Link href="https://www.linkedin.com/company/kleenmaids" target="_blank">
                                     <p className="flex items-center space-x-2 font-medium hover:underline text-sm sm:text-base"><Icon icon="mdi:linkedin" width={20} height={20} className="sm:w-6 sm:h-6" />LinkedIn</p>
                                 </Link>
-                                <Link href="https://www.instagram.com/" target="_blank">
+                                <Link href="https://www.instagram.com/kleenmaids256/" target="_blank">
                                     <p className="flex items-center space-x-2 font-medium hover:underline text-sm sm:text-base"><Icon icon="mdi:instagram" width={20} height={20} className="sm:w-6 sm:h-6" />Instagram</p>
                                 </Link>
                             </div>
