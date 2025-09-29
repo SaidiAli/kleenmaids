@@ -6,15 +6,45 @@ import { StarIcon } from '@/components/ui/star-icon';
 import { services } from '@/data';
 import { useForm } from '@formspree/react';
 import { Icon } from '@iconify/react/dist/iconify.js';
-import { Mail, MapPin, Phone, Send } from 'lucide-react';
+import { Mail, MapPin, Phone, Send, CheckCircle, Home } from 'lucide-react';
 import { motion } from 'motion/react';
+import Link from 'next/link';
 
 const ContactPage = () => {
     const [state, handleSubmit] = useForm("xdkwevjo");
+
+    // This block is the updated success page
     if (state.succeeded) {
-        return <p>Thanks for joining!</p>;
+        return (
+            <div className="bg-bluish min-h-screen">
+                <Navbar className="" />
+                <div className="container mx-auto py-20 px-4 flex flex-col items-center justify-center text-center h-[60vh]">
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        className="max-w-md"
+                    >
+                        <CheckCircle className="h-16 w-16 mx-auto text-greenish mb-6" />
+                        <h1 className="text-4xl md:text-5xl font-bold text-deep-blue mb-4">
+                            Message Sent!
+                        </h1>
+                        <p className="text-lg text-gray-700 mb-8">
+                            Thank you for reaching out. Your message has been received successfully, and we will get back to you soon.
+                        </p>
+                        <Link href="/">
+                            <Button className="bg-deep-blue hover:bg-greenish font-semibold rounded-full text-white">
+                                <Home className="mr-2 h-4 w-4" />
+                                Return to Homepage
+                            </Button>
+                        </Link>
+                    </motion.div>
+                </div>
+            </div>
+        );
     }
 
+    // The form page remains the same
     return (
         <div className="bg-bluish min-h-screen">
             <Navbar className="" />
@@ -261,10 +291,11 @@ const ContactPage = () => {
                                 >
                                     <Button
                                         type="submit"
+                                        disabled={state.submitting}
                                         className="w-full flex items-center justify-center gap-2 bg-deep-blue hover:bg-greenish text-white font-bold px-6 py-4 rounded-lg transition-all duration-300"
                                     >
                                         <Send size={18} />
-                                        Send message
+                                        {state.submitting ? "Sending..." : "Send message"}
                                     </Button>
                                 </motion.div>
                             </motion.div>
