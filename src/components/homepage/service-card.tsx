@@ -1,5 +1,3 @@
-import { cn } from "@/lib/utils";
-import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
 import cloudinaryLoader from "@/lib/cloudinaryLoader";
@@ -29,11 +27,12 @@ const ServiceCard = ({ title, image, link, className = "" }: ServiceCardProps) =
             >
                 {/* Background Image */}
                 <div className="absolute inset-0">
-                    <Image
-                        src={image}
+                    <img
+                        src={cloudinaryLoader({ src: image, width: 500, quality: 75 })}
                         alt={title}
-                        fill
-                        className="object-cover group-hover:scale-110 transition-transform duration-500"
+                        width={500}
+                        className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
+                        loading="lazy"
                     />
                 </div>
 

@@ -30,7 +30,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${ibmPlexSerif.variable} antialiased`}
       >
         <div className="min-h-screen bg-white">
-          {/* <Navbar className="" /> */}
           {children}
           <Footer />
         </div>

@@ -12,6 +12,11 @@ export const Footer = () => {
         { name: "Staffing Services", href: "/services/staffing-services" },
     ]
 
+    const logoSrc = "/v1756821027/kleenmaids/opyke0inbuummdaqtyz0.png";
+    const logoWidth = 300;
+    const logoHeight = 100;
+    const quality = 75;
+
     return (
         <footer className="bg-deep-blue text-white">
             <div className="container mx-auto px-4 md:py-12">
@@ -19,7 +24,14 @@ export const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 min-h-[200px] sm:min-h-[300px]">
                     <div className="flex flex-col gap-6 sm:gap-8 py-6 sm:py-8">
                         <Link href="/" className="flex items-center space-x-2 relative">
-                            <Image src="/v1756821027/kleenmaids/opyke0inbuummdaqtyz0.png" alt="Logo" width={200} height={80} className="object-contain sm:w-[250px] sm:h-[90px] lg:w-[300px] lg:h-[100px]" />
+                            <img
+                                src={cloudinaryLoader({ src: logoSrc, width: logoWidth, quality: quality })}
+                                alt="Logo"
+                                width={logoWidth}
+                                height={logoHeight}
+                                className="object-contain sm:w-[250px] sm:h-[90px] lg:w-[300px] lg:h-[100px]"
+                                loading="lazy"
+                            />
                         </Link>
                         <div>
                             <p className="text-xl font-bold mb-3 sm:mb-4">Follow Us</p>

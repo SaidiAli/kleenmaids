@@ -1,9 +1,7 @@
-
 "use client"
 
 import { MoveUpRight, ChevronDown, Menu, X } from "lucide-react"
 import { Button } from "./ui/button"
-import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
 import { motion } from "motion/react"
@@ -42,7 +40,14 @@ export default function Navbar({ className }: { className: string }) {
             <div className="container mx-auto flex items-center justify-between">
                 <div className="flex items-center space-x-8">
                     <Link href="/" className="flex items-center space-x-2 relative">
-                        <Image src="/v1756019569/kleenmaids/yqebepxlocyvujhfhtkq.png" alt="Logo" width={150} height={75} className="object-contain sm:w-[200px] sm:h-[100px]" />
+                        <img
+                            src={cloudinaryLoader({ src: '/v1756019569/kleenmaids/yqebepxlocyvujhfhtkq.png', width: 150, quality: 75 })}
+                            alt="Logo"
+                            width={150}
+                            height={75}
+                            className="object-contain sm:w-[200px] sm:h-[100px]"
+                            loading="lazy"
+                        />
                     </Link>
                 </div>
                 <div className="flex items-center gap-4 md:gap-16">
@@ -50,7 +55,7 @@ export default function Navbar({ className }: { className: string }) {
                         <Link href="/" className="text-gray-600 hover:text-greenish transition-colors">
                             Home
                         </Link>
-                        <div 
+                        <div
                             className="relative"
                             onMouseEnter={() => setIsServicesHovered(true)}
                             onMouseLeave={() => setIsServicesHovered(false)}
@@ -64,12 +69,11 @@ export default function Navbar({ className }: { className: string }) {
                                     <ChevronDown className="h-4 w-4" />
                                 </motion.div>
                             </div>
-                            <div 
-                                className={`absolute top-full left-0 mt-2 w-64 bg-bluish shadow-lg rounded-none transition-all duration-300 ${
-                                    isServicesHovered 
-                                        ? 'opacity-100 visible translate-y-0' 
+                            <div
+                                className={`absolute top-full left-0 mt-2 w-64 bg-bluish shadow-lg rounded-none transition-all duration-300 ${isServicesHovered
+                                        ? 'opacity-100 visible translate-y-0'
                                         : 'opacity-0 invisible -translate-y-2'
-                                }`}
+                                    }`}
                             >
                                 <div className="">
                                     {services.map((service, index) => (
@@ -118,8 +122,8 @@ export default function Navbar({ className }: { className: string }) {
                         className="md:hidden absolute top-full left-0 right-0 bg-bluish shadow-lg border-t border-gray-200"
                     >
                         <nav className="container mx-auto px-4 py-4 space-y-4">
-                            <Link 
-                                href="/" 
+                            <Link
+                                href="/"
                                 className="block text-gray-600 hover:text-greenish transition-colors uppercase font-bold py-2"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
@@ -140,22 +144,22 @@ export default function Navbar({ className }: { className: string }) {
                                     ))}
                                 </div>
                             </div>
-                            <Link 
-                                href="/about" 
+                            <Link
+                                href="/about"
                                 className="block text-gray-600 hover:text-greenish transition-colors uppercase font-bold py-2"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
                                 About
                             </Link>
-                            <Link 
-                                href="/contact" 
+                            <Link
+                                href="/contact"
                                 className="block text-gray-600 hover:text-greenish transition-colors uppercase font-bold py-2"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
                                 Contact
                             </Link>
                             <Link href="/contact" className="block pt-4 hover:bg-deep-blue">
-                                <Button 
+                                <Button
                                     className="w-full bg-greenish rounded-full px-8 hover:scale-105 hover:bg-deep-blue transition-all uppercase cursor-pointer group"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
