@@ -23,8 +23,8 @@ export default function StaffingServicesPage() {
         <ServiceLayout
             title="Staffing Services"
             description="Reliable staffing for cleaners, cooks, housekeepers, and more."
-            heroImage="/v1755705248/kleenmaids/gqaqsgzt7xjcd3lh18yz.jpg"
-            heroImageDesktop="/v1755705245/kleenmaids/wk11mvmtx1vyccokxwpp.jpg"
+            heroImage="/v1761039946/kleenmaids/tsbayqo03cedh2tios8b.jpg"
+            heroImageDesktop="/v1761040202/kleenmaids/nxwbookd47dcw91psv9f.jpg"
             benefits={benefits}
             features={features}
         >
@@ -61,7 +61,7 @@ export default function StaffingServicesPage() {
                 </div>
 
                 <div className="cta mt-8 sm:mt-10 bg-deep-blue text-white rounded-xl p-4 sm:p-6 shadow">
-                    <p className="font-semibold text-sm sm:text-base">Looking to hire support staff for a specific role? <a href="https://wa.me/256752623801" className="underline decoration-yellowish underline-offset-4">Contact us</a> to discuss your requirements and find the right candidate for the job.</p>
+                    <p className="font-semibold text-sm sm:text-base">Looking to hire support staff for a specific role? <a href="https://wa.me/256779511178" className="underline decoration-yellowish underline-offset-4">Contact us</a> to discuss your requirements and find the right candidate for the job.</p>
                 </div>
             </div>
         </ServiceLayout>

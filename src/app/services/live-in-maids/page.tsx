@@ -25,8 +25,8 @@ export default function LiveInMaidPage() {
         <ServiceLayout
             title="Live-In Helper Placement Services"
             description="Temporary or permanent live-in maid placements."
-            heroImage="/v1755705250/kleenmaids/wu5ymuiyg1ll1knfszhu.jpg"
-            heroImageDesktop="/v1755705255/kleenmaids/fumdsl1gfby740tmm8iq.jpg"
+            heroImage="/v1761041165/kleenmaids/mytvn1of3mm8x5i6gzru.jpg"
+            heroImageDesktop="/v1761040934/kleenmaids/sten2livfxsievz8l3v9.jpg"
             benefits={benefits}
             features={features}
         >
@@ -66,7 +66,7 @@ export default function LiveInMaidPage() {
                 <div className="cta mt-8 sm:mt-10 bg-deep-blue text-white rounded-xl p-4 sm:p-6 shadow flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4">
                     <p className="font-semibold text-sm sm:text-base">Ready to find the ideal support for your home?</p>
                     <a
-                        href="https://wa.me/256752623801"
+                        href="https://wa.me/256779511178"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center justify-center gap-2 rounded-md bg-yellowish text-deep-blue px-3 sm:px-4 py-2 font-semibold shadow hover:bg-blue-50 transition-colors text-sm sm:text-base whitespace-nowrap"

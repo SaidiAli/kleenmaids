@@ -23,7 +23,8 @@ export default function EmergencyMaidsPage() {
     <ServiceLayout
       title="Emergency Maids Solution"
       description="A one-off service for urgent, last-minute light cleaning needs."
-      heroImage="/v1756019568/kleenmaids/rmyfifprz0kj6gaugn9i.jpg"
+      heroImage="/v1761041698/kleenmaids/zcsxh0stb5o8qwaezo7z.jpg"
+      heroImageDesktop="/v1761041698/kleenmaids/zcsxh0stb5o8qwaezo7z.jpg"
       benefits={benefits}
       features={features}
     >
@@ -52,7 +53,7 @@ export default function EmergencyMaidsPage() {
         </div>
 
         <div className="cta mt-8 sm:mt-10 bg-deep-blue text-white rounded-xl p-4 sm:p-6 shadow">
-          <p className="font-semibold text-sm sm:text-base">In an emergency and need help now? <a href="https://wa.me/256752623801" className="underline decoration-yellowish underline-offset-4">Call us</a> for a quick fix!</p>
+          <p className="font-semibold text-sm sm:text-base">In an emergency and need help now? <a href="https://wa.me/256779511178" className="underline decoration-yellowish underline-offset-4">Call us</a> for a quick fix!</p>
         </div>
       </div>
     </ServiceLayout>

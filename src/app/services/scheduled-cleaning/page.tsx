@@ -42,13 +42,12 @@ export default function ScheduledCleaningPage() {
                         <li>Laundry services (Wash and Iron)</li>
                         <li>Washing of utensils</li>
                         <li>Organizing and de-cluttering of your living space</li>
-                        <li>Light compound cutters</li>
                     </ul>
                 </div>
 
                 <div className="space-y-4 sm:space-y-6">
                     <h2 className="text-lg sm:text-xl font-semibold text-gray-900 border-b border-gray-200 pb-2">Flexible Scheduling & Pricing</h2>
-                    <p className="text-gray-700 text-sm sm:text-base">We offer various schedules to fit your lifestyle. The cost of the service is a standard monthly charge determined by the frequency you need.</p>
+                    <p className="text-gray-700 text-sm sm:text-base">We offer various schedules to fit your lifestyle. The cost of the service is a standard monthly charge determined by the frequency you need but can be adjusted depending on the size of household.</p>
                     <p className="font-semibold text-gray-900 text-sm sm:text-base">Available Schedules:</p>
                     <ul className="list-disc pl-4 sm:pl-6 space-y-2 text-gray-700 text-sm sm:text-base">
                         <li>Weekly</li>

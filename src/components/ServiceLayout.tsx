@@ -1,5 +1,4 @@
 import type React from "react"
-import Image from "next/image"
 import Navbar from "./navbar"
 import cloudinaryLoader from "@/lib/cloudinaryLoader"
 
@@ -20,14 +19,6 @@ export default function ServiceLayout({
     heroImageDesktop,
     children,
 }: ServiceLayoutProps) {
-    const services = [
-        { name: "All Services", href: "/services", active: false },
-        { name: "Live-In Helper Placement", href: "/services/live-in-maids", active: false },
-        { name: "Scheduled House Cleaning", href: "/services/scheduled-cleaning", active: false },
-        { name: "Emergency Helpers Solution", href: "/services/emergency-maids", active: false },
-        { name: "Cleaning Services", href: "/services/cleaning-services", active: false },
-        { name: "Staffing Services", href: "/services/staffing-services", active: false },
-    ]
 
     return (
         <div className="min-h-screen bg-bluish">
@@ -47,19 +38,17 @@ export default function ServiceLayout({
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row justify-between items-start gap-8 lg:gap-12">
                     <div className="w-full lg:basis-1/3 lg:order-2 lg:sticky lg:top-20">
                         {/* Mobile Image */}
-                        <Image
-                            src={heroImage || "/placeholder.svg"}
+                        <img
+                            src={cloudinaryLoader({ src: heroImage, width: 500, quality: 80 })}
                             alt={title}
                             width={500}
-                            height={400}
                             className="rounded-lg w-full h-[250px] sm:h-[300px] lg:h-[400px] xl:h-[600px] object-cover block lg:hidden"
                         />
                         {/* Desktop Image */}
-                        <Image
-                            src={heroImageDesktop || heroImage || "/placeholder.svg"}
+                        <img
+                            src={cloudinaryLoader({ src: heroImageDesktop || heroImage || "/placeholder.svg", width: 600, quality: 80 })}
                             alt={title}
-                            width={500}
-                            height={400}
+                            width={600}
                             className="rounded-lg w-full h-[250px] sm:h-[300px] lg:h-[400px] xl:h-[600px] object-cover hidden lg:block"
                         />
                     </div>

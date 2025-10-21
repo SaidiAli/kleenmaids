@@ -39,8 +39,10 @@ export default function CleaningServicesPage() {
           <h2 className="text-lg sm:text-xl font-semibold text-gray-900 border-b border-gray-200 pb-2">Our Cleaning Solutions</h2>
           <p className="text-gray-700 text-sm sm:text-base">We offer a wide range of specialized cleaning services to handle any task, big or small. Our solutions include:</p>
           <ul className="list-disc pl-4 sm:pl-6 space-y-2 text-gray-700 text-sm sm:text-base">
+            <li>Office and Commercial Space Cleaning</li>
             <li>Deep Cleaning Services</li>
-            <li>Specialized Cleaning Services</li>
+            <li>Professional Furniture Cleaning</li>
+            <li>Specialized Cleaning Service (Hospitals, Restaurants, Schools, Hotels, etc.)</li>
             <li>Move-in and Move-Out Cleaning Services</li>
             <li>Before and After Event Cleaning Services</li>
             <li>Itemized Cleaning for your furniture, Carpets and Upholstered items</li>
@@ -49,7 +51,7 @@ export default function CleaningServicesPage() {
 
         <div className="space-y-4 sm:space-y-6">
           <h2 className="text-lg sm:text-xl font-semibold text-gray-900 border-b border-gray-200 pb-2">Our Professional Standard</h2>
-          <p className="text-gray-700 leading-relaxed text-sm sm:text-base">To ensure consistent quality and true customer satisfaction, our one-off cleaning services are handled by a dedicated team. Each team includes a supervisor who is present to oversee the particular job at hand and ensure our work exceeds your expectations.</p>
+          <p className="text-gray-700 leading-relaxed text-sm sm:text-base">To ensure consistent quality and true customer satisfaction, our cleaning services are handled by a dedicated team. Each team includes a supervisor who is present to oversee the particular job at hand and ensure our work exceeds your expectations.</p>
         </div>
 
         <div className="space-y-4 sm:space-y-6">
@@ -62,7 +64,7 @@ export default function CleaningServicesPage() {
         </div>
 
         <div className="cta mt-8 sm:mt-10 bg-deep-blue text-white rounded-xl p-4 sm:p-6 shadow">
-          <p className="font-semibold text-sm sm:text-base">Ready for a spotless space? <a href="https://wa.me/256752623801" className="underline decoration-yellowish underline-offset-4">Contact us today</a> to schedule a site visit and receive a custom quotation for your cleaning needs!</p>
+          <p className="font-semibold text-sm sm:text-base">Ready for a spotless space? <a href="https://wa.me/256779511178" className="underline decoration-yellowish underline-offset-4">Contact us today</a> to schedule a site visit and receive a custom quotation for your cleaning needs!</p>
         </div>
       </div>
     </ServiceLayout>

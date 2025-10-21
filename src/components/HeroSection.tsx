@@ -56,8 +56,8 @@ export const HeroSection = () => {
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ delay: 0.9, duration: 0.6 }}
                         >
-                            Professional cleaning services in Kampala, Uganda. We provide reliable, affordable, and eco-friendly
-                            cleaning solutions for homes and offices.
+                            Professional cleaning services in Kampala. We provide reliable, affordable, and eco-friendly
+                            cleaning solutions for businesses and homes.
                         </motion.p>
                         <motion.div
                             className="flex flex-col sm:flex-row gap-4 justify-center"

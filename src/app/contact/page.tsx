@@ -140,7 +140,7 @@ const ContactPage = () => {
                             </motion.div>
 
                             <motion.a
-                                href="https://wa.me/256752623801"
+                                href="https://wa.me/256779511178"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="bg-white p-6 rounded-lg shadow-sm flex items-start gap-4"

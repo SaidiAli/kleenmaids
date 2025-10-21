@@ -35,7 +35,7 @@ export default function WhoWeAreSection() {
                 >
                     <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center">Who we are</h2>
                     <p className="text-base sm:text-lg lg:text-xl text-center leading-relaxed">
-                        Kleenmaids is a professional domestic help placement agency and cleaning service provider with a 17-year history of serving homeowners and corporate entities in the Kampala area. We maintain a keen focus on providing thoroughly vetted staff, quality placements, and exceptional, eco-friendly cleaning solutions.
+                        Kleenmaids is a leading professional cleaning service provider and domestic help placement agency with over 17 years of experience serving corporate clients and homeowners nationwide. We are committed to delivering exceptional, eco-friendly cleaning solutions while ensuring every placement is handled with quality, integrity, and thoroughly vetted staff.
                     </p>
                 </motion.div>
             </motion.div>

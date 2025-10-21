@@ -13,7 +13,7 @@ export default function AboutPage() {
             <AboutHero />
 
             <motion.section
-                className="pb-16 sm:pb-24 lg:pb-36 mx-auto"
+                className="mb-[350px] md:mb-36 mx-auto"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
@@ -28,9 +28,9 @@ export default function AboutPage() {
                         transition={{ duration: 0.6, delay: 0.2 }}
                     >
                         <img
-                            src={cloudinaryLoader({ src: "/v1755723564/kleenmaids/mcqx8amwvs9sljgb356v.jpg", width: 150, quality: 75 })}
+                            src={cloudinaryLoader({ src: "/v1755723564/kleenmaids/mcqx8amwvs9sljgb356v.jpg", width: 1000, quality: 75 })}
                             alt="Professional cleaning team"
-                            className="object-cover"
+                            className="object-cover w-[400px] h-[300px] md:w-full md:h-full"
                         />
                     </motion.div>
                     <motion.div
@@ -41,9 +41,9 @@ export default function AboutPage() {
                         transition={{ duration: 0.6, delay: 0.4 }}
                     >
                         <img
-                            src={cloudinaryLoader({ src: "/v1756019572/kleenmaids/ecrevztowjfcpbezml1e.png", width: 150, quality: 75 })}
+                            src={cloudinaryLoader({ src: "/v1756019572/kleenmaids/ecrevztowjfcpbezml1e.png", width: 500, quality: 75 })}
                             alt="Professional cleaning service"
-                            className="object-cover"
+                            className="object-cover w-[400px] h-[300px] md:w-full md:h-full"
                         />
                     </motion.div>
                 </div>

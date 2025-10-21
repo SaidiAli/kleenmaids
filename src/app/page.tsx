@@ -6,7 +6,6 @@ import ProcessSection from "@/components/homepage/process";
 import Testimonials from "@/components/homepage/testimonial";
 import WhoWeAreSection from "@/components/homepage/who-we-are";
 import { StarIcon } from "@/components/ui/star-icon";
-import Image from "next/image";
 import ServicesSection from "@/components/homepage/services-section";
 import { motion } from "motion/react";
 import cloudinaryLoader from "@/lib/cloudinaryLoader";
@@ -176,7 +175,7 @@ export default function Home() {
             >
               <div className="relative h-full rounded-lg overflow-hidden">
                 <img
-                  src={cloudinaryLoader({ src: "/v1755723564/kleenmaids/mcqx8amwvs9sljgb356v.jpg", width: 600, quality: 80 })}
+                  src={cloudinaryLoader({ src: "/v1761042659/kleenmaids/nmqrvmjs2zhxm7palfxx.jpg", width: 600, quality: 80 })}
                   alt="Professional cleaning team"
                   className="object-cover w-full h-full"
                   width={800}
