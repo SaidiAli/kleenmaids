@@ -9,7 +9,7 @@ import cloudinaryLoader from "@/lib/cloudinaryLoader";
 export default function AboutPage() {
     return (
         <div className="min-h-screen bg-bluish">
-            <Navbar className="" />
+            <Navbar className="py-4 md:py-2" />
             <AboutHero />
 
             <motion.section
@@ -75,7 +75,7 @@ export default function AboutPage() {
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.6, delay: 0.4 }}
                             >
-                                To become a customer-focused market leader in the provision of dependable, efficient Domestic Help Support and Cleaning Solutions through exceptional service provision, unwavering reliability and lasting peace of mind, that consistently exceeds their expectations in the workplace and their homes.
+                                To be a customer-focused market leader in the provision of flexible and integrated cleaning and domestic support solutions. 
                             </motion.p>
                         </div>
                     </div>
@@ -93,7 +93,7 @@ export default function AboutPage() {
                     <div className="flex flex-col justify-center items-center gap-6 sm:gap-8">
                         <div className="max-w-4xl space-y-6 sm:space-y-8">
                             <motion.h3
-                                className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-center"
+                                className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-center" 
                                 initial={{ opacity: 0, y: 30 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
@@ -108,7 +108,7 @@ export default function AboutPage() {
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.6, delay: 0.4 }}
                             >
-                                To become the exclusive market leader in the provision of professionally trained domestic help support staff and cleaning solutions for both individuals and organizations within Kampala and beyond.
+                                To deliver premium quality cleaning and domestic support services that elevate and maintain the image of our clients'  premises to a status better than we found them.
                             </motion.p>
                         </div>
                     </div>
@@ -270,7 +270,10 @@ function AboutHero() {
                     transition={{ duration: 0.6, delay: 0.4 }}
                 >
                     <p className="text-lg leading-relaxed">
-                        Kleenmaids Management & Placement Agency (U) Ltd is a trusted cleaning and domestic help service provider with over 15 years of experience. We provide solutions to:
+                        Kleenmaids Management & Placement Agency (U) Ltd is a fully registered and licensed service  provider in Uganda, offering professional, cleaning and domestic support solutions. Our philosophy is simple: <span className="font-bold text-greenish">Quality Cleaning Every Time!</span> 
+                    </p>
+                    <p className="text-lg leading-relaxed">
+                        We offer solutions for:
                     </p>
                     <div className="space-y-3 sm:space-y-4">
                         <motion.div

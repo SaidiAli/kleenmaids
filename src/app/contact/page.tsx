@@ -169,6 +169,7 @@ const ContactPage = () => {
                                 <div>
                                     <h3 className="text-xl font-bold text-deep-blue">Mail Address</h3>
                                     <p className="text-gray-600">info@kleenmaidsug.com</p>
+                                    <p className="text-gray-600">kleenmaidsltd@gmail.com</p>
                                 </div>
                             </motion.div>
                         </motion.div>

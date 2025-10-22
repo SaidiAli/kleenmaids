@@ -27,7 +27,7 @@ const ServicesSection = () => {
         {
             title: "Professional Cleaning",
             link: "/services/cleaning-services",
-            image: '/v1761037821/kleenmaids/yqcxrwkkqft5xfhay2io.png',
+            image: '/v1761139654/kleenmaids/v43fguz8rknmitvrmy9v.jpg',
         }
     ];
 
