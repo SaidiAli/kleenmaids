@@ -1,6 +1,3 @@
-// https://res.cloudinary.com/zurri-cloud/image/upload/v1756019569/kleenmaids/yqebepxlocyvujhfhtkq.png
-// https://res.cloudinary.com/zurri-cloud/image/upload/v1756019568/kleenmaids/rmyfifprz0kj6gaugn9i.jpg
-
 export default function cloudinaryLoader({
     src,
     width,
