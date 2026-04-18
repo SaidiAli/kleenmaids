@@ -1,6 +1,6 @@
 import type React from "react"
 import Navbar from "./navbar"
-import cloudinaryLoader from "@/lib/cloudinaryLoader"
+import r2Loader from "@/lib/r2Loader"
 
 interface ServiceLayoutProps {
     title: string
@@ -39,14 +39,14 @@ export default function ServiceLayout({
                     <div className="w-full lg:basis-1/3 lg:order-2 lg:sticky lg:top-20">
                         {/* Mobile Image */}
                         <img
-                            src={cloudinaryLoader({ src: heroImage, width: 500, quality: 80 })}
+                            src={r2Loader({ src: heroImage })}
                             alt={title}
                             width={500}
                             className="rounded-lg w-full h-[250px] sm:h-[300px] lg:h-[400px] xl:h-[600px] object-cover block lg:hidden"
                         />
                         {/* Desktop Image */}
                         <img
-                            src={cloudinaryLoader({ src: heroImageDesktop || heroImage || "/placeholder.svg", width: 600, quality: 80 })}
+                            src={r2Loader({ src: heroImageDesktop || heroImage || "/placeholder.svg" })}
                             alt={title}
                             width={600}
                             className="rounded-lg w-full h-[250px] sm:h-[300px] lg:h-[400px] xl:h-[600px] object-cover hidden lg:block"

@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Icon } from "@iconify/react/dist/iconify.js"
-import cloudinaryLoader from "@/lib/cloudinaryLoader"
+import r2Loader from "@/lib/r2Loader"
 
 export const Footer = () => {
     const services = [
@@ -12,7 +12,7 @@ export const Footer = () => {
         { name: "Staffing Services", href: "/services/staffing-services" },
     ]
 
-    const logoSrc = "/v1756821027/kleenmaids/opyke0inbuummdaqtyz0.png";
+    const logoSrc = "opyke0inbuummdaqtyz0.png";
     const logoWidth = 300;
     const logoHeight = 100;
     const quality = 75;
@@ -25,7 +25,7 @@ export const Footer = () => {
                     <div className="flex flex-col gap-6 sm:gap-8 py-6 sm:py-8">
                         <Link href="/" className="flex items-center space-x-2 relative">
                             <img
-                                src={cloudinaryLoader({ src: logoSrc, width: logoWidth, quality: quality })}
+                                src={r2Loader({ src: logoSrc })}
                                 alt="Logo"
                                 width={logoWidth}
                                 height={logoHeight}

@@ -23,8 +23,8 @@ export default function EmergencyMaidsPage() {
     <ServiceLayout
       title="Emergency Maids Solution"
       description="A one-off service for urgent, last-minute light cleaning needs."
-      heroImage="/v1761041698/kleenmaids/zcsxh0stb5o8qwaezo7z.jpg"
-      heroImageDesktop="/v1761041698/kleenmaids/zcsxh0stb5o8qwaezo7z.jpg"
+      heroImage="zcsxh0stb5o8qwaezo7z.jpg"
+      heroImageDesktop="zcsxh0stb5o8qwaezo7z.jpg"
       benefits={benefits}
       features={features}
     >

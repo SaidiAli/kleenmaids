@@ -4,7 +4,7 @@ import Testimonials from "@/components/homepage/testimonial"
 import Navbar from "@/components/navbar"
 import { StarIcon } from "@/components/ui/star-icon"
 import { motion } from "motion/react"
-import cloudinaryLoader from "@/lib/cloudinaryLoader";
+import r2Loader from "@/lib/r2Loader";
 
 export default function AboutPage() {
     return (
@@ -28,7 +28,7 @@ export default function AboutPage() {
                         transition={{ duration: 0.6, delay: 0.2 }}
                     >
                         <img
-                            src={cloudinaryLoader({ src: "/v1755723564/kleenmaids/mcqx8amwvs9sljgb356v.jpg", width: 1000, quality: 75 })}
+                            src={r2Loader({ src: "mcqx8amwvs9sljgb356v.jpg" })}
                             alt="Professional cleaning team"
                             className="object-cover w-[400px] h-[300px] md:w-full md:h-full"
                         />
@@ -41,7 +41,7 @@ export default function AboutPage() {
                         transition={{ duration: 0.6, delay: 0.4 }}
                     >
                         <img
-                            src={cloudinaryLoader({ src: "/v1756019572/kleenmaids/ecrevztowjfcpbezml1e.png", width: 500, quality: 75 })}
+                            src={r2Loader({ src: "ecrevztowjfcpbezml1e.png" })}
                             alt="Professional cleaning service"
                             className="object-cover w-[400px] h-[300px] md:w-full md:h-full"
                         />

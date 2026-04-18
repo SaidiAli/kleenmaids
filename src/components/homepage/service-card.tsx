@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { motion } from "motion/react";
-import cloudinaryLoader from "@/lib/cloudinaryLoader";
+import r2Loader from "@/lib/r2Loader";
 
 interface ServiceCardProps {
     title: string;
@@ -28,7 +28,7 @@ const ServiceCard = ({ title, image, link, className = "" }: ServiceCardProps) =
                 {/* Background Image */}
                 <div className="absolute inset-0">
                     <img
-                        src={cloudinaryLoader({ src: image, width: 500, quality: 75 })}
+                        src={r2Loader({ src: image })}
                         alt={title}
                         width={500}
                         className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"

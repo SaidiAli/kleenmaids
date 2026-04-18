@@ -7,27 +7,27 @@ const ServicesSection = () => {
         {
             title: "Live-In Maid Placement",
             link: "/services/live-in-maids",
-            image: '/v1755723564/kleenmaids/mcqx8amwvs9sljgb356v.jpg',
+            image: 'mcqx8amwvs9sljgb356v.jpg',
         },
         {
             title: "Scheduled House Cleaning",
             link: "/services/scheduled-cleaning",
-            image: '/v1755705251/kleenmaids/b0skm2jljeujyxj4vnwe.jpg',
+            image: 'b0skm2jljeujyxj4vnwe.jpg',
         },
         {
             title: "Staffing Services",
             link: "/services/staffing-services",
-            image: '/v1761039946/kleenmaids/tsbayqo03cedh2tios8b.jpg',
+            image: 'tsbayqo03cedh2tios8b.jpg',
         },
         {
             title: "Emergency Maids Solution",
             link: "/services/emergency-maids",
-            image: '/v1755705246/kleenmaids/or62huxxvk9jlnfwwfzv.jpg',
+            image: 'or62huxxvk9jlnfwwfzv.jpg',
         },
         {
             title: "Professional Cleaning",
             link: "/services/cleaning-services",
-            image: '/v1761139654/kleenmaids/v43fguz8rknmitvrmy9v.jpg',
+            image: 'v43fguz8rknmitvrmy9v.jpg',
         }
     ];
 

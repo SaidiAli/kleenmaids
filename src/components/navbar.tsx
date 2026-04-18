@@ -6,7 +6,7 @@ import Link from "next/link"
 import { useState } from "react"
 import { motion } from "motion/react"
 import { cn } from "@/lib/utils"
-import cloudinaryLoader from "@/lib/cloudinaryLoader"
+import r2Loader from "@/lib/r2Loader"
 
 export default function Navbar({ className }: { className: string }) {
     const [isServicesHovered, setIsServicesHovered] = useState(false)
@@ -41,7 +41,7 @@ export default function Navbar({ className }: { className: string }) {
                 <div className="flex items-center space-x-8">
                     <Link href="/" className="flex items-center space-x-2 relative">
                         <img
-                            src={cloudinaryLoader({ src: '/v1756019569/kleenmaids/yqebepxlocyvujhfhtkq.png', width: 150, quality: 75 })}
+                            src={r2Loader({ src: 'yqebepxlocyvujhfhtkq.png' })}
                             alt="Logo"
                             width={150}
                             height={75}

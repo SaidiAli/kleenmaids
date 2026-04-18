@@ -25,8 +25,8 @@ export default function LiveInMaidPage() {
         <ServiceLayout
             title="Live-In Helper Placement Services"
             description="Temporary or permanent live-in maid placements."
-            heroImage="/v1761041165/kleenmaids/mytvn1of3mm8x5i6gzru.jpg"
-            heroImageDesktop="/v1761040934/kleenmaids/sten2livfxsievz8l3v9.jpg"
+            heroImage="mytvn1of3mm8x5i6gzru.jpg"
+            heroImageDesktop="sten2livfxsievz8l3v9.jpg"
             benefits={benefits}
             features={features}
         >

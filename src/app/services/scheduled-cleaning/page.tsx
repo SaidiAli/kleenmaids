@@ -23,8 +23,8 @@ export default function ScheduledCleaningPage() {
         <ServiceLayout
             title="Scheduled House Cleaning"
             description="Professional cleaning on your schedule."
-            heroImage="/v1755705251/kleenmaids/b0skm2jljeujyxj4vnwe.jpg"
-            heroImageDesktop="/v1755705248/kleenmaids/yvmqopclpcoydjjn21i4.jpg"
+            heroImage="b0skm2jljeujyxj4vnwe.jpg"
+            heroImageDesktop="yvmqopclpcoydjjn21i4.jpg"
             benefits={benefits}
             features={features}
         >

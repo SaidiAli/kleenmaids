@@ -4,13 +4,13 @@ const nextConfig: NextConfig = {
   output: 'export',
   images: {
     loader: 'custom',
-    loaderFile: './src/lib/cloudinaryLoader.ts',
+    loaderFile: './src/lib/r2Loader.ts',
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "res.cloudinary.com",
+        hostname: "site-contents.aptusagency.com",
         port: "",
-        pathname: "/**",
+        pathname: "/kleen/**",
       },
     ],
   },

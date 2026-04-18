@@ -23,8 +23,8 @@ export default function StaffingServicesPage() {
         <ServiceLayout
             title="Staffing Services"
             description="Reliable staffing for cleaners, cooks, housekeepers, and more."
-            heroImage="/v1761039946/kleenmaids/tsbayqo03cedh2tios8b.jpg"
-            heroImageDesktop="/v1761040202/kleenmaids/nxwbookd47dcw91psv9f.jpg"
+            heroImage="tsbayqo03cedh2tios8b.jpg"
+            heroImageDesktop="nxwbookd47dcw91psv9f.jpg"
             benefits={benefits}
             features={features}
         >
