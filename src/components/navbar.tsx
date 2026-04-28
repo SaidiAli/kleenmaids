@@ -14,20 +14,20 @@ export default function Navbar({ className }: { className: string }) {
 
     const services = [
         {
-            title: "Live-In Maid Placement",
-            href: "/services/live-in-maids",
+            title: "Professional Cleaning Services",
+            href: "/services/cleaning-services",
         },
         {
             title: "Scheduled House Cleaning",
             href: "/services/scheduled-cleaning",
         },
         {
-            title: "Emergency Maids Solution",
-            href: "/services/emergency-maids",
+            title: "Live-In Maid Placement",
+            href: "/services/live-in-maids",
         },
         {
-            title: "Professional Cleaning Services",
-            href: "/services/cleaning-services",
+            title: "Emergency Maids Solution",
+            href: "/services/emergency-maids",
         },
         {
             title: "Staffing Services",

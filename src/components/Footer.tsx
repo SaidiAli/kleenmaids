@@ -1,5 +1,4 @@
 import Link from "next/link"
-import Image from "next/image"
 import { Icon } from "@iconify/react/dist/iconify.js"
 import r2Loader from "@/lib/r2Loader"
 
@@ -15,7 +14,6 @@ export const Footer = () => {
     const logoSrc = "opyke0inbuummdaqtyz0.png";
     const logoWidth = 300;
     const logoHeight = 100;
-    const quality = 75;
 
     return (
         <footer className="bg-deep-blue text-white">
@@ -62,16 +60,16 @@ export const Footer = () => {
                         <div className="space-y-1">
                             <p className="text-xl font-bold mb-2">Contact Info</p>
                             <Link
-                                href="tel:+256700123456"
+                                href="tel:+256779511178"
                                 className="block transition-colors text-base md:text-lg"
                             >
-                                +256 700 123 456
+                                +256 779 511 178
                             </Link>
                             <Link
-                                href="mailto:info@kleenmaidsug.com"
+                                href="mailto:kleenmaidsltd@gmail.com"
                                 className="block transition-colors text-base md:text-lg"
                             >
-                                info@kleenmaidsug.com
+                                kleenmaidsltd@gmail.com
                             </Link>
                         </div>
                         <div className="space-y-1">

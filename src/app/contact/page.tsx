@@ -135,7 +135,7 @@ const ContactPage = () => {
                                 <Phone className="text-deep-blue w-8 h-8 mt-1 flex-shrink-0" />
                                 <div>
                                     <h3 className="text-xl font-bold text-deep-blue">Telephone Number</h3>
-                                    <p className="text-gray-600">+256 752 623 801</p>
+                                    <p className="text-gray-600">+256 779 511 178</p>
                                 </div>
                             </motion.div>
 
@@ -153,7 +153,7 @@ const ContactPage = () => {
                                 <Icon icon="logos:whatsapp-icon" width={24} height={24} className='w-8 h-8 mt-1 flex-shrink-0' />
                                 <div>
                                     <h3 className="text-xl font-bold text-deep-blue">Chat on WhatsApp</h3>
-                                    <p className="text-gray-600">+256 752 623 801</p>
+                                    <p className="text-gray-600">+256 779 511 178</p>
                                 </div>
                             </motion.a>
 
